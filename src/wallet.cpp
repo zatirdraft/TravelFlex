@@ -642,7 +642,7 @@ void CWalletTx::GetAmounts(list<pair<CTxDestination, int64_t> >& listReceived,
     strSentAccount = strFromAccount;
 
     nFee = 0;
-    
+
     // Compute fee:
     int64_t nDebit = GetDebit();
     if (nDebit > 0) // debit>0 means we signed/sent this transaction
@@ -988,7 +988,7 @@ void CWallet::AvailableCoins(vector<COutput>& vCoins, bool fOnlyConfirmed, const
             for (unsigned int i = 0; i < pcoin->vout.size(); i++) {
                 if (!(pcoin->IsSpent(i)) && IsMine(pcoin->vout[i]) &&
                     !IsLockedCoin((*it).first, i) && pcoin->vout[i].nValue >= nMinimumInputValue &&
-                    (!coinControl || !coinControl->HasSelected() || coinControl->IsSelected((*it).first, i))) 
+                    (!coinControl || !coinControl->HasSelected() || coinControl->IsSelected((*it).first, i)))
                         vCoins.push_back(COutput(pcoin, i, pcoin->GetDepthInMainChain()));
             }
         }
@@ -1144,7 +1144,7 @@ bool CWallet::SelectCoins(int64_t nTargetValue, set<pair<const CWalletTx*,unsign
 {
     vector<COutput> vCoins;
     AvailableCoins(vCoins, true, coinControl);
-    
+
     // coin control -> return all selected outputs (we want all selected to go into the transaction for sure)
     if (coinControl && coinControl->HasSelected())
     {
@@ -1243,11 +1243,11 @@ bool CWallet::CreateTransaction(const vector<pair<CScript, int64_t> >& vecSend,
                     // TODO: pass in scriptChange instead of reservekey so
                     // change transaction isn't always pay-to-bitcoin-address
                     CScript scriptChange;
-                    
+
                     // coin control: send change to custom address
                     if (coinControl && !boost::get<CNoDestination>(&coinControl->destChange))
                         scriptChange.SetDestination(coinControl->destChange);
-                        
+
                     // no coin control: send change to newly generated address
                     else
                     {
@@ -1566,7 +1566,7 @@ bool CWallet::TopUpKeyPool()
         CWalletDB walletdb(strWalletFile);
 
         // Top up key pool
-        unsigned int nTargetSize = max(GetArg("-keypool", 100), 0LL);
+        unsigned int nTargetSize = max(GetArg("-keypool", 100), (int64_t)0);
         while (setKeyPool.size() < (nTargetSize + 1))
         {
             int64_t nEnd = 1;
