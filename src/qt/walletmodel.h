@@ -27,7 +27,7 @@ class SendCoinsRecipient
 public:
     QString address;
     QString label;
-    qint64_t amount;
+    qint64 amount;
 };
 
 /** Interface to Bitcoin wallet from Qt view code. */
@@ -63,9 +63,9 @@ public:
     AddressTableModel *getAddressTableModel();
     TransactionTableModel *getTransactionTableModel();
     
-    qint64_t getBalance(const CCoinControl *coinControl=NULL) const;
-    qint64_t getUnconfirmedBalance() const;
-    qint64_t getImmatureBalance() const;
+    qint64 getBalance(const CCoinControl *coinControl=NULL) const;
+    qint64 getUnconfirmedBalance() const;
+    qint64 getImmatureBalance() const;
     int getNumTransactions() const;
     EncryptionStatus getEncryptionStatus() const;
 
@@ -76,11 +76,11 @@ public:
     struct SendCoinsReturn
     {
         SendCoinsReturn(StatusCode status=Aborted,
-                         qint64_t fee=0,
+                         qint64 fee=0,
                          QString hex=QString()):
             status(status), fee(fee), hex(hex) {}
         StatusCode status;
-        qint64_t fee; // is used in case status is "AmountWithFeeExceedsBalance"
+        qint64 fee; // is used in case status is "AmountWithFeeExceedsBalance"
         QString hex; // is filled with the transaction hash if status is "OK"
     };
 
@@ -137,10 +137,10 @@ private:
     TransactionTableModel *transactionTableModel;
 
     // Cache some values to be able to detect changes
-    qint64_t cachedBalance;
-    qint64_t cachedUnconfirmedBalance;
-    qint64_t cachedImmatureBalance;
-    qint64_t cachedNumTransactions;
+    qint64 cachedBalance;
+    qint64 cachedUnconfirmedBalance;
+    qint64 cachedImmatureBalance;
+    qint64 cachedNumTransactions;
     EncryptionStatus cachedEncryptionStatus;
     int cachedNumBlocks;
 
@@ -152,7 +152,7 @@ private:
 
 signals:
     // Signal that balance in wallet changed
-    void balanceChanged(qint64_t balance, qint64_t unconfirmedBalance, qint64_t immatureBalance);
+    void balanceChanged(qint64 balance, qint64 unconfirmedBalance, qint64 immatureBalance);
 
     // Number of transactions in wallet changed
     void numTransactionsChanged(int count);

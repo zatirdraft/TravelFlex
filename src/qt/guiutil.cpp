@@ -53,7 +53,7 @@ QString dateTimeStr(const QDateTime &date)
     return date.date().toString(Qt::SystemLocaleShortDate) + QString(" ") + date.toString("hh:mm");
 }
 
-QString dateTimeStr(qint64_t nTime)
+QString dateTimeStr(qint64 nTime)
 {
     return dateTimeStr(QDateTime::fromTime_t((qint32)nTime));
 }

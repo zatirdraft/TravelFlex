@@ -30,7 +30,7 @@ public:
     static void updateLabels(WalletModel*, QDialog*);
     static QString getPriorityLabel(double);
     
-    static QList<qint64_t> payAmounts;
+    static QList<qint64> payAmounts;
     static CCoinControl *coinControl;
 
 private:

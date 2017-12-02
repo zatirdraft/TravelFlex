@@ -23,7 +23,7 @@
 #include <QTreeWidgetItem>
 
 using namespace std;
-QList<qint64_t> CoinControlDialog::payAmounts;
+QList<qint64> CoinControlDialog::payAmounts;
 CCoinControl* CoinControlDialog::coinControl = new CCoinControl();
 
 CoinControlDialog::CoinControlDialog(QWidget *parent) :
@@ -422,12 +422,12 @@ void CoinControlDialog::updateLabels(WalletModel *model, QDialog* dialog)
     if (!model) return;
 
     // nPayAmount
-    qint64_t nPayAmount = 0;
+    qint64 nPayAmount = 0;
     bool fLowOutput = false;
     bool fDust = false;
     unsigned int nQuantityDust = 0;
     CTransaction txDummy;
-    foreach(const qint64_t &amount, CoinControlDialog::payAmounts)
+    foreach(const qint64 &amount, CoinControlDialog::payAmounts)
     {
         nPayAmount += amount;
         
