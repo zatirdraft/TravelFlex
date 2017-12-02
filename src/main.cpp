@@ -2913,7 +2913,7 @@ bool InitBlockIndex() {
             uint256 thash;
             char scratchpad[SCRYPT_SCRATCHPAD_SIZE];
 
-            loop
+            while(1)
             {
                 scrypt_1024_1_1_256_sp(BEGIN(block.nVersion), BEGIN(thash), scratchpad);
                 if (thash <= hashTarget)
@@ -2928,7 +2928,8 @@ bool InitBlockIndex() {
                     printf("NONCE WRAPPED, incrementing time\n");
                     ++block.nTime;
                 }
-       }
+            }
+        }
 
         block.print();
         printf("block.GetHash() = %s\n", block.GetHash().ToString().c_str());
