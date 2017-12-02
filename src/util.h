@@ -28,6 +28,8 @@
 #include <boost/date_time/posix_time/posix_time_types.hpp>
 
 #include "netbase.h" // for AddTimeData
+#include <stdint.h>
+#include <inttypes.h>
 
 typedef long long  int64;
 typedef unsigned long long  uint64;
@@ -42,15 +44,15 @@ static const int64 CENT = 1000000;
 #define UEND(a)             ((unsigned char*)&((&(a))[1]))
 #define ARRAYLEN(array)     (sizeof(array)/sizeof((array)[0]))
 
-#ifndef PRI64d
+#ifndef PRId64
 #if defined(_MSC_VER) || defined(__MSVCRT__)
-#define PRI64d  "I64d"
-#define PRI64u  "I64u"
-#define PRI64x  "I64x"
+#define PRId64  "I64d"
+#define PRIu64  "I64u"
+#define PRIx64  "I64x"
 #else
-#define PRI64d  "lld"
-#define PRI64u  "llu"
-#define PRI64x  "llx"
+#define PRId64  "lld"
+#define PRIu64  "llu"
+#define PRIx64  "llx"
 #endif
 #endif
 
@@ -243,7 +245,7 @@ void runCommand(std::string strCommand);
 
 inline std::string i64tostr(int64 n)
 {
-    return strprintf("%"PRI64d, n);
+    return strprintf("%" PRId64, n);
 }
 
 inline std::string itostr(int n)
