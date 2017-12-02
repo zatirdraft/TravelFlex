@@ -81,38 +81,12 @@
    <string notr="true"/>
   </property>
   <layout class="QGridLayout" name="gridLayout">
-   <item row="0" column="0" rowspan="12">
-    <widget class="QLabel" name="label_4">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Preferred" vsizetype="Ignored">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
-     </property>
-     <property name="pixmap">
-      <pixmap resource="../bitcoin.qrc">:/images/about</pixmap>
-     </property>
-    </widget>
-   </item>
    <item row="0" column="1">
     <widget class="QLabel" name="label_8">
      <property name="text">
-      <string>EXTRA THANKS TO:</string>
+      <string/>
      </property>
     </widget>
-   </item>
-   <item row="0" column="2" rowspan="4">
-    <spacer name="verticalSpacer_2">
-     <property name="orientation">
-      <enum>Qt::Vertical</enum>
-     </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>20</width>
-       <height>83</height>
-      </size>
-     </property>
-    </spacer>
    </item>
    <item row="1" column="1">
     <widget class="QLabel" name="label_5">
@@ -181,21 +155,14 @@
       </palette>
      </property>
      <property name="text">
-      <string>WAYA,DaGoofMan,UKMahem,Beirdo,Blurb,ladysatoshie,</string>
+      <string/>
      </property>
     </widget>
    </item>
-   <item row="2" column="1">
-    <widget class="QLabel" name="label_6">
-     <property name="text">
-      <string>RON,Milk&amp;Pie4U,NerdLifemines,sparker327,nitro,jw,markpaul099,RAFFLER</string>
-     </property>
-    </widget>
-   </item>
-   <item row="3" column="1">
-    <widget class="QLabel" name="label_7">
-     <property name="text">
-      <string>SHOTGUN,Blundertoe,regtable,TRFpyTRFping &amp; more   Thank You SOOOO Much</string>
+   <item row="5" column="1" colspan="2">
+    <widget class="Line" name="line">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
      </property>
     </widget>
    </item>
@@ -209,16 +176,107 @@
         </font>
        </property>
        <property name="text">
-        <string>TravelFlex v4.1 RC1</string>
+        <string>TravelFlex </string>
        </property>
       </widget>
      </item>
     </layout>
    </item>
-   <item row="5" column="1" colspan="2">
-    <widget class="Line" name="line">
+   <item row="2" column="1">
+    <widget class="QLabel" name="label_6">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="7" column="1">
+    <widget class="QLabel" name="copyrightLabel">
+     <property name="cursor">
+      <cursorShape>IBeamCursor</cursorShape>
+     </property>
+     <property name="text">
+      <string notr="true">Copyright &amp;copy; YYYY Bitcoin Developers
+Copyright &amp;copy; YYYY TravelFlex Developers</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::RichText</enum>
+     </property>
+     <property name="textInteractionFlags">
+      <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="2" rowspan="4">
+    <spacer name="verticalSpacer_2">
      <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>83</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="3" column="1">
+    <widget class="QLabel" name="label_7">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="9" column="2" rowspan="2">
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>60</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="0" column="0" rowspan="11">
+    <widget class="QLabel" name="label_4">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Ignored">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="../bitcoin.qrc">:/images/about</pixmap>
+     </property>
+    </widget>
+   </item>
+   <item row="10" column="1">
+    <widget class="QLabel" name="label_11">
+     <property name="text">
+      <string>Community      :  https://community.TRF-pool.world/</string>
+     </property>
+    </widget>
+   </item>
+   <item row="8" column="1" colspan="2">
+    <widget class="QLabel" name="label_2">
+     <property name="cursor">
+      <cursorShape>IBeamCursor</cursorShape>
+     </property>
+     <property name="text">
+      <string>
+This is experimental software.
+
+Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php.
+
+This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/) and cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP software written by Thomas Bernard.</string>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+     <property name="textInteractionFlags">
+      <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
      </property>
     </widget>
    </item>
@@ -265,79 +323,7 @@
      </item>
     </layout>
    </item>
-   <item row="7" column="1">
-    <widget class="QLabel" name="copyrightLabel">
-     <property name="cursor">
-      <cursorShape>IBeamCursor</cursorShape>
-     </property>
-     <property name="text">
-      <string notr="true">Copyright &amp;copy; YYYY Bitcoin Developers
-Copyright &amp;copy; YYYY TravelFlex Developers</string>
-     </property>
-     <property name="textFormat">
-      <enum>Qt::RichText</enum>
-     </property>
-     <property name="textInteractionFlags">
-      <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
-     </property>
-    </widget>
-   </item>
-   <item row="8" column="1" colspan="2">
-    <widget class="QLabel" name="label_2">
-     <property name="cursor">
-      <cursorShape>IBeamCursor</cursorShape>
-     </property>
-     <property name="text">
-      <string>
-This is experimental software.
-
-Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php.
-
-This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/) and cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP software written by Thomas Bernard.</string>
-     </property>
-     <property name="wordWrap">
-      <bool>true</bool>
-     </property>
-     <property name="textInteractionFlags">
-      <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
-     </property>
-    </widget>
-   </item>
-   <item row="9" column="1">
-    <widget class="QLabel" name="label_9">
-     <property name="text">
-      <string>Bitcoin Talk       :  https://bitcointalk.org/index.php?topic=1904863.0</string>
-     </property>
-    </widget>
-   </item>
-   <item row="9" column="2" rowspan="3">
-    <spacer name="verticalSpacer">
-     <property name="orientation">
-      <enum>Qt::Vertical</enum>
-     </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>20</width>
-       <height>60</height>
-      </size>
-     </property>
-    </spacer>
-   </item>
-   <item row="10" column="1">
-    <widget class="QLabel" name="label_10">
-     <property name="text">
-      <string>ZZZ</string>
-     </property>
-    </widget>
-   </item>
    <item row="11" column="1">
-    <widget class="QLabel" name="label_11">
-     <property name="text">
-      <string>Community      :  https://community.TRF-pool.world/</string>
-     </property>
-    </widget>
-   </item>
-   <item row="12" column="1">
     <widget class="QDialogButtonBox" name="buttonBox">
      <property name="orientation">
       <enum>Qt::Horizontal</enum>
