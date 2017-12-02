@@ -4,13 +4,13 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About Flappycoin</source>
-        <translation>Over Flappycoin</translation>
+        <source>About Travelflex</source>
+        <translation>Over Travelflex</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;Flappycoin&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;Flappycoin&lt;/b&gt; versie</translation>
+        <source>&lt;b&gt;Travelflex&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;Travelflex&lt;/b&gt; versie</translation>
     </message>
     <message>
         <location line="+57"/>
@@ -34,8 +34,8 @@ Dit product bevat software ontwikkeld door het OpenSSL Project voor gebruik in d
     </message>
     <message>
         <location line="+0"/>
-        <source>The Flappycoin developers</source>
-        <translation>De Flappycoin-ontwikkelaars</translation>
+        <source>The Travelflex developers</source>
+        <translation>De Travelflex-ontwikkelaars</translation>
     </message>
 </context>
 <context>
@@ -67,8 +67,8 @@ Dit product bevat software ontwikkeld door het OpenSSL Project voor gebruik in d
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="+63"/>
-        <source>These are your Flappycoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Dit zijn uw Flappycoinadressen om betalingen mee te ontvangen. U kunt er voor kiezen om een uniek adres aan te maken voor elke afzender. Op deze manier kunt u bijhouden wie al aan u betaald heeft.</translation>
+        <source>These are your Travelflex addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Dit zijn uw Travelflexadressen om betalingen mee te ontvangen. U kunt er voor kiezen om een uniek adres aan te maken voor elke afzender. Op deze manier kunt u bijhouden wie al aan u betaald heeft.</translation>
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="+14"/>
@@ -82,8 +82,8 @@ Dit product bevat software ontwikkeld door het OpenSSL Project voor gebruik in d
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a Flappycoin address</source>
-        <translation>Onderteken een bericht om te bewijzen dat u een bepaald Flappycoinadres bezit</translation>
+        <source>Sign a message to prove you own a Travelflex address</source>
+        <translation>Onderteken een bericht om te bewijzen dat u een bepaald Travelflexadres bezit</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -107,8 +107,8 @@ Dit product bevat software ontwikkeld door het OpenSSL Project voor gebruik in d
     </message>
     <message>
         <location line="-44"/>
-        <source>Verify a message to ensure it was signed with a specified Flappycoin address</source>
-        <translation>Controleer een bericht om te verifiëren dat het gespecificeerde Flappycoinadres het bericht heeft ondertekend.</translation>
+        <source>Verify a message to ensure it was signed with a specified Travelflex address</source>
+        <translation>Controleer een bericht om te verifiëren dat het gespecificeerde Travelflexadres het bericht heeft ondertekend.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -122,8 +122,8 @@ Dit product bevat software ontwikkeld door het OpenSSL Project voor gebruik in d
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="-5"/>
-        <source>These are your Flappycoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Dit zijn uw Flappycoinadressen om betalingen mee te verzenden. Check altijd het bedrag en het ontvangende adres voordat u uw flappycoins verzendt.</translation>
+        <source>These are your Travelflex addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Dit zijn uw Travelflexadressen om betalingen mee te verzenden. Check altijd het bedrag en het ontvangende adres voordat u uw Travelflexs verzendt.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -248,8 +248,8 @@ Dit product bevat software ontwikkeld door het OpenSSL Project voor gebruik in d
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR FLAPPYCOINS&lt;/b&gt;!</source>
-        <translation>Waarschuwing: Als u uw portemonnee versleutelt en uw wachtwoord vergeet, zult u &lt;b&gt;AL UW FLAPPYCOINS VERLIEZEN&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TravelflexS&lt;/b&gt;!</source>
+        <translation>Waarschuwing: Als u uw portemonnee versleutelt en uw wachtwoord vergeet, zult u &lt;b&gt;AL UW TravelflexS VERLIEZEN&lt;/b&gt;!</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -275,8 +275,8 @@ Dit product bevat software ontwikkeld door het OpenSSL Project voor gebruik in d
     </message>
     <message>
         <location line="-56"/>
-        <source>Flappycoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your flappycoins from being stolen by malware infecting your computer.</source>
-        <translation>Flappycoin zal nu afsluiten om het versleutelingsproces te voltooien. Onthoud dat het versleutelen van uw portemonnee u niet volledig kan beschermen: Malware kan uw computer infecteren en uw flappycoins stelen.</translation>
+        <source>Travelflex will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Travelflexs from being stolen by malware infecting your computer.</source>
+        <translation>Travelflex zal nu afsluiten om het versleutelingsproces te voltooien. Onthoud dat het versleutelen van uw portemonnee u niet volledig kan beschermen: Malware kan uw computer infecteren en uw Travelflexs stelen.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -374,8 +374,8 @@ Dit product bevat software ontwikkeld door het OpenSSL Project voor gebruik in d
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about Flappycoin</source>
-        <translation>Laat informatie zien over Flappycoin</translation>
+        <source>Show information about Travelflex</source>
+        <translation>Laat informatie zien over Travelflex</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -419,13 +419,13 @@ Dit product bevat software ontwikkeld door het OpenSSL Project voor gebruik in d
     </message>
     <message>
         <location line="-347"/>
-        <source>Send coins to a Flappycoin address</source>
-        <translation>Verstuur munten naar een Flappycoinadres</translation>
+        <source>Send coins to a Travelflex address</source>
+        <translation>Verstuur munten naar een Travelflexadres</translation>
     </message>
     <message>
         <location line="+49"/>
-        <source>Modify configuration options for Flappycoin</source>
-        <translation>Wijzig instellingen van Flappycoin</translation>
+        <source>Modify configuration options for Travelflex</source>
+        <translation>Wijzig instellingen van Travelflex</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -455,8 +455,8 @@ Dit product bevat software ontwikkeld door het OpenSSL Project voor gebruik in d
     <message>
         <location line="-165"/>
         <location line="+530"/>
-        <source>Flappycoin</source>
-        <translation>Flappycoin</translation>
+        <source>Travelflex</source>
+        <translation>Travelflex</translation>
     </message>
     <message>
         <location line="-530"/>
@@ -480,8 +480,8 @@ Dit product bevat software ontwikkeld door het OpenSSL Project voor gebruik in d
     </message>
     <message>
         <location line="+22"/>
-        <source>&amp;About Flappycoin</source>
-        <translation>&amp;Over Flappycoin</translation>
+        <source>&amp;About Travelflex</source>
+        <translation>&amp;Over Travelflex</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -500,13 +500,13 @@ Dit product bevat software ontwikkeld door het OpenSSL Project voor gebruik in d
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign messages with your Flappycoin addresses to prove you own them</source>
-        <translation>Onderteken berichten met uw Flappycoinadressen om te bewijzen dat u deze adressen bezit</translation>
+        <source>Sign messages with your Travelflex addresses to prove you own them</source>
+        <translation>Onderteken berichten met uw Travelflexadressen om te bewijzen dat u deze adressen bezit</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified Flappycoin addresses</source>
-        <translation>Verifiëer handtekeningen om zeker te zijn dat de berichten zijn ondertekend met de gespecificeerde Flappycoinadressen</translation>
+        <source>Verify messages to ensure they were signed with specified Travelflex addresses</source>
+        <translation>Verifiëer handtekeningen om zeker te zijn dat de berichten zijn ondertekend met de gespecificeerde Travelflexadressen</translation>
     </message>
     <message>
         <location line="+28"/>
@@ -536,13 +536,13 @@ Dit product bevat software ontwikkeld door het OpenSSL Project voor gebruik in d
     </message>
     <message>
         <location line="+47"/>
-        <source>Flappycoin client</source>
-        <translation>Flappycoin client</translation>
+        <source>Travelflex client</source>
+        <translation>Travelflex client</translation>
     </message>
     <message numerus="yes">
         <location line="+141"/>
-        <source>%n active connection(s) to Flappycoin network</source>
-        <translation><numerusform>%n actieve connectie naar Flappycoinnetwerk</numerusform><numerusform>%n actieve connecties naar Flappycoinnetwerk</numerusform></translation>
+        <source>%n active connection(s) to Travelflex network</source>
+        <translation><numerusform>%n actieve connectie naar Travelflexnetwerk</numerusform><numerusform>%n actieve connecties naar Travelflexnetwerk</numerusform></translation>
     </message>
     <message>
         <location line="+22"/>
@@ -607,7 +607,7 @@ Dit product bevat software ontwikkeld door het OpenSSL Project voor gebruik in d
     <message>
         <location line="+70"/>
         <source>This transaction is over the size limit. You can still send it for a fee of %1, which goes to the nodes that process your transaction and helps to support the network. Do you want to pay the fee?</source>
-        <translation>Deze transactie overschrijdt de groottelimiet. Om de transactie alsnog te versturen kunt u transactiekosten betalen van %1. Deze transactiekosten gaan naar de nodes die uw transactie verwerken en het helpt op deze manier bij het ondersteunen van het Flappycoinnetwerk. Wilt u de transactiekosten betalen?</translation>
+        <translation>Deze transactie overschrijdt de groottelimiet. Om de transactie alsnog te versturen kunt u transactiekosten betalen van %1. Deze transactiekosten gaan naar de nodes die uw transactie verwerken en het helpt op deze manier bij het ondersteunen van het Travelflexnetwerk. Wilt u de transactiekosten betalen?</translation>
     </message>
     <message>
         <location line="-140"/>
@@ -656,8 +656,8 @@ Adres: %4
     <message>
         <location line="-23"/>
         <location line="+23"/>
-        <source>URI can not be parsed! This can be caused by an invalid Flappycoin address or malformed URI parameters.</source>
-        <translation>URI kan niet worden geïnterpreteerd. Dit kan komen door een ongeldig Flappycoinadres of misvormde URI-parameters.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid Travelflex address or malformed URI parameters.</source>
+        <translation>URI kan niet worden geïnterpreteerd. Dit kan komen door een ongeldig Travelflexadres of misvormde URI-parameters.</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -671,8 +671,8 @@ Adres: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+111"/>
-        <source>A fatal error occurred. Flappycoin can no longer continue safely and will quit.</source>
-        <translation>Er is een fatale fout opgetreden. Flappycoin kan niet meer veilig doorgaan en zal nu afgesloten worden.</translation>
+        <source>A fatal error occurred. Travelflex can no longer continue safely and will quit.</source>
+        <translation>Er is een fatale fout opgetreden. Travelflex kan niet meer veilig doorgaan en zal nu afgesloten worden.</translation>
     </message>
 </context>
 <context>
@@ -737,8 +737,8 @@ Adres: %4
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Flappycoin address.</source>
-        <translation>Het opgegeven adres &quot;%1&quot; is een ongeldig Flappycoinadres</translation>
+        <source>The entered address &quot;%1&quot; is not a valid Travelflex address.</source>
+        <translation>Het opgegeven adres &quot;%1&quot; is een ongeldig Travelflexadres</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -756,8 +756,8 @@ Adres: %4
     <message>
         <location filename="../guiutil.cpp" line="+424"/>
         <location line="+12"/>
-        <source>Flappycoin-Qt</source>
-        <translation>Flappycoin-Qt</translation>
+        <source>Travelflex-Qt</source>
+        <translation>Travelflex-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -819,13 +819,13 @@ Adres: %4
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start Flappycoin after logging in to the system.</source>
-        <translation>Start Flappycoin automatisch na inloggen in het systeem</translation>
+        <source>Automatically start Travelflex after logging in to the system.</source>
+        <translation>Start Travelflex automatisch na inloggen in het systeem</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Flappycoin on system login</source>
-        <translation>Start &amp;Flappycoin bij het inloggen in het systeem</translation>
+        <source>&amp;Start Travelflex on system login</source>
+        <translation>Start &amp;Travelflex bij het inloggen in het systeem</translation>
     </message>
     <message>
         <location line="+35"/>
@@ -844,8 +844,8 @@ Adres: %4
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the Flappycoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Open de Flappycoin-poort automatisch op de router. Dit werkt alleen als de router UPnP ondersteunt en het aanstaat.</translation>
+        <source>Automatically open the Travelflex client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Open de Travelflex-poort automatisch op de router. Dit werkt alleen als de router UPnP ondersteunt en het aanstaat.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -854,8 +854,8 @@ Adres: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the Flappycoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Verbind met het Flappycoin-netwerk via een SOCKS-proxy (bijv. wanneer u via Tor wilt verbinden)</translation>
+        <source>Connect to the Travelflex network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Verbind met het Travelflex-netwerk via een SOCKS-proxy (bijv. wanneer u via Tor wilt verbinden)</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -929,8 +929,8 @@ Adres: %4
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Flappycoin.</source>
-        <translation>De taal van de gebruikersinterface kan hier ingesteld worden. Deze instelling zal pas van kracht worden nadat Flappycoin herstart wordt.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Travelflex.</source>
+        <translation>De taal van de gebruikersinterface kan hier ingesteld worden. Deze instelling zal pas van kracht worden nadat Travelflex herstart wordt.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -944,8 +944,8 @@ Adres: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show Flappycoin addresses in the transaction list or not.</source>
-        <translation>Of Flappycoinadressen getoond worden in de transactielijst</translation>
+        <source>Whether to show Travelflex addresses in the transaction list or not.</source>
+        <translation>Of Travelflexadressen getoond worden in de transactielijst</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -996,8 +996,8 @@ Adres: %4
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting Flappycoin.</source>
-        <translation>Deze instelling zal pas van kracht worden na het herstarten van Flappycoin.</translation>
+        <source>This setting will take effect after restarting Travelflex.</source>
+        <translation>Deze instelling zal pas van kracht worden na het herstarten van Travelflex.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1015,8 +1015,8 @@ Adres: %4
     <message>
         <location line="+50"/>
         <location line="+166"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Flappycoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>De weergegeven informatie kan verouderd zijn. Uw portemonnee synchroniseert automaticsh met het Flappycoinnetwerk nadat een verbinding is gelegd, maar dit proces is nog niet voltooid.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Travelflex network after a connection is established, but this process has not completed yet.</source>
+        <translation>De weergegeven informatie kan verouderd zijn. Uw portemonnee synchroniseert automaticsh met het Travelflexnetwerk nadat een verbinding is gelegd, maar dit proces is nog niet voltooid.</translation>
     </message>
     <message>
         <location line="-124"/>
@@ -1069,8 +1069,8 @@ Adres: %4
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start flappycoin: click-to-pay handler</source>
-        <translation>Kan flappycoin niet starten: click-to-pay handler</translation>
+        <source>Cannot start Travelflex: click-to-pay handler</source>
+        <translation>Kan Travelflex niet starten: click-to-pay handler</translation>
     </message>
 </context>
 <context>
@@ -1219,8 +1219,8 @@ Adres: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the Flappycoin-Qt help message to get a list with possible Flappycoin command-line options.</source>
-        <translation>Toon het FlappycoinQt-hulpbericht voor een lijst met mogelijke Flappycoin commandoregel-opties.</translation>
+        <source>Show the Travelflex-Qt help message to get a list with possible Travelflex command-line options.</source>
+        <translation>Toon het TravelflexQt-hulpbericht voor een lijst met mogelijke Travelflex commandoregel-opties.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1239,13 +1239,13 @@ Adres: %4
     </message>
     <message>
         <location line="-104"/>
-        <source>Flappycoin - Debug window</source>
-        <translation>Flappycoin-debugscherm</translation>
+        <source>Travelflex - Debug window</source>
+        <translation>Travelflex-debugscherm</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>Flappycoin Core</source>
-        <translation>Flappycoin Kern</translation>
+        <source>Travelflex Core</source>
+        <translation>Travelflex Kern</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1254,8 +1254,8 @@ Adres: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the Flappycoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Open het Flappycoindebug-logbestand van de huidige datamap. Dit kan een aantal seconden duren voor grote logbestanden.</translation>
+        <source>Open the Travelflex debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Open het Travelflexdebug-logbestand van de huidige datamap. Dit kan een aantal seconden duren voor grote logbestanden.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1264,8 +1264,8 @@ Adres: %4
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
-        <source>Welcome to the Flappycoin RPC console.</source>
-        <translation>Welkom bij de Flappycoin RPC-console.</translation>
+        <source>Welcome to the Travelflex RPC console.</source>
+        <translation>Welkom bij de Travelflex RPC-console.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1448,8 +1448,8 @@ Adres: %4
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a Flappycoin address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation>Vul een Flappycoinadres in (bijv. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
+        <source>Enter a Travelflex address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
+        <translation>Vul een Travelflexadres in (bijv. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
     </message>
 </context>
 <context>
@@ -1513,8 +1513,8 @@ Adres: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Flappycoin address</source>
-        <translation>Onderteken een bericht om te bewijzen dat u een bepaald Flappycoinadres bezit</translation>
+        <source>Sign the message to prove you own this Travelflex address</source>
+        <translation>Onderteken een bericht om te bewijzen dat u een bepaald Travelflexadres bezit</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1549,8 +1549,8 @@ Adres: %4
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified Flappycoin address</source>
-        <translation>Controleer een bericht om te verifiëren dat het gespecificeerde Flappycoinadres het bericht heeft ondertekend.</translation>
+        <source>Verify the message to ensure it was signed with the specified Travelflex address</source>
+        <translation>Controleer een bericht om te verifiëren dat het gespecificeerde Travelflexadres het bericht heeft ondertekend.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1565,8 +1565,8 @@ Adres: %4
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a Flappycoin address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation>Vul een Flappycoinadres in (bijv. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
+        <source>Enter a Travelflex address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
+        <translation>Vul een Travelflexadres in (bijv. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -1575,8 +1575,8 @@ Adres: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter Flappycoin signature</source>
-        <translation>Voer Flappycoin-handtekening in</translation>
+        <source>Enter Travelflex signature</source>
+        <translation>Voer Travelflex-handtekening in</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -1649,8 +1649,8 @@ Adres: %4
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+22"/>
-        <source>The Flappycoin developers</source>
-        <translation>De Flappycoin-ontwikkelaars</translation>
+        <source>The Travelflex developers</source>
+        <translation>De Travelflex-ontwikkelaars</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2187,8 +2187,8 @@ Adres: %4
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+94"/>
-        <source>Flappycoin version</source>
-        <translation>Flappycoinversie</translation>
+        <source>Travelflex version</source>
+        <translation>Travelflexversie</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -2197,8 +2197,8 @@ Adres: %4
     </message>
     <message>
         <location line="-29"/>
-        <source>Send command to -server or flappycoind</source>
-        <translation>Stuur commando naar -server of flappycoind</translation>
+        <source>Send command to -server or Travelflexd</source>
+        <translation>Stuur commando naar -server of Travelflexd</translation>
     </message>
     <message>
         <location line="-23"/>
@@ -2217,14 +2217,14 @@ Adres: %4
     </message>
     <message>
         <location line="+24"/>
-        <source>Specify configuration file (default: flappycoin.conf)</source>
-        <translation>Specificeer configuratiebestand (standaard: flappycoin.conf)
+        <source>Specify configuration file (default: Travelflex.conf)</source>
+        <translation>Specificeer configuratiebestand (standaard: Travelflex.conf)
 </translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: flappycoind.pid)</source>
-        <translation>Specificeer pid-bestand (standaard: flappycoind.pid)
+        <source>Specify pid file (default: Travelflexd.pid)</source>
+        <translation>Specificeer pid-bestand (standaard: Travelflexd.pid)
 </translation>
     </message>
     <message>
@@ -2302,23 +2302,23 @@ Adres: %4
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=flappycoinrpc
+rpcuser=Travelflexrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Flappycoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Travelflex Alert&quot; admin@foo.com
 </source>
         <translation>%s, u moet een RPC-wachtwoord instellen in het configuratiebestand: %s
 U wordt aangeraden het volgende willekeurige wachtwoord te gebruiken:
-rpcuser=flappycoinrpc
+rpcuser=Travelflexrpc
 rpcpassword=%s
 (u hoeft dit wachtwoord niet te onthouden)
 De gebruikersnaam en wachtwoord mogen niet hetzelfde zijn.
 Als het bestand niet bestaat, make hem dan aan met leesrechten voor enkel de eigenaar.
 Het is ook aan te bevelen &quot;alertnotify&quot; in te stellen zodat u op de hoogte gesteld wordt van problemen;
-for example: alertnotify=echo %%s | mail -s &quot;Flappycoin Alert&quot; admin@foo.com</translation>
+for example: alertnotify=echo %%s | mail -s &quot;Travelflex Alert&quot; admin@foo.com</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2332,8 +2332,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Flappycoin Alert&quot; admin@f
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. Flappycoin is probably already running.</source>
-        <translation>Kan geen lock op de datamap %s verkrijgen. Flappycoin draait vermoedelijk reeds.</translation>
+        <source>Cannot obtain a lock on data directory %s. Travelflex is probably already running.</source>
+        <translation>Kan geen lock op de datamap %s verkrijgen. Travelflex draait vermoedelijk reeds.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2377,8 +2377,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Flappycoin Alert&quot; admin@f
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Flappycoin will not work properly.</source>
-        <translation>Waarschuwing: Controleer dat de datum en tijd op uw computer correct zijn ingesteld. Als uw klok fout staat zal Flappycoin niet correct werken.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Travelflex will not work properly.</source>
+        <translation>Waarschuwing: Controleer dat de datum en tijd op uw computer correct zijn ingesteld. Als uw klok fout staat zal Travelflex niet correct werken.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2627,8 +2627,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Flappycoin Alert&quot; admin@f
     </message>
     <message>
         <location line="+5"/>
-        <source>SSL options: (see the Flappycoin Wiki for SSL setup instructions)</source>
-        <translation>SSL-opties: (zie de Flappycoin wiki voor SSL-instructies)</translation>
+        <source>SSL options: (see the Travelflex Wiki for SSL setup instructions)</source>
+        <translation>SSL-opties: (zie de Travelflex wiki voor SSL-instructies)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2817,13 +2817,13 @@ for example: alertnotify=echo %%s | mail -s &quot;Flappycoin Alert&quot; admin@f
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Flappycoin</source>
-        <translation>Fout bij laden wallet.dat: Portemonnee vereist een nieuwere versie van Flappycoin</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Travelflex</source>
+        <translation>Fout bij laden wallet.dat: Portemonnee vereist een nieuwere versie van Travelflex</translation>
     </message>
     <message>
         <location line="+93"/>
-        <source>Wallet needed to be rewritten: restart Flappycoin to complete</source>
-        <translation>Portemonnee moest herschreven worden: Herstart Flappycoin om te voltooien</translation>
+        <source>Wallet needed to be rewritten: restart Travelflex to complete</source>
+        <translation>Portemonnee moest herschreven worden: Herstart Travelflex om te voltooien</translation>
     </message>
     <message>
         <location line="-95"/>
@@ -2882,8 +2882,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Flappycoin Alert&quot; admin@f
     </message>
     <message>
         <location line="-25"/>
-        <source>Unable to bind to %s on this computer. Flappycoin is probably already running.</source>
-        <translation>Niet in staat om aan %s te binden op deze computer. Flappycoin draait vermoedelijk reeds.</translation>
+        <source>Unable to bind to %s on this computer. Travelflex is probably already running.</source>
+        <translation>Niet in staat om aan %s te binden op deze computer. Travelflex draait vermoedelijk reeds.</translation>
     </message>
     <message>
         <location line="+64"/>

@@ -34,9 +34,9 @@ QString BitcoinUnits::name(int unit)
 {
     switch(unit)
     {
-    case BTC: return QString("FLAP");
-    case kBTC: return QString("kFLAP");
-    case MBTC: return QString("MFLAP");
+    case BTC: return QString("TRF");
+    case kBTC: return QString("kTRF");
+    case MBTC: return QString("MTRF");
     default: return QString("???");
     }
 }
@@ -45,9 +45,9 @@ QString BitcoinUnits::description(int unit)
 {
     switch(unit)
     {
-    case BTC: return QString("Flappycoins");
-    case kBTC: return QString("Thousand-Flappycoins (1 * 1,000)");
-    case MBTC: return QString("Million-Flappycoins (1 * 1,000,000)");
+    case BTC: return QString("Travelflexs");
+    case kBTC: return QString("Thousand-Travelflexs (1 * 1,000)");
+    case MBTC: return QString("Million-Travelflexs (1 * 1,000,000)");
     default: return QString("???");
     }
 }

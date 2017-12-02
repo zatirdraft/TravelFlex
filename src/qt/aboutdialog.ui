@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>About FlappyCoin</string>
+   <string>About Travelflex</string>
   </property>
   <layout class="QGridLayout" name="gridLayout">
    <item row="0" column="0" rowspan="12">
@@ -78,7 +78,7 @@
         </font>
        </property>
        <property name="text">
-        <string>FlappyCoin v4 RC1</string>
+        <string>Travelflex v4 RC1</string>
        </property>
       </widget>
      </item>
@@ -99,7 +99,7 @@
         <cursorShape>IBeamCursor</cursorShape>
        </property>
        <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;FlappyCoin &lt;/span&gt;Core&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Travelflex &lt;/span&gt;Core&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
        <property name="textInteractionFlags">
         <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -141,7 +141,7 @@
      </property>
      <property name="text">
       <string notr="true">Copyright &amp;copy; YYYY Bitcoin Developers
-Copyright &amp;copy; YYYY FlappyCoin Developers</string>
+Copyright &amp;copy; YYYY Travelflex Developers</string>
      </property>
      <property name="textFormat">
       <enum>Qt::RichText</enum>
@@ -195,14 +195,14 @@ This product includes software developed by the OpenSSL Project for use in the O
    <item row="10" column="1">
     <widget class="QLabel" name="label_10">
      <property name="text">
-      <string>HOME POOL    :  https://dev.flap-pool.world/</string>
+      <string>HOME POOL    :  https://dev.TRF-pool.world/</string>
      </property>
     </widget>
    </item>
    <item row="11" column="1">
     <widget class="QLabel" name="label_11">
      <property name="text">
-      <string>Community      :  https://community.flap-pool.world/</string>
+      <string>Community      :  https://community.TRF-pool.world/</string>
      </property>
     </widget>
    </item>
