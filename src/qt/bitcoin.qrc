@@ -48,14 +48,6 @@
         <file alias="splash_testnet">res/images/splash_testnet.png</file>
         <file>res/images/footer.png</file>
         <file>res/images/wallet-bg.png</file>
-        <file>res/images/cld1.png</file>
-        <file>res/images/cld3.png</file>
-        <file>res/images/cld4.png</file>
-        <file>res/images/fb1.png</file>
-        <file>res/images/fb2.png</file>
-        <file>res/images/fb4.png</file>
-        <file>res/images/fb5.png</file>
-        <file>res/images/fb6.png</file>
     </qresource>
     <qresource prefix="/movies">
         <file alias="update_spinner">res/movies/update_spinner.mng</file>
