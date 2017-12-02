@@ -1,9 +1,9 @@
-Building FlappyCoin
+Building Travelflex
 
-See doc/readme-qt.rst for instructions on building FlappyCoin-Qt,
+See doc/readme-qt.rst for instructions on building Travelflex-Qt,
 the intended-for-end-users, nice-graphical-interface, reference
-implementation of FlappyCoin.
+implementation of Travelflex.
 
-See doc/build-*.txt for instructions on building flappycoind,
+See doc/build-*.txt for instructions on building Travelflexd,
 the intended-for-services, no-graphical-interface, reference
-implementation of FlappyCoin.
+implementation of Travelflex.
