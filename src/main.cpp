@@ -33,10 +33,10 @@ CCriticalSection cs_main;
 CTxMemPool mempool;
 unsigned int nTransactionsUpdated = 0;
 
-bool nDoGenesis = true;
+bool nDoGenesis = false;
 
 map<uint256, CBlockIndex*> mapBlockIndex;
-uint256 hashGenesisBlock("0x000001701438c1b16f3418e761b851c7b74bc0614cee6408db6a648b7");
+uint256 hashGenesisBlock("0x6cf39d0c0ecebebd54261354c9705da846d26aa57e989ac809d5c8b4b7b3aa76");
 uint256 hashGenesisBlockTestNet("0x");
 static CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // TravelFlex: starting difficulty is 1 / 2^12
 CBlockIndex* pindexGenesisBlock = NULL;
@@ -2859,7 +2859,7 @@ bool LoadBlockIndex()
         pchMessageStart[1] = 0xc1;
         pchMessageStart[2] = 0xb7;
         pchMessageStart[3] = 0xdc;
-        hashGenesisBlock = uint256("0xf5ae71e26c74beacc88382716aced69cddf3dffff24f384e1808905e0188f68f");
+        hashGenesisBlock = uint256("0x");
     }
 
     //
@@ -2899,7 +2899,7 @@ bool InitBlockIndex() {
         block.nVersion = 1;
         block.nTime    = 1512213058;
         block.nBits    = bnProofOfWorkLimit.GetCompact();
-        block.nNonce   = 251506;
+        block.nNonce   = 560708;
         if(fTestNet)
         {
             block.nNonce   = 0;
