@@ -4,13 +4,13 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About Travelflex</source>
-        <translation>Tietoa Travelflexista</translation>
+        <source>About TravelFlex</source>
+        <translation>Tietoa TravelFlexista</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;Travelflex&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;Travelflex&lt;/b&gt; versio</translation>
+        <source>&lt;b&gt;TravelFlex&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;TravelFlex&lt;/b&gt; versio</translation>
     </message>
     <message>
         <location line="+57"/>
@@ -35,7 +35,7 @@ Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.o
     </message>
     <message>
         <location line="+0"/>
-        <source>The Travelflex developers</source>
+        <source>The TravelFlex developers</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -68,8 +68,8 @@ Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.o
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="+63"/>
-        <source>These are your Travelflex addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Nämä ovat Travelflex-osoitteesi joihin voit vastaanottaa maksuja. Voit haluta antaa jokaiselle maksajalle omansa, että pystyt seuraamaan keneltä maksut tulevat.</translation>
+        <source>These are your TravelFlex addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Nämä ovat TravelFlex-osoitteesi joihin voit vastaanottaa maksuja. Voit haluta antaa jokaiselle maksajalle omansa, että pystyt seuraamaan keneltä maksut tulevat.</translation>
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="+14"/>
@@ -83,8 +83,8 @@ Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.o
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a Travelflex address</source>
-        <translation>Allekirjoita viesti todistaaksesi, että omistat Travelflex-osoitteen</translation>
+        <source>Sign a message to prove you own a TravelFlex address</source>
+        <translation>Allekirjoita viesti todistaaksesi, että omistat TravelFlex-osoitteen</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -108,8 +108,8 @@ Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.o
     </message>
     <message>
         <location line="-44"/>
-        <source>Verify a message to ensure it was signed with a specified Travelflex address</source>
-        <translation>Tarkista viestin allekirjoitus varmistaaksesi, että se allekirjoitettiin tietyllä Travelflex-osoitteella</translation>
+        <source>Verify a message to ensure it was signed with a specified TravelFlex address</source>
+        <translation>Tarkista viestin allekirjoitus varmistaaksesi, että se allekirjoitettiin tietyllä TravelFlex-osoitteella</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -123,7 +123,7 @@ Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.o
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="-5"/>
-        <source>These are your Travelflex addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your TravelFlex addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -249,8 +249,8 @@ Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.o
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TravelflexS&lt;/b&gt;!</source>
-        <translation>Varoitus: Jos salaat lompakkosi ja menetät tunnuslauseesi, &lt;b&gt;MENETÄT KAIKKI TravelflexISI&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TravelFlexS&lt;/b&gt;!</source>
+        <translation>Varoitus: Jos salaat lompakkosi ja menetät tunnuslauseesi, &lt;b&gt;MENETÄT KAIKKI TravelFlexISI&lt;/b&gt;!</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -276,8 +276,8 @@ Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.o
     </message>
     <message>
         <location line="-56"/>
-        <source>Travelflex will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Travelflexs from being stolen by malware infecting your computer.</source>
-        <translation>Travelflex sulkeutuu lopettaakseen salausprosessin. Muista, että salattukaan lompakko ei täysin suojaa sitä haittaohjelmien aiheuttamilta varkauksilta.</translation>
+        <source>TravelFlex will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TravelFlexs from being stolen by malware infecting your computer.</source>
+        <translation>TravelFlex sulkeutuu lopettaakseen salausprosessin. Muista, että salattukaan lompakko ei täysin suojaa sitä haittaohjelmien aiheuttamilta varkauksilta.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -361,7 +361,7 @@ Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.o
     <message>
         <location line="-14"/>
         <source>Show the list of addresses for receiving payments</source>
-        <translation>Näytä Travelflexien vastaanottamiseen käytetyt osoitteet</translation>
+        <translation>Näytä TravelFlexien vastaanottamiseen käytetyt osoitteet</translation>
     </message>
     <message>
         <location line="+31"/>
@@ -375,8 +375,8 @@ Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.o
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about Travelflex</source>
-        <translation>Näytä tietoa Travelflex-projektista</translation>
+        <source>Show information about TravelFlex</source>
+        <translation>Näytä tietoa TravelFlex-projektista</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -420,13 +420,13 @@ Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.o
     </message>
     <message>
         <location line="-347"/>
-        <source>Send coins to a Travelflex address</source>
-        <translation>Lähetä kolikoita Travelflex-osoitteeseen</translation>
+        <source>Send coins to a TravelFlex address</source>
+        <translation>Lähetä kolikoita TravelFlex-osoitteeseen</translation>
     </message>
     <message>
         <location line="+49"/>
-        <source>Modify configuration options for Travelflex</source>
-        <translation>Muuta Travelflexin konfiguraatioasetuksia</translation>
+        <source>Modify configuration options for TravelFlex</source>
+        <translation>Muuta TravelFlexin konfiguraatioasetuksia</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -456,8 +456,8 @@ Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.o
     <message>
         <location line="-165"/>
         <location line="+530"/>
-        <source>Travelflex</source>
-        <translation>Travelflex</translation>
+        <source>TravelFlex</source>
+        <translation>TravelFlex</translation>
     </message>
     <message>
         <location line="-530"/>
@@ -481,8 +481,8 @@ Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.o
     </message>
     <message>
         <location line="+22"/>
-        <source>&amp;About Travelflex</source>
-        <translation>&amp;Tietoa Travelflexista</translation>
+        <source>&amp;About TravelFlex</source>
+        <translation>&amp;Tietoa TravelFlexista</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -492,7 +492,7 @@ Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.o
     <message>
         <location line="+1"/>
         <source>Show or hide the main Window</source>
-        <translation>Näytä tai piilota Travelflex-ikkuna</translation>
+        <translation>Näytä tai piilota TravelFlex-ikkuna</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -501,13 +501,13 @@ Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.o
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign messages with your Travelflex addresses to prove you own them</source>
-        <translation>Allekirjoita viestisi omalla Travelflex -osoitteellasi todistaaksesi, että omistat ne</translation>
+        <source>Sign messages with your TravelFlex addresses to prove you own them</source>
+        <translation>Allekirjoita viestisi omalla TravelFlex -osoitteellasi todistaaksesi, että omistat ne</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified Travelflex addresses</source>
-        <translation>Varmista, että viestisi on allekirjoitettu määritetyllä Travelflex -osoitteella</translation>
+        <source>Verify messages to ensure they were signed with specified TravelFlex addresses</source>
+        <translation>Varmista, että viestisi on allekirjoitettu määritetyllä TravelFlex -osoitteella</translation>
     </message>
     <message>
         <location line="+28"/>
@@ -537,13 +537,13 @@ Tämä ohjelma sisältää OpenSSL projektin OpenSSL työkalupakin (http://www.o
     </message>
     <message>
         <location line="+47"/>
-        <source>Travelflex client</source>
-        <translation>Travelflex-asiakas</translation>
+        <source>TravelFlex client</source>
+        <translation>TravelFlex-asiakas</translation>
     </message>
     <message numerus="yes">
         <location line="+141"/>
-        <source>%n active connection(s) to Travelflex network</source>
-        <translation><numerusform>%n aktiivinen yhteys Travelflex-verkkoon</numerusform><numerusform>%n aktiivista yhteyttä Travelflex-verkkoon</numerusform></translation>
+        <source>%n active connection(s) to TravelFlex network</source>
+        <translation><numerusform>%n aktiivinen yhteys TravelFlex-verkkoon</numerusform><numerusform>%n aktiivista yhteyttä TravelFlex-verkkoon</numerusform></translation>
     </message>
     <message>
         <location line="+22"/>
@@ -656,8 +656,8 @@ Osoite: %4</translation>
     <message>
         <location line="-23"/>
         <location line="+23"/>
-        <source>URI can not be parsed! This can be caused by an invalid Travelflex address or malformed URI parameters.</source>
-        <translation>URIa ei voitu jäsentää! Tämä voi johtua kelvottomasta Travelflex-osoitteesta tai virheellisistä URI parametreista.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid TravelFlex address or malformed URI parameters.</source>
+        <translation>URIa ei voitu jäsentää! Tämä voi johtua kelvottomasta TravelFlex-osoitteesta tai virheellisistä URI parametreista.</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -671,8 +671,8 @@ Osoite: %4</translation>
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+111"/>
-        <source>A fatal error occurred. Travelflex can no longer continue safely and will quit.</source>
-        <translation>Peruuttamaton virhe on tapahtunut. Travelflex ei voi enää jatkaa turvallisesti ja sammutetaan.</translation>
+        <source>A fatal error occurred. TravelFlex can no longer continue safely and will quit.</source>
+        <translation>Peruuttamaton virhe on tapahtunut. TravelFlex ei voi enää jatkaa turvallisesti ja sammutetaan.</translation>
     </message>
 </context>
 <context>
@@ -737,8 +737,8 @@ Osoite: %4</translation>
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Travelflex address.</source>
-        <translation>Antamasi osoite &quot;%1&quot; ei ole validi Travelflex-osoite.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid TravelFlex address.</source>
+        <translation>Antamasi osoite &quot;%1&quot; ei ole validi TravelFlex-osoite.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -756,8 +756,8 @@ Osoite: %4</translation>
     <message>
         <location filename="../guiutil.cpp" line="+424"/>
         <location line="+12"/>
-        <source>Travelflex-Qt</source>
-        <translation>Travelflex-Qt</translation>
+        <source>TravelFlex-Qt</source>
+        <translation>TravelFlex-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -819,13 +819,13 @@ Osoite: %4</translation>
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start Travelflex after logging in to the system.</source>
-        <translation>Käynnistä Travelflex kirjautumisen yhteydessä.</translation>
+        <source>Automatically start TravelFlex after logging in to the system.</source>
+        <translation>Käynnistä TravelFlex kirjautumisen yhteydessä.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Travelflex on system login</source>
-        <translation>&amp;Käynnistä Travelflex kirjautumisen yhteydessä</translation>
+        <source>&amp;Start TravelFlex on system login</source>
+        <translation>&amp;Käynnistä TravelFlex kirjautumisen yhteydessä</translation>
     </message>
     <message>
         <location line="+35"/>
@@ -844,8 +844,8 @@ Osoite: %4</translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the Travelflex client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Avaa Travelflex-asiakasohjelman portti reitittimellä automaattisesti. Tämä toimii vain, jos reitittimesi tukee UPnP:tä ja se on käytössä.</translation>
+        <source>Automatically open the TravelFlex client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Avaa TravelFlex-asiakasohjelman portti reitittimellä automaattisesti. Tämä toimii vain, jos reitittimesi tukee UPnP:tä ja se on käytössä.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -854,8 +854,8 @@ Osoite: %4</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the Travelflex network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Ota yhteys Travelflex-verkkoon SOCKS-proxyn läpi (esimerkiksi kun haluat käyttää Tor-verkkoa).</translation>
+        <source>Connect to the TravelFlex network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Ota yhteys TravelFlex-verkkoon SOCKS-proxyn läpi (esimerkiksi kun haluat käyttää Tor-verkkoa).</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -910,7 +910,7 @@ Osoite: %4</translation>
     <message>
         <location line="+7"/>
         <source>Minimize instead of exit the application when the window is closed. When this option is enabled, the application will be closed only after selecting Quit in the menu.</source>
-        <translation>Ikkunaa suljettaessa vain pienentää Travelflex-ohjelman ikkunan lopettamatta itse ohjelmaa. Kun tämä asetus on valittuna, ohjelman voi sulkea vain valitsemalla Lopeta ohjelman valikosta.</translation>
+        <translation>Ikkunaa suljettaessa vain pienentää TravelFlex-ohjelman ikkunan lopettamatta itse ohjelmaa. Kun tämä asetus on valittuna, ohjelman voi sulkea vain valitsemalla Lopeta ohjelman valikosta.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -929,23 +929,23 @@ Osoite: %4</translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Travelflex.</source>
-        <translation>Tässä voit määritellä käyttöliittymän kielen. Muutokset astuvat voimaan seuraavan kerran, kun Travelflex käynnistetään.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting TravelFlex.</source>
+        <translation>Tässä voit määritellä käyttöliittymän kielen. Muutokset astuvat voimaan seuraavan kerran, kun TravelFlex käynnistetään.</translation>
     </message>
     <message>
         <location line="+11"/>
         <source>&amp;Unit to show amounts in:</source>
-        <translation>Yksikkö jona Travelflex-määrät näytetään</translation>
+        <translation>Yksikkö jona TravelFlex-määrät näytetään</translation>
     </message>
     <message>
         <location line="+13"/>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Valitse mitä yksikköä käytetään ensisijaisesti Travelflex-määrien näyttämiseen.</translation>
+        <translation>Valitse mitä yksikköä käytetään ensisijaisesti TravelFlex-määrien näyttämiseen.</translation>
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show Travelflex addresses in the transaction list or not.</source>
-        <translation>Näytetäänkö Travelflex-osoitteet rahansiirrot listassa vai ei.</translation>
+        <source>Whether to show TravelFlex addresses in the transaction list or not.</source>
+        <translation>Näytetäänkö TravelFlex-osoitteet rahansiirrot listassa vai ei.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -996,8 +996,8 @@ Osoite: %4</translation>
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting Travelflex.</source>
-        <translation>Tämä asetus astuu voimaan seuraavalla kerralla, kun Travelflex käynnistetään.</translation>
+        <source>This setting will take effect after restarting TravelFlex.</source>
+        <translation>Tämä asetus astuu voimaan seuraavalla kerralla, kun TravelFlex käynnistetään.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1015,8 +1015,8 @@ Osoite: %4</translation>
     <message>
         <location line="+50"/>
         <location line="+166"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Travelflex network after a connection is established, but this process has not completed yet.</source>
-        <translation>Näytetyt tiedot eivät välttämättä ole ajantasalla. Lompakkosi synkronoituu Travelflex-verkon kanssa automaattisesti yhteyden muodostamisen jälkeen, mutta synkronointi on vielä meneillään.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the TravelFlex network after a connection is established, but this process has not completed yet.</source>
+        <translation>Näytetyt tiedot eivät välttämättä ole ajantasalla. Lompakkosi synkronoituu TravelFlex-verkon kanssa automaattisesti yhteyden muodostamisen jälkeen, mutta synkronointi on vielä meneillään.</translation>
     </message>
     <message>
         <location line="-124"/>
@@ -1051,12 +1051,12 @@ Osoite: %4</translation>
     <message>
         <location line="-101"/>
         <source>Your current balance</source>
-        <translation>Tililläsi tällä hetkellä olevien Travelflexien määrä</translation>
+        <translation>Tililläsi tällä hetkellä olevien TravelFlexien määrä</translation>
     </message>
     <message>
         <location line="+29"/>
         <source>Total of transactions that have yet to be confirmed, and do not yet count toward the current balance</source>
-        <translation>Niiden saapuvien rahansiirtojen määrä, joita Travelflex-verkko ei vielä ole ehtinyt vahvistaa ja siten eivät vielä näy saldossa.</translation>
+        <translation>Niiden saapuvien rahansiirtojen määrä, joita TravelFlex-verkko ei vielä ole ehtinyt vahvistaa ja siten eivät vielä näy saldossa.</translation>
     </message>
     <message>
         <location filename="../overviewpage.cpp" line="+116"/>
@@ -1069,7 +1069,7 @@ Osoite: %4</translation>
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start Travelflex: click-to-pay handler</source>
+        <source>Cannot start TravelFlex: click-to-pay handler</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -1219,8 +1219,8 @@ Osoite: %4</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the Travelflex-Qt help message to get a list with possible Travelflex command-line options.</source>
-        <translation>Näytä Travelflex-Qt komentoriviparametrien ohjesivu, jossa on listattuna mahdolliset komentoriviparametrit.</translation>
+        <source>Show the TravelFlex-Qt help message to get a list with possible TravelFlex command-line options.</source>
+        <translation>Näytä TravelFlex-Qt komentoriviparametrien ohjesivu, jossa on listattuna mahdolliset komentoriviparametrit.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1239,13 +1239,13 @@ Osoite: %4</translation>
     </message>
     <message>
         <location line="-104"/>
-        <source>Travelflex - Debug window</source>
-        <translation>Travelflex - Debug ikkuna</translation>
+        <source>TravelFlex - Debug window</source>
+        <translation>TravelFlex - Debug ikkuna</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>Travelflex Core</source>
-        <translation>Travelflex-ydin</translation>
+        <source>TravelFlex Core</source>
+        <translation>TravelFlex-ydin</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1254,7 +1254,7 @@ Osoite: %4</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the Travelflex debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the TravelFlex debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation>Avaa lokitiedosto nykyisestä data-kansiosta. Tämä voi viedä useamman sekunnin, jos lokitiedosto on iso.</translation>
     </message>
     <message>
@@ -1264,8 +1264,8 @@ Osoite: %4</translation>
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
-        <source>Welcome to the Travelflex RPC console.</source>
-        <translation>Tervetuloa Travelflex RPC konsoliin.</translation>
+        <source>Welcome to the TravelFlex RPC console.</source>
+        <translation>Tervetuloa TravelFlex RPC konsoliin.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1290,7 +1290,7 @@ Osoite: %4</translation>
         <location line="+5"/>
         <location line="+5"/>
         <source>Send Coins</source>
-        <translation>Lähetä Travelflexeja</translation>
+        <translation>Lähetä TravelFlexeja</translation>
     </message>
     <message>
         <location line="+50"/>
@@ -1340,7 +1340,7 @@ Osoite: %4</translation>
     <message>
         <location line="+5"/>
         <source>Confirm send coins</source>
-        <translation>Hyväksy Travelflexien lähettäminen</translation>
+        <translation>Hyväksy TravelFlexien lähettäminen</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1360,7 +1360,7 @@ Osoite: %4</translation>
     <message>
         <location line="+5"/>
         <source>The amount to pay must be larger than 0.</source>
-        <translation>Maksettavan summan tulee olla suurempi kuin 0 Travelflexia.</translation>
+        <translation>Maksettavan summan tulee olla suurempi kuin 0 TravelFlexia.</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -1385,7 +1385,7 @@ Osoite: %4</translation>
     <message>
         <location line="+5"/>
         <source>Error: The transaction was rejected. This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>Virhe: Rahansiirto hylättiin.  Tämä voi tapahtua jos jotkin Travelflexeistasi on jo käytetty, esimerkiksi jos olet käyttänyt kopiota wallet.dat-lompakkotiedostosta ja Travelflexit on merkitty käytetyksi vain kopiossa.</translation>
+        <translation>Virhe: Rahansiirto hylättiin.  Tämä voi tapahtua jos jotkin TravelFlexeistasi on jo käytetty, esimerkiksi jos olet käyttänyt kopiota wallet.dat-lompakkotiedostosta ja TravelFlexit on merkitty käytetyksi vain kopiossa.</translation>
     </message>
 </context>
 <context>
@@ -1448,8 +1448,8 @@ Osoite: %4</translation>
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a Travelflex address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation>Anna Travelflex-osoite (esim. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
+        <source>Enter a TravelFlex address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
+        <translation>Anna TravelFlex-osoite (esim. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
     </message>
 </context>
 <context>
@@ -1513,8 +1513,8 @@ Osoite: %4</translation>
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Travelflex address</source>
-        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän Travelflex-osoitteen</translation>
+        <source>Sign the message to prove you own this TravelFlex address</source>
+        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän TravelFlex-osoitteen</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1549,8 +1549,8 @@ Osoite: %4</translation>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified Travelflex address</source>
-        <translation>Tarkista viestin allekirjoitus varmistaaksesi, että se allekirjoitettiin tietyllä Travelflex-osoitteella</translation>
+        <source>Verify the message to ensure it was signed with the specified TravelFlex address</source>
+        <translation>Tarkista viestin allekirjoitus varmistaaksesi, että se allekirjoitettiin tietyllä TravelFlex-osoitteella</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1565,8 +1565,8 @@ Osoite: %4</translation>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a Travelflex address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation>Anna Travelflex-osoite (esim. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
+        <source>Enter a TravelFlex address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
+        <translation>Anna TravelFlex-osoite (esim. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -1575,8 +1575,8 @@ Osoite: %4</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter Travelflex signature</source>
-        <translation>Syötä Travelflex-allekirjoitus</translation>
+        <source>Enter TravelFlex signature</source>
+        <translation>Syötä TravelFlex-allekirjoitus</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -1649,7 +1649,7 @@ Osoite: %4</translation>
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+22"/>
-        <source>The Travelflex developers</source>
+        <source>The TravelFlex developers</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1955,7 +1955,7 @@ Osoite: %4</translation>
     <message>
         <location line="+2"/>
         <source>Destination address of transaction.</source>
-        <translation>Rahansiirron kohteen Travelflex-osoite</translation>
+        <translation>Rahansiirron kohteen TravelFlex-osoite</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2137,7 +2137,7 @@ Osoite: %4</translation>
     <message>
         <location filename="../walletmodel.cpp" line="+193"/>
         <source>Send Coins</source>
-        <translation>Lähetä Travelflexeja</translation>
+        <translation>Lähetä TravelFlexeja</translation>
     </message>
 </context>
 <context>
@@ -2187,8 +2187,8 @@ Osoite: %4</translation>
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+94"/>
-        <source>Travelflex version</source>
-        <translation>Travelflexin versio</translation>
+        <source>TravelFlex version</source>
+        <translation>TravelFlexin versio</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -2197,8 +2197,8 @@ Osoite: %4</translation>
     </message>
     <message>
         <location line="-29"/>
-        <source>Send command to -server or Travelflexd</source>
-        <translation>Lähetä käsky palvelimelle tai Travelflexd:lle</translation>
+        <source>Send command to -server or TravelFlexd</source>
+        <translation>Lähetä käsky palvelimelle tai TravelFlexd:lle</translation>
     </message>
     <message>
         <location line="-23"/>
@@ -2217,13 +2217,13 @@ Osoite: %4</translation>
     </message>
     <message>
         <location line="+24"/>
-        <source>Specify configuration file (default: Travelflex.conf)</source>
-        <translation>Määritä asetustiedosto (oletus: Travelflex.conf)</translation>
+        <source>Specify configuration file (default: TravelFlex.conf)</source>
+        <translation>Määritä asetustiedosto (oletus: TravelFlex.conf)</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: Travelflexd.pid)</source>
-        <translation>Määritä pid-tiedosto (oletus: Travelflex.pid)</translation>
+        <source>Specify pid file (default: TravelFlexd.pid)</source>
+        <translation>Määritä pid-tiedosto (oletus: TravelFlex.pid)</translation>
     </message>
     <message>
         <location line="-1"/>
@@ -2300,13 +2300,13 @@ Osoite: %4</translation>
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=Travelflexrpc
+rpcuser=TravelFlexrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Travelflex Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;TravelFlex Alert&quot; admin@foo.com
 </source>
         <translation type="unfinished"/>
     </message>
@@ -2322,7 +2322,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Travelflex Alert&quot; admin@f
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. Travelflex is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. TravelFlex is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2367,8 +2367,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Travelflex Alert&quot; admin@f
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Travelflex will not work properly.</source>
-        <translation>Varoitus: Tarkista että tietokoneesi kellonaika ja päivämäärä ovat paikkansapitäviä! Travelflex ei toimi oikein väärällä päivämäärällä ja/tai kellonajalla.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong TravelFlex will not work properly.</source>
+        <translation>Varoitus: Tarkista että tietokoneesi kellonaika ja päivämäärä ovat paikkansapitäviä! TravelFlex ei toimi oikein väärällä päivämäärällä ja/tai kellonajalla.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2617,8 +2617,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Travelflex Alert&quot; admin@f
     </message>
     <message>
         <location line="+5"/>
-        <source>SSL options: (see the Travelflex Wiki for SSL setup instructions)</source>
-        <translation>SSL asetukset (katso Travelflex Wikistä tarkemmat SSL ohjeet)</translation>
+        <source>SSL options: (see the TravelFlex Wiki for SSL setup instructions)</source>
+        <translation>SSL asetukset (katso TravelFlex Wikistä tarkemmat SSL ohjeet)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2808,13 +2808,13 @@ TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Travelflex</source>
-        <translation>Virhe ladattaessa wallet.dat-tiedostoa: Tarvitset uudemman version Travelflexista</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of TravelFlex</source>
+        <translation>Virhe ladattaessa wallet.dat-tiedostoa: Tarvitset uudemman version TravelFlexista</translation>
     </message>
     <message>
         <location line="+93"/>
-        <source>Wallet needed to be rewritten: restart Travelflex to complete</source>
-        <translation>Lompakko tarvitsee uudelleenkirjoittaa: käynnistä Travelflex uudelleen</translation>
+        <source>Wallet needed to be rewritten: restart TravelFlex to complete</source>
+        <translation>Lompakko tarvitsee uudelleenkirjoittaa: käynnistä TravelFlex uudelleen</translation>
     </message>
     <message>
         <location line="-95"/>
@@ -2873,8 +2873,8 @@ TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)</translation>
     </message>
     <message>
         <location line="-25"/>
-        <source>Unable to bind to %s on this computer. Travelflex is probably already running.</source>
-        <translation>Kytkeytyminen %s ei onnistu tällä tietokoneella. Travelflex on todennäköisesti jo ajamassa.</translation>
+        <source>Unable to bind to %s on this computer. TravelFlex is probably already running.</source>
+        <translation>Kytkeytyminen %s ei onnistu tällä tietokoneella. TravelFlex on todennäköisesti jo ajamassa.</translation>
     </message>
     <message>
         <location line="+64"/>

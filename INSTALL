@@ -1,9 +1,9 @@
-Building Travelflex
+Building TravelFlex
 
-See doc/readme-qt.rst for instructions on building Travelflex-Qt,
+See doc/readme-qt.rst for instructions on building TravelFlex-Qt,
 the intended-for-end-users, nice-graphical-interface, reference
-implementation of Travelflex.
+implementation of TravelFlex.
 
-See doc/build-*.txt for instructions on building Travelflexd,
+See doc/build-*.txt for instructions on building TravelFlexd,
 the intended-for-services, no-graphical-interface, reference
-implementation of Travelflex.
+implementation of TravelFlex.

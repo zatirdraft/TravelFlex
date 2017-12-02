@@ -4,13 +4,13 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About Travelflex</source>
-        <translation>Informatio de Travelflex</translation>
+        <source>About TravelFlex</source>
+        <translation>Informatio de TravelFlex</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;Travelflex&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;Travelflex&lt;/b&gt; versio</translation>
+        <source>&lt;b&gt;TravelFlex&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;TravelFlex&lt;/b&gt; versio</translation>
     </message>
     <message>
         <location line="+57"/>
@@ -33,8 +33,8 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
     </message>
     <message>
         <location line="+0"/>
-        <source>The Travelflex developers</source>
-        <translation>Travelflex curatores</translation>
+        <source>The TravelFlex developers</source>
+        <translation>TravelFlex curatores</translation>
     </message>
 </context>
 <context>
@@ -66,8 +66,8 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="+63"/>
-        <source>These are your Travelflex addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Haec sunt inscriptiones Travelflex tuae pro accipendo pensitationes.  Cupias variam ad quemque mittentem dare ut melius scias quem tibi pensare.</translation>
+        <source>These are your TravelFlex addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Haec sunt inscriptiones TravelFlex tuae pro accipendo pensitationes.  Cupias variam ad quemque mittentem dare ut melius scias quem tibi pensare.</translation>
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="+14"/>
@@ -81,8 +81,8 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a Travelflex address</source>
-        <translation>Signa nuntium ut demonstres inscriptionem Travelflex a te possessam esse</translation>
+        <source>Sign a message to prove you own a TravelFlex address</source>
+        <translation>Signa nuntium ut demonstres inscriptionem TravelFlex a te possessam esse</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -106,8 +106,8 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
     </message>
     <message>
         <location line="-44"/>
-        <source>Verify a message to ensure it was signed with a specified Travelflex address</source>
-        <translation>Verifica nuntium ut cures signatum esse cum specificata inscriptione Travelflex</translation>
+        <source>Verify a message to ensure it was signed with a specified TravelFlex address</source>
+        <translation>Verifica nuntium ut cures signatum esse cum specificata inscriptione TravelFlex</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -121,7 +121,7 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="-5"/>
-        <source>These are your Travelflex addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your TravelFlex addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Hae sunt inscriptiones mittendi pensitationes.  Semper inspice quantitatem et inscriptionem accipiendi antequam nummos mittis.</translation>
     </message>
     <message>
@@ -247,7 +247,7 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TravelflexS&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TravelFlexS&lt;/b&gt;!</source>
         <translation>Monitio: Si cassidile tuum cifras et tesseram amittis, tu &lt;b&gt;AMITTES OMNES TUOS NUMMOS BITOS&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -274,8 +274,8 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
     </message>
     <message>
         <location line="-56"/>
-        <source>Travelflex will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Travelflexs from being stolen by malware infecting your computer.</source>
-        <translation>Travelflex iam desinet ut finiat actionem cifrandi.  Memento cassidile cifrare non posse cuncte curare ne tui nummi clepantur ab malis programatibus in tuo computatro.</translation>
+        <source>TravelFlex will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TravelFlexs from being stolen by malware infecting your computer.</source>
+        <translation>TravelFlex iam desinet ut finiat actionem cifrandi.  Memento cassidile cifrare non posse cuncte curare ne tui nummi clepantur ab malis programatibus in tuo computatro.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -373,8 +373,8 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about Travelflex</source>
-        <translation>Monstra informationem de Travelflex</translation>
+        <source>Show information about TravelFlex</source>
+        <translation>Monstra informationem de TravelFlex</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -418,13 +418,13 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
     </message>
     <message>
         <location line="-347"/>
-        <source>Send coins to a Travelflex address</source>
-        <translation>Mitte nummos ad inscriptionem Travelflex</translation>
+        <source>Send coins to a TravelFlex address</source>
+        <translation>Mitte nummos ad inscriptionem TravelFlex</translation>
     </message>
     <message>
         <location line="+49"/>
-        <source>Modify configuration options for Travelflex</source>
-        <translation>Muta configurationis optiones pro Travelflex</translation>
+        <source>Modify configuration options for TravelFlex</source>
+        <translation>Muta configurationis optiones pro TravelFlex</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -454,8 +454,8 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
     <message>
         <location line="-165"/>
         <location line="+530"/>
-        <source>Travelflex</source>
-        <translation>Travelflex</translation>
+        <source>TravelFlex</source>
+        <translation>TravelFlex</translation>
     </message>
     <message>
         <location line="-530"/>
@@ -479,8 +479,8 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
     </message>
     <message>
         <location line="+22"/>
-        <source>&amp;About Travelflex</source>
-        <translation>&amp;Informatio de Travelflex</translation>
+        <source>&amp;About TravelFlex</source>
+        <translation>&amp;Informatio de TravelFlex</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -499,13 +499,13 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign messages with your Travelflex addresses to prove you own them</source>
-        <translation>Signa nuntios cum tuis inscriptionibus Travelflex ut demonstres te eas possidere</translation>
+        <source>Sign messages with your TravelFlex addresses to prove you own them</source>
+        <translation>Signa nuntios cum tuis inscriptionibus TravelFlex ut demonstres te eas possidere</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified Travelflex addresses</source>
-        <translation>Verifica nuntios ut certus sis eos signatos esse cum specificatis inscriptionibus Travelflex</translation>
+        <source>Verify messages to ensure they were signed with specified TravelFlex addresses</source>
+        <translation>Verifica nuntios ut certus sis eos signatos esse cum specificatis inscriptionibus TravelFlex</translation>
     </message>
     <message>
         <location line="+28"/>
@@ -535,13 +535,13 @@ Hoc productum continet programmata composita ab OpenSSL Project pro utendo in Op
     </message>
     <message>
         <location line="+47"/>
-        <source>Travelflex client</source>
-        <translation>Travelflex cliens</translation>
+        <source>TravelFlex client</source>
+        <translation>TravelFlex cliens</translation>
     </message>
     <message numerus="yes">
         <location line="+141"/>
-        <source>%n active connection(s) to Travelflex network</source>
-        <translation><numerusform>%n activa conexio ad rete Travelflex</numerusform><numerusform>%n activae conexiones ad rete Travelflex</numerusform></translation>
+        <source>%n active connection(s) to TravelFlex network</source>
+        <translation><numerusform>%n activa conexio ad rete TravelFlex</numerusform><numerusform>%n activae conexiones ad rete TravelFlex</numerusform></translation>
     </message>
     <message>
         <location line="+22"/>
@@ -655,8 +655,8 @@ Inscriptio: %4
     <message>
         <location line="-23"/>
         <location line="+23"/>
-        <source>URI can not be parsed! This can be caused by an invalid Travelflex address or malformed URI parameters.</source>
-        <translation>URI intellegi non posse!  Huius causa possit inscriptionem Travelflex non validam aut URI parametra maleformata.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid TravelFlex address or malformed URI parameters.</source>
+        <translation>URI intellegi non posse!  Huius causa possit inscriptionem TravelFlex non validam aut URI parametra maleformata.</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -670,8 +670,8 @@ Inscriptio: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+111"/>
-        <source>A fatal error occurred. Travelflex can no longer continue safely and will quit.</source>
-        <translation>Error fatalis accidit.  Travelflex nondum pergere tute potest, et exibit.</translation>
+        <source>A fatal error occurred. TravelFlex can no longer continue safely and will quit.</source>
+        <translation>Error fatalis accidit.  TravelFlex nondum pergere tute potest, et exibit.</translation>
     </message>
 </context>
 <context>
@@ -736,8 +736,8 @@ Inscriptio: %4
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Travelflex address.</source>
-        <translation>Inscriptio inserta &quot;%1&quot; non valida inscriptio Travelflex est.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid TravelFlex address.</source>
+        <translation>Inscriptio inserta &quot;%1&quot; non valida inscriptio TravelFlex est.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -755,8 +755,8 @@ Inscriptio: %4
     <message>
         <location filename="../guiutil.cpp" line="+424"/>
         <location line="+12"/>
-        <source>Travelflex-Qt</source>
-        <translation>Travelflex-Qt</translation>
+        <source>TravelFlex-Qt</source>
+        <translation>TravelFlex-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -818,13 +818,13 @@ Inscriptio: %4
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start Travelflex after logging in to the system.</source>
-        <translation>Pelle Travelflex per se postquam in systema inire.</translation>
+        <source>Automatically start TravelFlex after logging in to the system.</source>
+        <translation>Pelle TravelFlex per se postquam in systema inire.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Travelflex on system login</source>
-        <translation>&amp;Pelle Travelflex cum inire systema</translation>
+        <source>&amp;Start TravelFlex on system login</source>
+        <translation>&amp;Pelle TravelFlex cum inire systema</translation>
     </message>
     <message>
         <location line="+35"/>
@@ -843,8 +843,8 @@ Inscriptio: %4
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the Travelflex client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Aperi per se portam clientis Travelflex in itineratore.  Hoc tantum effectivum est si itineratrum tuum supportat UPnP et id activum est.</translation>
+        <source>Automatically open the TravelFlex client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Aperi per se portam clientis TravelFlex in itineratore.  Hoc tantum effectivum est si itineratrum tuum supportat UPnP et id activum est.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -853,8 +853,8 @@ Inscriptio: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the Travelflex network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Connecte ad rete Travelflex per SOCKS vicarium (e.g. quando conectens per Tor).</translation>
+        <source>Connect to the TravelFlex network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Connecte ad rete TravelFlex per SOCKS vicarium (e.g. quando conectens per Tor).</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -928,8 +928,8 @@ Inscriptio: %4
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Travelflex.</source>
-        <translation>Lingua monstranda utenti hic constitui potest.  Haec configuratio effectiva erit postquam Travelflex iterum initiatum erit.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting TravelFlex.</source>
+        <translation>Lingua monstranda utenti hic constitui potest.  Haec configuratio effectiva erit postquam TravelFlex iterum initiatum erit.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -943,8 +943,8 @@ Inscriptio: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show Travelflex addresses in the transaction list or not.</source>
-        <translation>Num monstrare inscriptiones Travelflex in enumeratione transactionum.</translation>
+        <source>Whether to show TravelFlex addresses in the transaction list or not.</source>
+        <translation>Num monstrare inscriptiones TravelFlex in enumeratione transactionum.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -995,8 +995,8 @@ Inscriptio: %4
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting Travelflex.</source>
-        <translation>Haec configuratio effectiva erit postquam Travelflex iterum initiatum erit.</translation>
+        <source>This setting will take effect after restarting TravelFlex.</source>
+        <translation>Haec configuratio effectiva erit postquam TravelFlex iterum initiatum erit.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1014,8 +1014,8 @@ Inscriptio: %4
     <message>
         <location line="+50"/>
         <location line="+166"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Travelflex network after a connection is established, but this process has not completed yet.</source>
-        <translation>Monstrata informatio fortasse non recentissima est.  Tuum cassidile per se synchronizat cum rete Travelflex postquam conexio constabilita est, sed hoc actio nondum perfecta est.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the TravelFlex network after a connection is established, but this process has not completed yet.</source>
+        <translation>Monstrata informatio fortasse non recentissima est.  Tuum cassidile per se synchronizat cum rete TravelFlex postquam conexio constabilita est, sed hoc actio nondum perfecta est.</translation>
     </message>
     <message>
         <location line="-124"/>
@@ -1068,8 +1068,8 @@ Inscriptio: %4
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start Travelflex: click-to-pay handler</source>
-        <translation>Travelflex incipere non potest: cliccare-ad-pensandum handler</translation>
+        <source>Cannot start TravelFlex: click-to-pay handler</source>
+        <translation>TravelFlex incipere non potest: cliccare-ad-pensandum handler</translation>
     </message>
 </context>
 <context>
@@ -1218,8 +1218,8 @@ Inscriptio: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the Travelflex-Qt help message to get a list with possible Travelflex command-line options.</source>
-        <translation>Monstra nuntium auxilii Travelflex-Qt ut videas enumerationem possibilium optionum Travelflex mandati initiantis.</translation>
+        <source>Show the TravelFlex-Qt help message to get a list with possible TravelFlex command-line options.</source>
+        <translation>Monstra nuntium auxilii TravelFlex-Qt ut videas enumerationem possibilium optionum TravelFlex mandati initiantis.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1238,13 +1238,13 @@ Inscriptio: %4
     </message>
     <message>
         <location line="-104"/>
-        <source>Travelflex - Debug window</source>
-        <translation>Travelflex - Fenestra debug</translation>
+        <source>TravelFlex - Debug window</source>
+        <translation>TravelFlex - Fenestra debug</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>Travelflex Core</source>
-        <translation>Travelflex Nucleus</translation>
+        <source>TravelFlex Core</source>
+        <translation>TravelFlex Nucleus</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1253,8 +1253,8 @@ Inscriptio: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the Travelflex debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Aperi plicam catalogi de Travelflex debug ex activo indice datorum.  Hoc possit pauca secunda pro plicis magnis catalogi.</translation>
+        <source>Open the TravelFlex debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Aperi plicam catalogi de TravelFlex debug ex activo indice datorum.  Hoc possit pauca secunda pro plicis magnis catalogi.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1263,8 +1263,8 @@ Inscriptio: %4
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
-        <source>Welcome to the Travelflex RPC console.</source>
-        <translation>Bene ventio in terminale RPC de Travelflex.</translation>
+        <source>Welcome to the TravelFlex RPC console.</source>
+        <translation>Bene ventio in terminale RPC de TravelFlex.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1447,8 +1447,8 @@ Inscriptio: %4
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a Travelflex address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation>Insero inscriptionem Travelflex (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
+        <source>Enter a TravelFlex address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
+        <translation>Insero inscriptionem TravelFlex (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
     </message>
 </context>
 <context>
@@ -1512,8 +1512,8 @@ Inscriptio: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Travelflex address</source>
-        <translation>Signa nuntium ut demonstres hanc inscriptionem Travelflex a te possessa esse</translation>
+        <source>Sign the message to prove you own this TravelFlex address</source>
+        <translation>Signa nuntium ut demonstres hanc inscriptionem TravelFlex a te possessa esse</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1548,8 +1548,8 @@ Inscriptio: %4
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified Travelflex address</source>
-        <translation>Verifica nuntium ut cures signatum esse cum specifica inscriptione Travelflex</translation>
+        <source>Verify the message to ensure it was signed with the specified TravelFlex address</source>
+        <translation>Verifica nuntium ut cures signatum esse cum specifica inscriptione TravelFlex</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1564,8 +1564,8 @@ Inscriptio: %4
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a Travelflex address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation>Insere inscriptionem Travelflex (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
+        <source>Enter a TravelFlex address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
+        <translation>Insere inscriptionem TravelFlex (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -1574,8 +1574,8 @@ Inscriptio: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter Travelflex signature</source>
-        <translation>Insere signationem Travelflex</translation>
+        <source>Enter TravelFlex signature</source>
+        <translation>Insere signationem TravelFlex</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -1648,8 +1648,8 @@ Inscriptio: %4
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+22"/>
-        <source>The Travelflex developers</source>
-        <translation>Travelflex curatores</translation>
+        <source>The TravelFlex developers</source>
+        <translation>TravelFlex curatores</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2186,8 +2186,8 @@ Inscriptio: %4
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+94"/>
-        <source>Travelflex version</source>
-        <translation>Versio de Travelflex</translation>
+        <source>TravelFlex version</source>
+        <translation>Versio de TravelFlex</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -2196,8 +2196,8 @@ Inscriptio: %4
     </message>
     <message>
         <location line="-29"/>
-        <source>Send command to -server or Travelflexd</source>
-        <translation>Mitte mandatum ad -server vel Travelflexd</translation>
+        <source>Send command to -server or TravelFlexd</source>
+        <translation>Mitte mandatum ad -server vel TravelFlexd</translation>
     </message>
     <message>
         <location line="-23"/>
@@ -2216,13 +2216,13 @@ Inscriptio: %4
     </message>
     <message>
         <location line="+24"/>
-        <source>Specify configuration file (default: Travelflex.conf)</source>
-        <translation>Specifica configurationis plicam (praedefinitum: Travelflex.conf)</translation>
+        <source>Specify configuration file (default: TravelFlex.conf)</source>
+        <translation>Specifica configurationis plicam (praedefinitum: TravelFlex.conf)</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: Travelflexd.pid)</source>
-        <translation>Specifica pid plicam (praedefinitum: Travelflex.pid)</translation>
+        <source>Specify pid file (default: TravelFlexd.pid)</source>
+        <translation>Specifica pid plicam (praedefinitum: TravelFlex.pid)</translation>
     </message>
     <message>
         <location line="-1"/>
@@ -2299,24 +2299,24 @@ Inscriptio: %4
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=Travelflexrpc
+rpcuser=TravelFlexrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Travelflex Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;TravelFlex Alert&quot; admin@foo.com
 </source>
         <translation>%s, necesse est te rpcpassword constituere in plica configurationis:
 %s
 Hortatur te hanc fortuitam tesseram uti:
-rpcuser=Travelflexrpc
+rpcuser=TravelFlexrpc
 rpcpassword=%s
 (non est necesse te hanc tesseram meminisse)
 Nomen usoris et tessera eadem esse NON POSSUNT.
 Si plica non existit, eam crea cum permissionibus ut eius dominus tantum sinitur id legere.
 Quoque hortatur alertnotify constituere ut tu notificetur de problematibus;
-exempli gratia: alertnotify=echo %%s | mail -s &quot;Travelflex Notificatio&quot; admin@foo.com
+exempli gratia: alertnotify=echo %%s | mail -s &quot;TravelFlex Notificatio&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -2331,8 +2331,8 @@ exempli gratia: alertnotify=echo %%s | mail -s &quot;Travelflex Notificatio&quot
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. Travelflex is probably already running.</source>
-        <translation>Non posse serare datorum indicem %s.  Travelflex probabiliter iam operatur.</translation>
+        <source>Cannot obtain a lock on data directory %s. TravelFlex is probably already running.</source>
+        <translation>Non posse serare datorum indicem %s.  TravelFlex probabiliter iam operatur.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2376,8 +2376,8 @@ exempli gratia: alertnotify=echo %%s | mail -s &quot;Travelflex Notificatio&quot
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Travelflex will not work properly.</source>
-        <translation>Monitio: Sodes cura ut dies tempusque computatri tui recti sunt!  Si horologium tuum pravum est, Travelflex non proprie fungetur.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong TravelFlex will not work properly.</source>
+        <translation>Monitio: Sodes cura ut dies tempusque computatri tui recti sunt!  Si horologium tuum pravum est, TravelFlex non proprie fungetur.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2626,8 +2626,8 @@ exempli gratia: alertnotify=echo %%s | mail -s &quot;Travelflex Notificatio&quot
     </message>
     <message>
         <location line="+5"/>
-        <source>SSL options: (see the Travelflex Wiki for SSL setup instructions)</source>
-        <translation>Optiones SSL: (vide vici de Travelflex pro instructionibus SSL configurationis)</translation>
+        <source>SSL options: (see the TravelFlex Wiki for SSL setup instructions)</source>
+        <translation>Optiones SSL: (vide vici de TravelFlex pro instructionibus SSL configurationis)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2816,13 +2816,13 @@ exempli gratia: alertnotify=echo %%s | mail -s &quot;Travelflex Notificatio&quot
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Travelflex</source>
-        <translation>Error legendi wallet.dat: Cassidili necesse est recentior versio Travelflex</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of TravelFlex</source>
+        <translation>Error legendi wallet.dat: Cassidili necesse est recentior versio TravelFlex</translation>
     </message>
     <message>
         <location line="+93"/>
-        <source>Wallet needed to be rewritten: restart Travelflex to complete</source>
-        <translation>Cassidili necesse erat rescribi: Repelle Travelflex ut compleas</translation>
+        <source>Wallet needed to be rewritten: restart TravelFlex to complete</source>
+        <translation>Cassidili necesse erat rescribi: Repelle TravelFlex ut compleas</translation>
     </message>
     <message>
         <location line="-95"/>
@@ -2881,8 +2881,8 @@ exempli gratia: alertnotify=echo %%s | mail -s &quot;Travelflex Notificatio&quot
     </message>
     <message>
         <location line="-25"/>
-        <source>Unable to bind to %s on this computer. Travelflex is probably already running.</source>
-        <translation>Non posse conglutinare ad %s in hoc cumputatro.  Travelflex probabiliter iam operatur.</translation>
+        <source>Unable to bind to %s on this computer. TravelFlex is probably already running.</source>
+        <translation>Non posse conglutinare ad %s in hoc cumputatro.  TravelFlex probabiliter iam operatur.</translation>
     </message>
     <message>
         <location line="+64"/>

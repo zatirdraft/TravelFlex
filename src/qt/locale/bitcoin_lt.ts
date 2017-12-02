@@ -4,13 +4,13 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About Travelflex</source>
-        <translation>Apie Travelflex</translation>
+        <source>About TravelFlex</source>
+        <translation>Apie TravelFlex</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;Travelflex&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;Travelflex&lt;/b&gt; versija</translation>
+        <source>&lt;b&gt;TravelFlex&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;TravelFlex&lt;/b&gt; versija</translation>
     </message>
     <message>
         <location line="+57"/>
@@ -33,7 +33,7 @@ Platinama pagal MIT/X11 licenciją, kurią rasite faile COPYING arba http://www.
     </message>
     <message>
         <location line="+0"/>
-        <source>The Travelflex developers</source>
+        <source>The TravelFlex developers</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -66,8 +66,8 @@ Platinama pagal MIT/X11 licenciją, kurią rasite faile COPYING arba http://www.
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="+63"/>
-        <source>These are your Travelflex addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Tai yra jūsų Travelflex adresai mokėjimų gavimui. Galite duoti skirtingus adresus atskiriems siuntėjams, kad galėtumėte sekti, kas jums moka.</translation>
+        <source>These are your TravelFlex addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Tai yra jūsų TravelFlex adresai mokėjimų gavimui. Galite duoti skirtingus adresus atskiriems siuntėjams, kad galėtumėte sekti, kas jums moka.</translation>
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="+14"/>
@@ -81,8 +81,8 @@ Platinama pagal MIT/X11 licenciją, kurią rasite faile COPYING arba http://www.
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a Travelflex address</source>
-        <translation>Pasirašykite žinutę, kad įrodytume, jog esate Travelflex adreso savininkas</translation>
+        <source>Sign a message to prove you own a TravelFlex address</source>
+        <translation>Pasirašykite žinutę, kad įrodytume, jog esate TravelFlex adreso savininkas</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -106,8 +106,8 @@ Platinama pagal MIT/X11 licenciją, kurią rasite faile COPYING arba http://www.
     </message>
     <message>
         <location line="-44"/>
-        <source>Verify a message to ensure it was signed with a specified Travelflex address</source>
-        <translation>Patikrinkite žinutę, jog įsitikintumėte, kad ją pasirašė nurodytas Travelflex adresas</translation>
+        <source>Verify a message to ensure it was signed with a specified TravelFlex address</source>
+        <translation>Patikrinkite žinutę, jog įsitikintumėte, kad ją pasirašė nurodytas TravelFlex adresas</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -121,7 +121,7 @@ Platinama pagal MIT/X11 licenciją, kurią rasite faile COPYING arba http://www.
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="-5"/>
-        <source>These are your Travelflex addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your TravelFlex addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -247,8 +247,8 @@ Platinama pagal MIT/X11 licenciją, kurią rasite faile COPYING arba http://www.
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TravelflexS&lt;/b&gt;!</source>
-        <translation>Dėmesio: jei užšifruosite savo piniginę ir pamesite slaptafrazę, jūs&lt;b&gt;PRARASITE VISUS SAVO TravelflexUS&lt;/b&gt;! </translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TravelFlexS&lt;/b&gt;!</source>
+        <translation>Dėmesio: jei užšifruosite savo piniginę ir pamesite slaptafrazę, jūs&lt;b&gt;PRARASITE VISUS SAVO TravelFlexUS&lt;/b&gt;! </translation>
     </message>
     <message>
         <location line="+0"/>
@@ -274,8 +274,8 @@ Platinama pagal MIT/X11 licenciją, kurią rasite faile COPYING arba http://www.
     </message>
     <message>
         <location line="-56"/>
-        <source>Travelflex will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Travelflexs from being stolen by malware infecting your computer.</source>
-        <translation>Travelflex dabar užsidarys šifravimo proceso pabaigai. Atminkite, kad piniginės šifravimas negali pilnai apsaugoti Travelflexų vagysčių kai tinkle esančios kenkėjiškos programos patenka į jūsų kompiuterį.</translation>
+        <source>TravelFlex will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TravelFlexs from being stolen by malware infecting your computer.</source>
+        <translation>TravelFlex dabar užsidarys šifravimo proceso pabaigai. Atminkite, kad piniginės šifravimas negali pilnai apsaugoti TravelFlexų vagysčių kai tinkle esančios kenkėjiškos programos patenka į jūsų kompiuterį.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -373,8 +373,8 @@ Platinama pagal MIT/X11 licenciją, kurią rasite faile COPYING arba http://www.
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about Travelflex</source>
-        <translation>Rodyti informaciją apie Travelflex</translation>
+        <source>Show information about TravelFlex</source>
+        <translation>Rodyti informaciją apie TravelFlex</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -418,13 +418,13 @@ Platinama pagal MIT/X11 licenciją, kurią rasite faile COPYING arba http://www.
     </message>
     <message>
         <location line="-347"/>
-        <source>Send coins to a Travelflex address</source>
-        <translation>Siųsti monetas Travelflex adresui</translation>
+        <source>Send coins to a TravelFlex address</source>
+        <translation>Siųsti monetas TravelFlex adresui</translation>
     </message>
     <message>
         <location line="+49"/>
-        <source>Modify configuration options for Travelflex</source>
-        <translation>Keisti Travelflex konfigūracijos galimybes</translation>
+        <source>Modify configuration options for TravelFlex</source>
+        <translation>Keisti TravelFlex konfigūracijos galimybes</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -454,8 +454,8 @@ Platinama pagal MIT/X11 licenciją, kurią rasite faile COPYING arba http://www.
     <message>
         <location line="-165"/>
         <location line="+530"/>
-        <source>Travelflex</source>
-        <translation>Travelflex</translation>
+        <source>TravelFlex</source>
+        <translation>TravelFlex</translation>
     </message>
     <message>
         <location line="-530"/>
@@ -479,8 +479,8 @@ Platinama pagal MIT/X11 licenciją, kurią rasite faile COPYING arba http://www.
     </message>
     <message>
         <location line="+22"/>
-        <source>&amp;About Travelflex</source>
-        <translation>&amp;Apie Travelflex</translation>
+        <source>&amp;About TravelFlex</source>
+        <translation>&amp;Apie TravelFlex</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -499,12 +499,12 @@ Platinama pagal MIT/X11 licenciją, kurią rasite faile COPYING arba http://www.
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign messages with your Travelflex addresses to prove you own them</source>
+        <source>Sign messages with your TravelFlex addresses to prove you own them</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified Travelflex addresses</source>
+        <source>Verify messages to ensure they were signed with specified TravelFlex addresses</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -535,13 +535,13 @@ Platinama pagal MIT/X11 licenciją, kurią rasite faile COPYING arba http://www.
     </message>
     <message>
         <location line="+47"/>
-        <source>Travelflex client</source>
-        <translation>Travelflex klientas</translation>
+        <source>TravelFlex client</source>
+        <translation>TravelFlex klientas</translation>
     </message>
     <message numerus="yes">
         <location line="+141"/>
-        <source>%n active connection(s) to Travelflex network</source>
-        <translation><numerusform>%n Travelflex tinklo aktyvus ryšys</numerusform><numerusform>%n Travelflex tinklo aktyvūs ryšiai</numerusform><numerusform>%n Travelflex tinklo aktyvūs ryšiai</numerusform></translation>
+        <source>%n active connection(s) to TravelFlex network</source>
+        <translation><numerusform>%n TravelFlex tinklo aktyvus ryšys</numerusform><numerusform>%n TravelFlex tinklo aktyvūs ryšiai</numerusform><numerusform>%n TravelFlex tinklo aktyvūs ryšiai</numerusform></translation>
     </message>
     <message>
         <location line="+22"/>
@@ -654,7 +654,7 @@ Adresas: %4</translation>
     <message>
         <location line="-23"/>
         <location line="+23"/>
-        <source>URI can not be parsed! This can be caused by an invalid Travelflex address or malformed URI parameters.</source>
+        <source>URI can not be parsed! This can be caused by an invalid TravelFlex address or malformed URI parameters.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -669,7 +669,7 @@ Adresas: %4</translation>
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+111"/>
-        <source>A fatal error occurred. Travelflex can no longer continue safely and will quit.</source>
+        <source>A fatal error occurred. TravelFlex can no longer continue safely and will quit.</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -735,8 +735,8 @@ Adresas: %4</translation>
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Travelflex address.</source>
-        <translation>Įvestas adresas „%1“ nėra galiojantis Travelflex adresas.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid TravelFlex address.</source>
+        <translation>Įvestas adresas „%1“ nėra galiojantis TravelFlex adresas.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -754,8 +754,8 @@ Adresas: %4</translation>
     <message>
         <location filename="../guiutil.cpp" line="+424"/>
         <location line="+12"/>
-        <source>Travelflex-Qt</source>
-        <translation>Travelflex-Qt</translation>
+        <source>TravelFlex-Qt</source>
+        <translation>TravelFlex-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -817,13 +817,13 @@ Adresas: %4</translation>
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start Travelflex after logging in to the system.</source>
+        <source>Automatically start TravelFlex after logging in to the system.</source>
         <translation>Automatiškai paleisti Bitkoin programą įjungus sistemą.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Travelflex on system login</source>
-        <translation>&amp;Paleisti Travelflex programą su window sistemos paleidimu</translation>
+        <source>&amp;Start TravelFlex on system login</source>
+        <translation>&amp;Paleisti TravelFlex programą su window sistemos paleidimu</translation>
     </message>
     <message>
         <location line="+35"/>
@@ -842,8 +842,8 @@ Adresas: %4</translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the Travelflex client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatiškai atidaryti Travelflex kliento prievadą maršrutizatoriuje. Tai veikia tik tada, kai jūsų maršrutizatorius palaiko UPnP ir ji įjungta.</translation>
+        <source>Automatically open the TravelFlex client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automatiškai atidaryti TravelFlex kliento prievadą maršrutizatoriuje. Tai veikia tik tada, kai jūsų maršrutizatorius palaiko UPnP ir ji įjungta.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -852,7 +852,7 @@ Adresas: %4</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the Travelflex network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <source>Connect to the TravelFlex network through a SOCKS proxy (e.g. when connecting through Tor).</source>
         <translation>Jungtis į Bitkoin tinklą per  socks proxy (pvz. jungiantis per Tor)</translation>
     </message>
     <message>
@@ -927,8 +927,8 @@ Adresas: %4</translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Travelflex.</source>
-        <translation>Čia gali būti nustatyta naudotojo sąsajos kalba. Šis nustatymas įsigalios iš naujo paleidus Travelflex.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting TravelFlex.</source>
+        <translation>Čia gali būti nustatyta naudotojo sąsajos kalba. Šis nustatymas įsigalios iš naujo paleidus TravelFlex.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -942,7 +942,7 @@ Adresas: %4</translation>
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show Travelflex addresses in the transaction list or not.</source>
+        <source>Whether to show TravelFlex addresses in the transaction list or not.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -994,7 +994,7 @@ Adresas: %4</translation>
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting Travelflex.</source>
+        <source>This setting will take effect after restarting TravelFlex.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1013,7 +1013,7 @@ Adresas: %4</translation>
     <message>
         <location line="+50"/>
         <location line="+166"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Travelflex network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the TravelFlex network after a connection is established, but this process has not completed yet.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1067,7 +1067,7 @@ Adresas: %4</translation>
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start Travelflex: click-to-pay handler</source>
+        <source>Cannot start TravelFlex: click-to-pay handler</source>
         <translation type="unfinished"/>
     </message>
 </context>
@@ -1217,7 +1217,7 @@ Adresas: %4</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the Travelflex-Qt help message to get a list with possible Travelflex command-line options.</source>
+        <source>Show the TravelFlex-Qt help message to get a list with possible TravelFlex command-line options.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1237,13 +1237,13 @@ Adresas: %4</translation>
     </message>
     <message>
         <location line="-104"/>
-        <source>Travelflex - Debug window</source>
-        <translation>Travelflex - Derinimo langas</translation>
+        <source>TravelFlex - Debug window</source>
+        <translation>TravelFlex - Derinimo langas</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>Travelflex Core</source>
-        <translation>Travelflex branduolys</translation>
+        <source>TravelFlex Core</source>
+        <translation>TravelFlex branduolys</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1252,7 +1252,7 @@ Adresas: %4</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the Travelflex debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the TravelFlex debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1262,7 +1262,7 @@ Adresas: %4</translation>
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
-        <source>Welcome to the Travelflex RPC console.</source>
+        <source>Welcome to the TravelFlex RPC console.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1446,7 +1446,7 @@ Adresas: %4</translation>
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a Travelflex address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
+        <source>Enter a TravelFlex address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
         <translation>Įveskite bitkoinų adresą (pvz. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
     </message>
 </context>
@@ -1511,7 +1511,7 @@ Adresas: %4</translation>
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Travelflex address</source>
+        <source>Sign the message to prove you own this TravelFlex address</source>
         <translation>Registruotis žinute įrodymuii, kad turite šį adresą</translation>
     </message>
     <message>
@@ -1547,8 +1547,8 @@ Adresas: %4</translation>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified Travelflex address</source>
-        <translation>Patikrinkite žinutę, jog įsitikintumėte, kad ją pasirašė nurodytas Travelflex adresas</translation>
+        <source>Verify the message to ensure it was signed with the specified TravelFlex address</source>
+        <translation>Patikrinkite žinutę, jog įsitikintumėte, kad ją pasirašė nurodytas TravelFlex adresas</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1563,7 +1563,7 @@ Adresas: %4</translation>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a Travelflex address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
+        <source>Enter a TravelFlex address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
         <translation>Įveskite bitkoinų adresą (pvz. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
     </message>
     <message>
@@ -1573,8 +1573,8 @@ Adresas: %4</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter Travelflex signature</source>
-        <translation>Įveskite Travelflex parašą</translation>
+        <source>Enter TravelFlex signature</source>
+        <translation>Įveskite TravelFlex parašą</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -1647,7 +1647,7 @@ Adresas: %4</translation>
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+22"/>
-        <source>The Travelflex developers</source>
+        <source>The TravelFlex developers</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2185,8 +2185,8 @@ Adresas: %4</translation>
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+94"/>
-        <source>Travelflex version</source>
-        <translation>Travelflex versija</translation>
+        <source>TravelFlex version</source>
+        <translation>TravelFlex versija</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -2195,8 +2195,8 @@ Adresas: %4</translation>
     </message>
     <message>
         <location line="-29"/>
-        <source>Send command to -server or Travelflexd</source>
-        <translation>Siųsti komandą serveriui arba Travelflexd</translation>
+        <source>Send command to -server or TravelFlexd</source>
+        <translation>Siųsti komandą serveriui arba TravelFlexd</translation>
     </message>
     <message>
         <location line="-23"/>
@@ -2215,13 +2215,13 @@ Adresas: %4</translation>
     </message>
     <message>
         <location line="+24"/>
-        <source>Specify configuration file (default: Travelflex.conf)</source>
-        <translation>Nurodyti konfigūracijos failą (pagal nutylėjimąt: Travelflex.conf)</translation>
+        <source>Specify configuration file (default: TravelFlex.conf)</source>
+        <translation>Nurodyti konfigūracijos failą (pagal nutylėjimąt: TravelFlex.conf)</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: Travelflexd.pid)</source>
-        <translation>Nurodyti pid failą (pagal nutylėjimą: Travelflexd.pid)</translation>
+        <source>Specify pid file (default: TravelFlexd.pid)</source>
+        <translation>Nurodyti pid failą (pagal nutylėjimą: TravelFlexd.pid)</translation>
     </message>
     <message>
         <location line="-1"/>
@@ -2298,13 +2298,13 @@ Adresas: %4</translation>
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=Travelflexrpc
+rpcuser=TravelFlexrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Travelflex Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;TravelFlex Alert&quot; admin@foo.com
 </source>
         <translation type="unfinished"/>
     </message>
@@ -2320,7 +2320,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Travelflex Alert&quot; admin@f
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. Travelflex is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. TravelFlex is probably already running.</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2365,8 +2365,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Travelflex Alert&quot; admin@f
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Travelflex will not work properly.</source>
-        <translation>Įspėjimas: Patikrinkite, kad kompiuterio data ir laikas yra teisingi.Jei Jūsų laikrodis neteisingai nustatytas Travelflex, veiks netinkamai.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong TravelFlex will not work properly.</source>
+        <translation>Įspėjimas: Patikrinkite, kad kompiuterio data ir laikas yra teisingi.Jei Jūsų laikrodis neteisingai nustatytas TravelFlex, veiks netinkamai.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2615,8 +2615,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Travelflex Alert&quot; admin@f
     </message>
     <message>
         <location line="+5"/>
-        <source>SSL options: (see the Travelflex Wiki for SSL setup instructions)</source>
-        <translation>SSL opcijos (žr.e Travelflex Wiki for SSL setup instructions)</translation>
+        <source>SSL options: (see the TravelFlex Wiki for SSL setup instructions)</source>
+        <translation>SSL opcijos (žr.e TravelFlex Wiki for SSL setup instructions)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2805,13 +2805,13 @@ for example: alertnotify=echo %%s | mail -s &quot;Travelflex Alert&quot; admin@f
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Travelflex</source>
-        <translation> wallet.dat pakrovimo klaida,  wallet.dat reikalauja naujasnės Travelflex versijos</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of TravelFlex</source>
+        <translation> wallet.dat pakrovimo klaida,  wallet.dat reikalauja naujasnės TravelFlex versijos</translation>
     </message>
     <message>
         <location line="+93"/>
-        <source>Wallet needed to be rewritten: restart Travelflex to complete</source>
-        <translation>Piniginė turi būti prrašyta: įvykdymui perkraukite Travelflex</translation>
+        <source>Wallet needed to be rewritten: restart TravelFlex to complete</source>
+        <translation>Piniginė turi būti prrašyta: įvykdymui perkraukite TravelFlex</translation>
     </message>
     <message>
         <location line="-95"/>
@@ -2870,8 +2870,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Travelflex Alert&quot; admin@f
     </message>
     <message>
         <location line="-25"/>
-        <source>Unable to bind to %s on this computer. Travelflex is probably already running.</source>
-        <translation>Nepavyko susieti šiame kompiuteryje prievado %s. Travelflex tikriausiai jau veikia.</translation>
+        <source>Unable to bind to %s on this computer. TravelFlex is probably already running.</source>
+        <translation>Nepavyko susieti šiame kompiuteryje prievado %s. TravelFlex tikriausiai jau veikia.</translation>
     </message>
     <message>
         <location line="+64"/>

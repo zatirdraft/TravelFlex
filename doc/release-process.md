@@ -6,7 +6,7 @@ Release Process
 ###update (commit) version in sources
 
 
-	Travelflex-qt.pro
+	TravelFlex-qt.pro
 	contrib/verifysfbinaries/verify.sh
 	doc/README*
 	share/setup.nsi
@@ -24,7 +24,7 @@ Release Process
 
 ##perform gitian builds
 
- From a directory containing the Travelflex source, gitian-builder and gitian.sigs
+ From a directory containing the TravelFlex source, gitian-builder and gitian.sigs
   
 	export SIGNER=(your gitian key, ie bluematt, sipa, etc)
 	export VERSION=0.8.0
@@ -44,55 +44,55 @@ Release Process
 	mv boost-mingw.patch boost-mingw-gas-cross-compile-2013-03-03.patch
 	wget 'http://download.qt-project.org/official_releases/qt/4.8/4.8.5/qt-everywhere-opensource-src-4.8.5.tar.gz'
 	cd ..
-	./bin/gbuild ../Travelflex/contrib/gitian-descriptors/boost-win32.yml
+	./bin/gbuild ../TravelFlex/contrib/gitian-descriptors/boost-win32.yml
 	mv build/out/boost-*.zip inputs/
-	./bin/gbuild ../Travelflex/contrib/gitian-descriptors/deps-win32.yml
+	./bin/gbuild ../TravelFlex/contrib/gitian-descriptors/deps-win32.yml
 	mv build/out/bitcoin*.zip inputs/
-	./bin/gbuild ../Travelflex/contrib/gitian-descriptors/qt-win32.yml
+	./bin/gbuild ../TravelFlex/contrib/gitian-descriptors/qt-win32.yml
 	mv build/out/qt*.zip inputs/
 
 
- Build Travelflexd and Travelflex-qt on Linux32, Linux64, and Win32:
+ Build TravelFlexd and TravelFlex-qt on Linux32, Linux64, and Win32:
   
-	./bin/gbuild --commit Travelflex=v${VERSION} ../Travelflex/contrib/gitian-descriptors/gitian.yml
-	./bin/gsign --signer $SIGNER --release ${VERSION} --destination ../gitian.sigs/ ../Travelflex/contrib/gitian-descriptors/gitian.yml
+	./bin/gbuild --commit TravelFlex=v${VERSION} ../TravelFlex/contrib/gitian-descriptors/gitian.yml
+	./bin/gsign --signer $SIGNER --release ${VERSION} --destination ../gitian.sigs/ ../TravelFlex/contrib/gitian-descriptors/gitian.yml
 	pushd build/out
-	zip -r Travelflex-${VERSION}-linux-gitian.zip *
-	mv Travelflex-${VERSION}-linux-gitian.zip ../../
+	zip -r TravelFlex-${VERSION}-linux-gitian.zip *
+	mv TravelFlex-${VERSION}-linux-gitian.zip ../../
 	popd
-	./bin/gbuild --commit Travelflex=v${VERSION} ../Travelflex/contrib/gitian-descriptors/gitian-win32.yml
-	./bin/gsign --signer $SIGNER --release ${VERSION}-win32 --destination ../gitian.sigs/ ../Travelflex/contrib/gitian-descriptors/gitian-win32.yml
+	./bin/gbuild --commit TravelFlex=v${VERSION} ../TravelFlex/contrib/gitian-descriptors/gitian-win32.yml
+	./bin/gsign --signer $SIGNER --release ${VERSION}-win32 --destination ../gitian.sigs/ ../TravelFlex/contrib/gitian-descriptors/gitian-win32.yml
 	pushd build/out
-	zip -r Travelflex-${VERSION}-win32-gitian.zip *
-	mv Travelflex-${VERSION}-win32-gitian.zip ../../
+	zip -r TravelFlex-${VERSION}-win32-gitian.zip *
+	mv TravelFlex-${VERSION}-win32-gitian.zip ../../
 	popd
 
   Build output expected:
 
-  1. linux 32-bit and 64-bit binaries + source (Travelflex-${VERSION}-linux-gitian.zip)
-  2. windows 32-bit binary, installer + source (Travelflex-${VERSION}-win32-gitian.zip)
+  1. linux 32-bit and 64-bit binaries + source (TravelFlex-${VERSION}-linux-gitian.zip)
+  2. windows 32-bit binary, installer + source (TravelFlex-${VERSION}-win32-gitian.zip)
   3. Gitian signatures (in gitian.sigs/${VERSION}[-win32]/(your gitian key)/
 
 repackage gitian builds for release as stand-alone zip/tar/installer exe
 
 **Linux .tar.gz:**
 
-	unzip Travelflex-${VERSION}-linux-gitian.zip -d Travelflex-${VERSION}-linux
-	tar czvf Travelflex-${VERSION}-linux.tar.gz Travelflex-${VERSION}-linux
-	rm -rf Travelflex-${VERSION}-linux
+	unzip TravelFlex-${VERSION}-linux-gitian.zip -d TravelFlex-${VERSION}-linux
+	tar czvf TravelFlex-${VERSION}-linux.tar.gz TravelFlex-${VERSION}-linux
+	rm -rf TravelFlex-${VERSION}-linux
 
 **Windows .zip and setup.exe:**
 
-	unzip Travelflex-${VERSION}-win32-gitian.zip -d Travelflex-${VERSION}-win32
-	mv Travelflex-${VERSION}-win32/Travelflex-*-setup.exe .
-	zip -r Travelflex-${VERSION}-win32.zip bitcoin-${VERSION}-win32
-	rm -rf Travelflex-${VERSION}-win32
+	unzip TravelFlex-${VERSION}-win32-gitian.zip -d TravelFlex-${VERSION}-win32
+	mv TravelFlex-${VERSION}-win32/TravelFlex-*-setup.exe .
+	zip -r TravelFlex-${VERSION}-win32.zip bitcoin-${VERSION}-win32
+	rm -rf TravelFlex-${VERSION}-win32
 
 **Perform Mac build:**
 
   OSX binaries are created by Gavin Andresen on a 32-bit, OSX 10.6 machine.
 
-	qmake RELEASE=1 USE_UPNP=1 USE_QRCODE=1 Travelflex-qt.pro
+	qmake RELEASE=1 USE_UPNP=1 USE_QRCODE=1 TravelFlex-qt.pro
 	make
 	export QTDIR=/opt/local/share/qt4  # needed to find translations/qt_*.qm files
 	T=$(contrib/qt_translations.py $QTDIR/translations src/qt/locale)
@@ -110,14 +110,14 @@ repackage gitian builds for release as stand-alone zip/tar/installer exe
 
 * create SHA256SUMS for builds, and PGP-sign it
 
-* update Travelflex.org version
+* update TravelFlex.org version
   make sure all OS download links go to the right versions
 
 * update forum version
 
 * update wiki download links
 
-* update wiki changelog: [https://en.Travelflex.it/wiki/Changelog](https://en.bitcoin.it/wiki/Changelog)
+* update wiki changelog: [https://en.TravelFlex.it/wiki/Changelog](https://en.bitcoin.it/wiki/Changelog)
 
 Commit your signature to gitian.sigs:
 
@@ -132,32 +132,32 @@ Commit your signature to gitian.sigs:
 
 ### After 3 or more people have gitian-built, repackage gitian-signed zips:
 
-From a directory containing Travelflex source, gitian.sigs and gitian zips
+From a directory containing TravelFlex source, gitian.sigs and gitian zips
 
 	export VERSION=0.5.1
-	mkdir Travelflex-${VERSION}-linux-gitian
-	pushd Travelflex-${VERSION}-linux-gitian
-	unzip ../Travelflex-${VERSION}-linux-gitian.zip
+	mkdir TravelFlex-${VERSION}-linux-gitian
+	pushd TravelFlex-${VERSION}-linux-gitian
+	unzip ../TravelFlex-${VERSION}-linux-gitian.zip
 	mkdir gitian
-	cp ../Travelflex/contrib/gitian-downloader/*.pgp ./gitian/
+	cp ../TravelFlex/contrib/gitian-downloader/*.pgp ./gitian/
 	for signer in $(ls ../gitian.sigs/${VERSION}/); do
-	 cp ../gitian.sigs/${VERSION}/${signer}/Travelflex-build.assert ./gitian/${signer}-build.assert
-	 cp ../gitian.sigs/${VERSION}/${signer}/Travelflex-build.assert.sig ./gitian/${signer}-build.assert.sig
+	 cp ../gitian.sigs/${VERSION}/${signer}/TravelFlex-build.assert ./gitian/${signer}-build.assert
+	 cp ../gitian.sigs/${VERSION}/${signer}/TravelFlex-build.assert.sig ./gitian/${signer}-build.assert.sig
 	done
-	zip -r Travelflex-${VERSION}-linux-gitian.zip *
-	cp Travelflex-${VERSION}-linux-gitian.zip ../
+	zip -r TravelFlex-${VERSION}-linux-gitian.zip *
+	cp TravelFlex-${VERSION}-linux-gitian.zip ../
 	popd
-	mkdir Travelflex-${VERSION}-win32-gitian
-	pushd Travelflex-${VERSION}-win32-gitian
-	unzip ../Travelflex-${VERSION}-win32-gitian.zip
+	mkdir TravelFlex-${VERSION}-win32-gitian
+	pushd TravelFlex-${VERSION}-win32-gitian
+	unzip ../TravelFlex-${VERSION}-win32-gitian.zip
 	mkdir gitian
-	cp ../Travelflex/contrib/gitian-downloader/*.pgp ./gitian/
+	cp ../TravelFlex/contrib/gitian-downloader/*.pgp ./gitian/
 	for signer in $(ls ../gitian.sigs/${VERSION}-win32/); do
-	 cp ../gitian.sigs/${VERSION}-win32/${signer}/Travelflex-build.assert ./gitian/${signer}-build.assert
-	 cp ../gitian.sigs/${VERSION}-win32/${signer}/Travelflex-build.assert.sig ./gitian/${signer}-build.assert.sig
+	 cp ../gitian.sigs/${VERSION}-win32/${signer}/TravelFlex-build.assert ./gitian/${signer}-build.assert
+	 cp ../gitian.sigs/${VERSION}-win32/${signer}/TravelFlex-build.assert.sig ./gitian/${signer}-build.assert.sig
 	done
-	zip -r Travelflex-${VERSION}-win32-gitian.zip *
-	cp Travelflex-${VERSION}-win32-gitian.zip ../
+	zip -r TravelFlex-${VERSION}-win32-gitian.zip *
+	cp TravelFlex-${VERSION}-win32-gitian.zip ../
 	popd
 
 - Upload gitian zips to SourceForge

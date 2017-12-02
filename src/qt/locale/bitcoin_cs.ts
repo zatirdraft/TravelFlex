@@ -4,13 +4,13 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About Travelflex</source>
-        <translation>O Travelflexu</translation>
+        <source>About TravelFlex</source>
+        <translation>O TravelFlexu</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;Travelflex&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;Travelflex&lt;/b&gt; verze</translation>
+        <source>&lt;b&gt;TravelFlex&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;TravelFlex&lt;/b&gt; verze</translation>
     </message>
     <message>
         <location line="+57"/>
@@ -34,8 +34,8 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
     </message>
     <message>
         <location line="+0"/>
-        <source>The Travelflex developers</source>
-        <translation>Vývojáři Travelflexu</translation>
+        <source>The TravelFlex developers</source>
+        <translation>Vývojáři TravelFlexu</translation>
     </message>
 </context>
 <context>
@@ -67,8 +67,8 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="+63"/>
-        <source>These are your Travelflex addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Tohle jsou tvé Travelflexové adresy pro příjem plateb. Můžeš dát pokaždé každému plátci novou adresu, abys věděl, kdo ti kdy kolik platil.</translation>
+        <source>These are your TravelFlex addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Tohle jsou tvé TravelFlexové adresy pro příjem plateb. Můžeš dát pokaždé každému plátci novou adresu, abys věděl, kdo ti kdy kolik platil.</translation>
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="+14"/>
@@ -82,8 +82,8 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a Travelflex address</source>
-        <translation>Podepiš zprávu, čímž prokážeš, že jsi vlastníkem Travelflexové adresy</translation>
+        <source>Sign a message to prove you own a TravelFlex address</source>
+        <translation>Podepiš zprávu, čímž prokážeš, že jsi vlastníkem TravelFlexové adresy</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -107,8 +107,8 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
     </message>
     <message>
         <location line="-44"/>
-        <source>Verify a message to ensure it was signed with a specified Travelflex address</source>
-        <translation>Ověř zprávu, aby ses ujistil, že byla podepsána danou Travelflexovou adresou</translation>
+        <source>Verify a message to ensure it was signed with a specified TravelFlex address</source>
+        <translation>Ověř zprávu, aby ses ujistil, že byla podepsána danou TravelFlexovou adresou</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -122,8 +122,8 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="-5"/>
-        <source>These are your Travelflex addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Tohle jsou tvé Travelflexové adresy pro posílání plateb. Před odesláním mincí si vždy zkontroluj částku a cílovou adresu.</translation>
+        <source>These are your TravelFlex addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Tohle jsou tvé TravelFlexové adresy pro posílání plateb. Před odesláním mincí si vždy zkontroluj částku a cílovou adresu.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -248,8 +248,8 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TravelflexS&lt;/b&gt;!</source>
-        <translation>Varování: Pokud si zašifruješ peněženku a ztratíš či zapomeneš heslo, &lt;b&gt;PŘIJDEŠ O VŠECHNY TravelflexY&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TravelFlexS&lt;/b&gt;!</source>
+        <translation>Varování: Pokud si zašifruješ peněženku a ztratíš či zapomeneš heslo, &lt;b&gt;PŘIJDEŠ O VŠECHNY TravelFlexY&lt;/b&gt;!</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -275,8 +275,8 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
     </message>
     <message>
         <location line="-56"/>
-        <source>Travelflex will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Travelflexs from being stolen by malware infecting your computer.</source>
-        <translation>Travelflex se teď ukončí, aby dokončil zašifrování. Pamatuj však, že pouhé zašifrování peněženky úplně nezabraňuje krádeži tvých Travelflexů malwarem, kterým se může počítač nakazit.</translation>
+        <source>TravelFlex will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TravelFlexs from being stolen by malware infecting your computer.</source>
+        <translation>TravelFlex se teď ukončí, aby dokončil zašifrování. Pamatuj však, že pouhé zašifrování peněženky úplně nezabraňuje krádeži tvých TravelFlexů malwarem, kterým se může počítač nakazit.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -374,8 +374,8 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about Travelflex</source>
-        <translation>Zobraz informace o Travelflexu</translation>
+        <source>Show information about TravelFlex</source>
+        <translation>Zobraz informace o TravelFlexu</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -419,13 +419,13 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
     </message>
     <message>
         <location line="-347"/>
-        <source>Send coins to a Travelflex address</source>
-        <translation>Pošli mince na Travelflexovou adresu</translation>
+        <source>Send coins to a TravelFlex address</source>
+        <translation>Pošli mince na TravelFlexovou adresu</translation>
     </message>
     <message>
         <location line="+49"/>
-        <source>Modify configuration options for Travelflex</source>
-        <translation>Uprav nastavení Travelflexu</translation>
+        <source>Modify configuration options for TravelFlex</source>
+        <translation>Uprav nastavení TravelFlexu</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -455,8 +455,8 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
     <message>
         <location line="-165"/>
         <location line="+530"/>
-        <source>Travelflex</source>
-        <translation>Travelflex</translation>
+        <source>TravelFlex</source>
+        <translation>TravelFlex</translation>
     </message>
     <message>
         <location line="-530"/>
@@ -480,8 +480,8 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
     </message>
     <message>
         <location line="+22"/>
-        <source>&amp;About Travelflex</source>
-        <translation>O &amp;Travelflexu</translation>
+        <source>&amp;About TravelFlex</source>
+        <translation>O &amp;TravelFlexu</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -500,13 +500,13 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign messages with your Travelflex addresses to prove you own them</source>
-        <translation>Podepiš zprávy svými Travelflexovými adresami, čímž prokážeš, že jsi jejich vlastníkem</translation>
+        <source>Sign messages with your TravelFlex addresses to prove you own them</source>
+        <translation>Podepiš zprávy svými TravelFlexovými adresami, čímž prokážeš, že jsi jejich vlastníkem</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified Travelflex addresses</source>
-        <translation>Ověř zprávy, aby ses ujistil, že byly podepsány danými Travelflexovými adresami</translation>
+        <source>Verify messages to ensure they were signed with specified TravelFlex addresses</source>
+        <translation>Ověř zprávy, aby ses ujistil, že byly podepsány danými TravelFlexovými adresami</translation>
     </message>
     <message>
         <location line="+28"/>
@@ -536,13 +536,13 @@ Tento produkt zahrnuje programy vyvinuté OpenSSL Projektem pro použití v Open
     </message>
     <message>
         <location line="+47"/>
-        <source>Travelflex client</source>
-        <translation>Travelflex klient</translation>
+        <source>TravelFlex client</source>
+        <translation>TravelFlex klient</translation>
     </message>
     <message numerus="yes">
         <location line="+141"/>
-        <source>%n active connection(s) to Travelflex network</source>
-        <translation><numerusform>%n aktivní spojení do Travelflexové sítě</numerusform><numerusform>%n aktivní spojení do Travelflexové sítě</numerusform><numerusform>%n aktivních spojení do Travelflexové sítě</numerusform></translation>
+        <source>%n active connection(s) to TravelFlex network</source>
+        <translation><numerusform>%n aktivní spojení do TravelFlexové sítě</numerusform><numerusform>%n aktivní spojení do TravelFlexové sítě</numerusform><numerusform>%n aktivních spojení do TravelFlexové sítě</numerusform></translation>
     </message>
     <message>
         <location line="+22"/>
@@ -656,8 +656,8 @@ Adresa: %4
     <message>
         <location line="-23"/>
         <location line="+23"/>
-        <source>URI can not be parsed! This can be caused by an invalid Travelflex address or malformed URI parameters.</source>
-        <translation>Nepodařilo se analyzovat URI! Důvodem může být neplatná Travelflexová adresa nebo poškozené parametry URI.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid TravelFlex address or malformed URI parameters.</source>
+        <translation>Nepodařilo se analyzovat URI! Důvodem může být neplatná TravelFlexová adresa nebo poškozené parametry URI.</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -671,8 +671,8 @@ Adresa: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+111"/>
-        <source>A fatal error occurred. Travelflex can no longer continue safely and will quit.</source>
-        <translation>Stala se fatální chyba. Travelflex nemůže bezpečně pokračovat v činnosti, a proto skončí.</translation>
+        <source>A fatal error occurred. TravelFlex can no longer continue safely and will quit.</source>
+        <translation>Stala se fatální chyba. TravelFlex nemůže bezpečně pokračovat v činnosti, a proto skončí.</translation>
     </message>
 </context>
 <context>
@@ -737,8 +737,8 @@ Adresa: %4
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Travelflex address.</source>
-        <translation>Zadaná adresa &quot;%1&quot; není platná Travelflexová adresa.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid TravelFlex address.</source>
+        <translation>Zadaná adresa &quot;%1&quot; není platná TravelFlexová adresa.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -756,8 +756,8 @@ Adresa: %4
     <message>
         <location filename="../guiutil.cpp" line="+424"/>
         <location line="+12"/>
-        <source>Travelflex-Qt</source>
-        <translation>Travelflex-Qt</translation>
+        <source>TravelFlex-Qt</source>
+        <translation>TravelFlex-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -819,13 +819,13 @@ Adresa: %4
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start Travelflex after logging in to the system.</source>
-        <translation>Automaticky spustí Travelflex po přihlášení do systému.</translation>
+        <source>Automatically start TravelFlex after logging in to the system.</source>
+        <translation>Automaticky spustí TravelFlex po přihlášení do systému.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Travelflex on system login</source>
-        <translation>S&amp;pustit Travelflex po přihlášení do systému</translation>
+        <source>&amp;Start TravelFlex on system login</source>
+        <translation>S&amp;pustit TravelFlex po přihlášení do systému</translation>
     </message>
     <message>
         <location line="+35"/>
@@ -844,7 +844,7 @@ Adresa: %4
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the Travelflex client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the TravelFlex client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation>Automaticky otevře potřebný port na routeru. Tohle funguje jen za předpokladu, že tvůj router podporuje UPnP a že je UPnP povolené.</translation>
     </message>
     <message>
@@ -854,8 +854,8 @@ Adresa: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the Travelflex network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Připojí se do Travelflexové sítě přes SOCKS proxy (např. když se připojuje přes Tor).</translation>
+        <source>Connect to the TravelFlex network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Připojí se do TravelFlexové sítě přes SOCKS proxy (např. když se připojuje přes Tor).</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -929,8 +929,8 @@ Adresa: %4
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Travelflex.</source>
-        <translation>Tady lze nastavit jazyk uživatelského rozhraní. Nastavení se projeví až po restartování Travelflexu.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting TravelFlex.</source>
+        <translation>Tady lze nastavit jazyk uživatelského rozhraní. Nastavení se projeví až po restartování TravelFlexu.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -944,8 +944,8 @@ Adresa: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show Travelflex addresses in the transaction list or not.</source>
-        <translation>Zda ukazovat Travelflexové adresy ve výpisu transakcí nebo ne.</translation>
+        <source>Whether to show TravelFlex addresses in the transaction list or not.</source>
+        <translation>Zda ukazovat TravelFlexové adresy ve výpisu transakcí nebo ne.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -996,8 +996,8 @@ Adresa: %4
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting Travelflex.</source>
-        <translation>Nastavení se projeví až po restartování Travelflexu.</translation>
+        <source>This setting will take effect after restarting TravelFlex.</source>
+        <translation>Nastavení se projeví až po restartování TravelFlexu.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1015,8 +1015,8 @@ Adresa: %4
     <message>
         <location line="+50"/>
         <location line="+166"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Travelflex network after a connection is established, but this process has not completed yet.</source>
-        <translation>Zobrazené informace nemusí být aktuální. Tvá peněženka se automaticky sesynchronizuje s Travelflexovou sítí, jakmile se s ní spojí. Zatím ale ještě není synchronizace dokončena.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the TravelFlex network after a connection is established, but this process has not completed yet.</source>
+        <translation>Zobrazené informace nemusí být aktuální. Tvá peněženka se automaticky sesynchronizuje s TravelFlexovou sítí, jakmile se s ní spojí. Zatím ale ještě není synchronizace dokončena.</translation>
     </message>
     <message>
         <location line="-124"/>
@@ -1069,8 +1069,8 @@ Adresa: %4
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start Travelflex: click-to-pay handler</source>
-        <translation>Nemůžu spustit Travelflex: obsluha click-to-pay</translation>
+        <source>Cannot start TravelFlex: click-to-pay handler</source>
+        <translation>Nemůžu spustit TravelFlex: obsluha click-to-pay</translation>
     </message>
 </context>
 <context>
@@ -1219,8 +1219,8 @@ Adresa: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the Travelflex-Qt help message to get a list with possible Travelflex command-line options.</source>
-        <translation>Seznam parametrů Travelflexu pro příkazovou řádku získáš v nápovědě Travelflexu Qt.</translation>
+        <source>Show the TravelFlex-Qt help message to get a list with possible TravelFlex command-line options.</source>
+        <translation>Seznam parametrů TravelFlexu pro příkazovou řádku získáš v nápovědě TravelFlexu Qt.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1239,13 +1239,13 @@ Adresa: %4
     </message>
     <message>
         <location line="-104"/>
-        <source>Travelflex - Debug window</source>
-        <translation>Travelflex - ladicí okno</translation>
+        <source>TravelFlex - Debug window</source>
+        <translation>TravelFlex - ladicí okno</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>Travelflex Core</source>
-        <translation>Jádro Travelflexu</translation>
+        <source>TravelFlex Core</source>
+        <translation>Jádro TravelFlexu</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1254,8 +1254,8 @@ Adresa: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the Travelflex debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Otevři soubor s ladicími záznamy Travelflexu z aktuálního datového adresáře. U velkých logů to může pár vteřin zabrat.</translation>
+        <source>Open the TravelFlex debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Otevři soubor s ladicími záznamy TravelFlexu z aktuálního datového adresáře. U velkých logů to může pár vteřin zabrat.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1264,8 +1264,8 @@ Adresa: %4
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
-        <source>Welcome to the Travelflex RPC console.</source>
-        <translation>Vítej v Travelflexové RPC konzoli.</translation>
+        <source>Welcome to the TravelFlex RPC console.</source>
+        <translation>Vítej v TravelFlexové RPC konzoli.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1448,8 +1448,8 @@ Adresa: %4
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a Travelflex address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation>Zadej Travelflexovou adresu (např. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
+        <source>Enter a TravelFlex address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
+        <translation>Zadej TravelFlexovou adresu (např. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
     </message>
 </context>
 <context>
@@ -1513,8 +1513,8 @@ Adresa: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Travelflex address</source>
-        <translation>Podepiš zprávu, čímž prokážeš, že jsi vlastníkem této Travelflexové adresy</translation>
+        <source>Sign the message to prove you own this TravelFlex address</source>
+        <translation>Podepiš zprávu, čímž prokážeš, že jsi vlastníkem této TravelFlexové adresy</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1549,8 +1549,8 @@ Adresa: %4
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified Travelflex address</source>
-        <translation>Ověř zprávu, aby ses ujistil, že byla podepsána danou Travelflexovou adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified TravelFlex address</source>
+        <translation>Ověř zprávu, aby ses ujistil, že byla podepsána danou TravelFlexovou adresou</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1565,8 +1565,8 @@ Adresa: %4
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a Travelflex address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation>Zadej Travelflexovou adresu (např. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
+        <source>Enter a TravelFlex address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
+        <translation>Zadej TravelFlexovou adresu (např. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -1575,8 +1575,8 @@ Adresa: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter Travelflex signature</source>
-        <translation>Vlož Travelflexový podpis</translation>
+        <source>Enter TravelFlex signature</source>
+        <translation>Vlož TravelFlexový podpis</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -1649,8 +1649,8 @@ Adresa: %4
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+22"/>
-        <source>The Travelflex developers</source>
-        <translation>Vývojáři Travelflexu</translation>
+        <source>The TravelFlex developers</source>
+        <translation>Vývojáři TravelFlexu</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2187,8 +2187,8 @@ Adresa: %4
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+94"/>
-        <source>Travelflex version</source>
-        <translation>Verze Travelflexu</translation>
+        <source>TravelFlex version</source>
+        <translation>Verze TravelFlexu</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -2197,8 +2197,8 @@ Adresa: %4
     </message>
     <message>
         <location line="-29"/>
-        <source>Send command to -server or Travelflexd</source>
-        <translation>Poslat příkaz pro -server nebo Travelflexd</translation>
+        <source>Send command to -server or TravelFlexd</source>
+        <translation>Poslat příkaz pro -server nebo TravelFlexd</translation>
     </message>
     <message>
         <location line="-23"/>
@@ -2217,13 +2217,13 @@ Adresa: %4
     </message>
     <message>
         <location line="+24"/>
-        <source>Specify configuration file (default: Travelflex.conf)</source>
-        <translation>Konfigurační soubor (výchozí: Travelflex.conf)</translation>
+        <source>Specify configuration file (default: TravelFlex.conf)</source>
+        <translation>Konfigurační soubor (výchozí: TravelFlex.conf)</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: Travelflexd.pid)</source>
-        <translation>PID soubor (výchozí: Travelflexd.pid)</translation>
+        <source>Specify pid file (default: TravelFlexd.pid)</source>
+        <translation>PID soubor (výchozí: TravelFlexd.pid)</translation>
     </message>
     <message>
         <location line="-1"/>
@@ -2300,24 +2300,24 @@ Adresa: %4
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=Travelflexrpc
+rpcuser=TravelFlexrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Travelflex Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;TravelFlex Alert&quot; admin@foo.com
 </source>
         <translation>%s, musíš nastavit rpcpassword v konfiguračním souboru:
 %s
 Je vhodné použít následující náhodné heslo:
-rpcuser=Travelflexrpc
+rpcuser=TravelFlexrpc
 rpcpassword=%s
 (není potřeba si ho pamatovat)
 rpcuser a rpcpassword NESMÍ být stejné.
 Pokud konfigurační soubor ještě neexistuje, vytvoř ho tak, aby ho mohl číst pouze vlastník.
 Je také doporučeno si nastavit alertnotify, abys byl upozorněn na případné problémy;
-například: alertnotify=echo %%s | mail -s &quot;Travelflex Alert&quot; admin@foo.com
+například: alertnotify=echo %%s | mail -s &quot;TravelFlex Alert&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -2332,8 +2332,8 @@ například: alertnotify=echo %%s | mail -s &quot;Travelflex Alert&quot; admin@f
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. Travelflex is probably already running.</source>
-        <translation>Nedaří se mi získat zámek na datový adresář %s. Travelflex pravděpodobně už jednou běží.</translation>
+        <source>Cannot obtain a lock on data directory %s. TravelFlex is probably already running.</source>
+        <translation>Nedaří se mi získat zámek na datový adresář %s. TravelFlex pravděpodobně už jednou běží.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2377,8 +2377,8 @@ například: alertnotify=echo %%s | mail -s &quot;Travelflex Alert&quot; admin@f
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Travelflex will not work properly.</source>
-        <translation>Upozornění: Zkontroluj, že máš v počítači správně nastavený datum a čas! Pokud jsou nastaveny špatně, Travelflex nebude fungovat správně.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong TravelFlex will not work properly.</source>
+        <translation>Upozornění: Zkontroluj, že máš v počítači správně nastavený datum a čas! Pokud jsou nastaveny špatně, TravelFlex nebude fungovat správně.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2627,8 +2627,8 @@ například: alertnotify=echo %%s | mail -s &quot;Travelflex Alert&quot; admin@f
     </message>
     <message>
         <location line="+5"/>
-        <source>SSL options: (see the Travelflex Wiki for SSL setup instructions)</source>
-        <translation>Možnosti SSL: (viz instrukce nastavení SSL v Travelflex Wiki)</translation>
+        <source>SSL options: (see the TravelFlex Wiki for SSL setup instructions)</source>
+        <translation>Možnosti SSL: (viz instrukce nastavení SSL v TravelFlex Wiki)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2817,13 +2817,13 @@ například: alertnotify=echo %%s | mail -s &quot;Travelflex Alert&quot; admin@f
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Travelflex</source>
-        <translation>Chyba při načítání wallet.dat: peněženka vyžaduje novější verzi Travelflexu</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of TravelFlex</source>
+        <translation>Chyba při načítání wallet.dat: peněženka vyžaduje novější verzi TravelFlexu</translation>
     </message>
     <message>
         <location line="+93"/>
-        <source>Wallet needed to be rewritten: restart Travelflex to complete</source>
-        <translation>Soubor s peněženkou potřeboval přepsat: restartuj Travelflex, aby se operace dokončila</translation>
+        <source>Wallet needed to be rewritten: restart TravelFlex to complete</source>
+        <translation>Soubor s peněženkou potřeboval přepsat: restartuj TravelFlex, aby se operace dokončila</translation>
     </message>
     <message>
         <location line="-95"/>
@@ -2882,8 +2882,8 @@ například: alertnotify=echo %%s | mail -s &quot;Travelflex Alert&quot; admin@f
     </message>
     <message>
         <location line="-25"/>
-        <source>Unable to bind to %s on this computer. Travelflex is probably already running.</source>
-        <translation>Nedaří se mi připojit na %s na tomhle počítači. Travelflex už pravděpodobně jednou běží.</translation>
+        <source>Unable to bind to %s on this computer. TravelFlex is probably already running.</source>
+        <translation>Nedaří se mi připojit na %s na tomhle počítači. TravelFlex už pravděpodobně jednou běží.</translation>
     </message>
     <message>
         <location line="+64"/>

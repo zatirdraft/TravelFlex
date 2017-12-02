@@ -45,9 +45,9 @@ QString BitcoinUnits::description(int unit)
 {
     switch(unit)
     {
-    case BTC: return QString("Travelflexs");
-    case kBTC: return QString("Thousand-Travelflexs (1 * 1,000)");
-    case MBTC: return QString("Million-Travelflexs (1 * 1,000,000)");
+    case BTC: return QString("TravelFlexs");
+    case kBTC: return QString("Thousand-TravelFlexs (1 * 1,000)");
+    case MBTC: return QString("Million-TravelFlexs (1 * 1,000,000)");
     default: return QString("???");
     }
 }

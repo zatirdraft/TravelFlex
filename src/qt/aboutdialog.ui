@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>About Travelflex</string>
+   <string>About TravelFlex</string>
   </property>
   <layout class="QGridLayout" name="gridLayout">
    <item row="0" column="0" rowspan="12">
@@ -78,7 +78,7 @@
         </font>
        </property>
        <property name="text">
-        <string>Travelflex v4 RC1</string>
+        <string>TravelFlex v4 RC1</string>
        </property>
       </widget>
      </item>
@@ -99,7 +99,7 @@
         <cursorShape>IBeamCursor</cursorShape>
        </property>
        <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Travelflex &lt;/span&gt;Core&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;TravelFlex &lt;/span&gt;Core&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
        <property name="textInteractionFlags">
         <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -141,7 +141,7 @@
      </property>
      <property name="text">
       <string notr="true">Copyright &amp;copy; YYYY Bitcoin Developers
-Copyright &amp;copy; YYYY Travelflex Developers</string>
+Copyright &amp;copy; YYYY TravelFlex Developers</string>
      </property>
      <property name="textFormat">
       <enum>Qt::RichText</enum>

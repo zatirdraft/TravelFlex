@@ -6,13 +6,13 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About Travelflex</source>
-        <translation>About Travelflex</translation>
+        <source>About TravelFlex</source>
+        <translation>About TravelFlex</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;Travelflex&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;Travelflex&lt;/b&gt; version</translation>
+        <source>&lt;b&gt;TravelFlex&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;TravelFlex&lt;/b&gt; version</translation>
     </message>
     <message>
         <location line="+57"/>
@@ -36,8 +36,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+0"/>
-        <source>The Travelflex developers</source>
-        <translation>The Travelflex developers</translation>
+        <source>The TravelFlex developers</source>
+        <translation>The TravelFlex developers</translation>
     </message>
 </context>
 <context>
@@ -69,8 +69,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="+63"/>
-        <source>These are your Travelflex addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>These are your Travelflex addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</translation>
+        <source>These are your TravelFlex addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>These are your TravelFlex addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</translation>
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="+14"/>
@@ -84,8 +84,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a Travelflex address</source>
-        <translation>Sign a message to prove you own a Travelflex address</translation>
+        <source>Sign a message to prove you own a TravelFlex address</source>
+        <translation>Sign a message to prove you own a TravelFlex address</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -109,8 +109,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-44"/>
-        <source>Verify a message to ensure it was signed with a specified Travelflex address</source>
-        <translation>Verify a message to ensure it was signed with a specified Travelflex address</translation>
+        <source>Verify a message to ensure it was signed with a specified TravelFlex address</source>
+        <translation>Verify a message to ensure it was signed with a specified TravelFlex address</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -124,8 +124,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="-5"/>
-        <source>These are your Travelflex addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>These are your Travelflex addresses for sending payments. Always check the amount and the receiving address before sending coins.</translation>
+        <source>These are your TravelFlex addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>These are your TravelFlex addresses for sending payments. Always check the amount and the receiving address before sending coins.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -250,8 +250,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TravelflexS&lt;/b&gt;!</source>
-        <translation>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TravelflexS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TravelFlexS&lt;/b&gt;!</source>
+        <translation>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR TravelFlexS&lt;/b&gt;!</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -277,8 +277,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-56"/>
-        <source>Travelflex will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Travelflexs from being stolen by malware infecting your computer.</source>
-        <translation>Travelflex will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Travelflexs from being stolen by malware infecting your computer.</translation>
+        <source>TravelFlex will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TravelFlexs from being stolen by malware infecting your computer.</source>
+        <translation>TravelFlex will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your TravelFlexs from being stolen by malware infecting your computer.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -376,8 +376,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about Travelflex</source>
-        <translation>Show information about Travelflex</translation>
+        <source>Show information about TravelFlex</source>
+        <translation>Show information about TravelFlex</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -421,13 +421,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-347"/>
-        <source>Send coins to a Travelflex address</source>
-        <translation>Send coins to a Travelflex address</translation>
+        <source>Send coins to a TravelFlex address</source>
+        <translation>Send coins to a TravelFlex address</translation>
     </message>
     <message>
         <location line="+49"/>
-        <source>Modify configuration options for Travelflex</source>
-        <translation>Modify configuration options for Travelflex</translation>
+        <source>Modify configuration options for TravelFlex</source>
+        <translation>Modify configuration options for TravelFlex</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -457,8 +457,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-165"/>
         <location line="+530"/>
-        <source>Travelflex</source>
-        <translation>Travelflex</translation>
+        <source>TravelFlex</source>
+        <translation>TravelFlex</translation>
     </message>
     <message>
         <location line="-530"/>
@@ -482,8 +482,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+22"/>
-        <source>&amp;About Travelflex</source>
-        <translation>&amp;About Travelflex</translation>
+        <source>&amp;About TravelFlex</source>
+        <translation>&amp;About TravelFlex</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -502,13 +502,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign messages with your Travelflex addresses to prove you own them</source>
-        <translation>Sign messages with your Travelflex addresses to prove you own them</translation>
+        <source>Sign messages with your TravelFlex addresses to prove you own them</source>
+        <translation>Sign messages with your TravelFlex addresses to prove you own them</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified Travelflex addresses</source>
-        <translation>Verify messages to ensure they were signed with specified Travelflex addresses</translation>
+        <source>Verify messages to ensure they were signed with specified TravelFlex addresses</source>
+        <translation>Verify messages to ensure they were signed with specified TravelFlex addresses</translation>
     </message>
     <message>
         <location line="+28"/>
@@ -538,15 +538,15 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+47"/>
-        <source>Travelflex client</source>
-        <translation>Travelflex client</translation>
+        <source>TravelFlex client</source>
+        <translation>TravelFlex client</translation>
     </message>
     <message numerus="yes">
         <location line="+141"/>
-        <source>%n active connection(s) to Travelflex network</source>
+        <source>%n active connection(s) to TravelFlex network</source>
         <translation>
-            <numerusform>%n active connection to Travelflex network</numerusform>
-            <numerusform>%n active connections to Travelflex network</numerusform>
+            <numerusform>%n active connection to TravelFlex network</numerusform>
+            <numerusform>%n active connections to TravelFlex network</numerusform>
         </translation>
     </message>
     <message>
@@ -670,8 +670,8 @@ Address: %4
     <message>
         <location line="-23"/>
         <location line="+23"/>
-        <source>URI can not be parsed! This can be caused by an invalid Travelflex address or malformed URI parameters.</source>
-        <translation>URI can not be parsed! This can be caused by an invalid Travelflex address or malformed URI parameters.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid TravelFlex address or malformed URI parameters.</source>
+        <translation>URI can not be parsed! This can be caused by an invalid TravelFlex address or malformed URI parameters.</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -685,8 +685,8 @@ Address: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+111"/>
-        <source>A fatal error occurred. Travelflex can no longer continue safely and will quit.</source>
-        <translation>A fatal error occurred. Travelflex can no longer continue safely and will quit.</translation>
+        <source>A fatal error occurred. TravelFlex can no longer continue safely and will quit.</source>
+        <translation>A fatal error occurred. TravelFlex can no longer continue safely and will quit.</translation>
     </message>
 </context>
 <context>
@@ -751,8 +751,8 @@ Address: %4
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Travelflex address.</source>
-        <translation>The entered address &quot;%1&quot; is not a valid Travelflex address.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid TravelFlex address.</source>
+        <translation>The entered address &quot;%1&quot; is not a valid TravelFlex address.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -770,8 +770,8 @@ Address: %4
     <message>
         <location filename="../guiutil.cpp" line="+424"/>
         <location line="+12"/>
-        <source>Travelflex-Qt</source>
-        <translation>Travelflex-Qt</translation>
+        <source>TravelFlex-Qt</source>
+        <translation>TravelFlex-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -833,13 +833,13 @@ Address: %4
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start Travelflex after logging in to the system.</source>
-        <translation>Automatically start Travelflex after logging in to the system.</translation>
+        <source>Automatically start TravelFlex after logging in to the system.</source>
+        <translation>Automatically start TravelFlex after logging in to the system.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Travelflex on system login</source>
-        <translation>&amp;Start Travelflex on system login</translation>
+        <source>&amp;Start TravelFlex on system login</source>
+        <translation>&amp;Start TravelFlex on system login</translation>
     </message>
     <message>
         <location line="+35"/>
@@ -858,8 +858,8 @@ Address: %4
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the Travelflex client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatically open the Travelflex client port on the router. This only works when your router supports UPnP and it is enabled.</translation>
+        <source>Automatically open the TravelFlex client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automatically open the TravelFlex client port on the router. This only works when your router supports UPnP and it is enabled.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -868,8 +868,8 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the Travelflex network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Connect to the Travelflex network through a SOCKS proxy (e.g. when connecting through Tor).</translation>
+        <source>Connect to the TravelFlex network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Connect to the TravelFlex network through a SOCKS proxy (e.g. when connecting through Tor).</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -943,8 +943,8 @@ Address: %4
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Travelflex.</source>
-        <translation>The user interface language can be set here. This setting will take effect after restarting Travelflex.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting TravelFlex.</source>
+        <translation>The user interface language can be set here. This setting will take effect after restarting TravelFlex.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -958,8 +958,8 @@ Address: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show Travelflex addresses in the transaction list or not.</source>
-        <translation>Whether to show Travelflex addresses in the transaction list or not.</translation>
+        <source>Whether to show TravelFlex addresses in the transaction list or not.</source>
+        <translation>Whether to show TravelFlex addresses in the transaction list or not.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1010,8 +1010,8 @@ Address: %4
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting Travelflex.</source>
-        <translation>This setting will take effect after restarting Travelflex.</translation>
+        <source>This setting will take effect after restarting TravelFlex.</source>
+        <translation>This setting will take effect after restarting TravelFlex.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1029,8 +1029,8 @@ Address: %4
     <message>
         <location line="+50"/>
         <location line="+166"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Travelflex network after a connection is established, but this process has not completed yet.</source>
-        <translation>The displayed information may be out of date. Your wallet automatically synchronizes with the Travelflex network after a connection is established, but this process has not completed yet.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the TravelFlex network after a connection is established, but this process has not completed yet.</source>
+        <translation>The displayed information may be out of date. Your wallet automatically synchronizes with the TravelFlex network after a connection is established, but this process has not completed yet.</translation>
     </message>
     <message>
         <location line="-124"/>
@@ -1083,8 +1083,8 @@ Address: %4
     <name>PaymentServer</name>
     <message>
         <location filename="../paymentserver.cpp" line="+107"/>
-        <source>Cannot start Travelflex: click-to-pay handler</source>
-        <translation>Cannot start Travelflex: click-to-pay handler</translation>
+        <source>Cannot start TravelFlex: click-to-pay handler</source>
+        <translation>Cannot start TravelFlex: click-to-pay handler</translation>
     </message>
 </context>
 <context>
@@ -1233,8 +1233,8 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the Travelflex-Qt help message to get a list with possible Travelflex command-line options.</source>
-        <translation>Show the Travelflex-Qt help message to get a list with possible Travelflex command-line options.</translation>
+        <source>Show the TravelFlex-Qt help message to get a list with possible TravelFlex command-line options.</source>
+        <translation>Show the TravelFlex-Qt help message to get a list with possible TravelFlex command-line options.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1253,13 +1253,13 @@ Address: %4
     </message>
     <message>
         <location line="-104"/>
-        <source>Travelflex - Debug window</source>
-        <translation>Travelflex - Debug window</translation>
+        <source>TravelFlex - Debug window</source>
+        <translation>TravelFlex - Debug window</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>Travelflex Core</source>
-        <translation>Travelflex Core</translation>
+        <source>TravelFlex Core</source>
+        <translation>TravelFlex Core</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1268,8 +1268,8 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the Travelflex debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Open the Travelflex debug log file from the current data directory. This can take a few seconds for large log files.</translation>
+        <source>Open the TravelFlex debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Open the TravelFlex debug log file from the current data directory. This can take a few seconds for large log files.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1278,8 +1278,8 @@ Address: %4
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
-        <source>Welcome to the Travelflex RPC console.</source>
-        <translation>Welcome to the Travelflex RPC console.</translation>
+        <source>Welcome to the TravelFlex RPC console.</source>
+        <translation>Welcome to the TravelFlex RPC console.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1462,8 +1462,8 @@ Address: %4
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a Travelflex address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation>Enter a Travelflex address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
+        <source>Enter a TravelFlex address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
+        <translation>Enter a TravelFlex address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
     </message>
 </context>
 <context>
@@ -1527,8 +1527,8 @@ Address: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Travelflex address</source>
-        <translation>Sign the message to prove you own this Travelflex address</translation>
+        <source>Sign the message to prove you own this TravelFlex address</source>
+        <translation>Sign the message to prove you own this TravelFlex address</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1563,8 +1563,8 @@ Address: %4
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified Travelflex address</source>
-        <translation>Verify the message to ensure it was signed with the specified Travelflex address</translation>
+        <source>Verify the message to ensure it was signed with the specified TravelFlex address</source>
+        <translation>Verify the message to ensure it was signed with the specified TravelFlex address</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1579,8 +1579,8 @@ Address: %4
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a Travelflex address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
-        <translation>Enter a Travelflex address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
+        <source>Enter a TravelFlex address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
+        <translation>Enter a TravelFlex address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -1589,8 +1589,8 @@ Address: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter Travelflex signature</source>
-        <translation>Enter Travelflex signature</translation>
+        <source>Enter TravelFlex signature</source>
+        <translation>Enter TravelFlex signature</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -1663,8 +1663,8 @@ Address: %4
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+22"/>
-        <source>The Travelflex developers</source>
-        <translation>The Travelflex developers</translation>
+        <source>The TravelFlex developers</source>
+        <translation>The TravelFlex developers</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2216,8 +2216,8 @@ Address: %4
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+94"/>
-        <source>Travelflex version</source>
-        <translation>Travelflex version</translation>
+        <source>TravelFlex version</source>
+        <translation>TravelFlex version</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -2226,8 +2226,8 @@ Address: %4
     </message>
     <message>
         <location line="-29"/>
-        <source>Send command to -server or Travelflexd</source>
-        <translation>Send command to -server or Travelflexd</translation>
+        <source>Send command to -server or TravelFlexd</source>
+        <translation>Send command to -server or TravelFlexd</translation>
     </message>
     <message>
         <location line="-23"/>
@@ -2246,13 +2246,13 @@ Address: %4
     </message>
     <message>
         <location line="+24"/>
-        <source>Specify configuration file (default: Travelflex.conf)</source>
-        <translation>Specify configuration file (default: Travelflex.conf)</translation>
+        <source>Specify configuration file (default: TravelFlex.conf)</source>
+        <translation>Specify configuration file (default: TravelFlex.conf)</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: Travelflexd.pid)</source>
-        <translation>Specify pid file (default: Travelflexd.pid)</translation>
+        <source>Specify pid file (default: TravelFlexd.pid)</source>
+        <translation>Specify pid file (default: TravelFlexd.pid)</translation>
     </message>
     <message>
         <location line="-1"/>
@@ -2329,24 +2329,24 @@ Address: %4
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=Travelflexrpc
+rpcuser=TravelFlexrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Travelflex Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;TravelFlex Alert&quot; admin@foo.com
 </source>
         <translation>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=Travelflexrpc
+rpcuser=TravelFlexrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Travelflex Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;TravelFlex Alert&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -2361,8 +2361,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Travelflex Alert&quot; admin@f
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. Travelflex is probably already running.</source>
-        <translation>Cannot obtain a lock on data directory %s. Travelflex is probably already running.</translation>
+        <source>Cannot obtain a lock on data directory %s. TravelFlex is probably already running.</source>
+        <translation>Cannot obtain a lock on data directory %s. TravelFlex is probably already running.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2406,8 +2406,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Travelflex Alert&quot; admin@f
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Travelflex will not work properly.</source>
-        <translation>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Travelflex will not work properly.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong TravelFlex will not work properly.</source>
+        <translation>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong TravelFlex will not work properly.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2656,8 +2656,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Travelflex Alert&quot; admin@f
     </message>
     <message>
         <location line="+5"/>
-        <source>SSL options: (see the Travelflex Wiki for SSL setup instructions)</source>
-        <translation>SSL options: (see the Travelflex Wiki for SSL setup instructions)</translation>
+        <source>SSL options: (see the TravelFlex Wiki for SSL setup instructions)</source>
+        <translation>SSL options: (see the TravelFlex Wiki for SSL setup instructions)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2846,13 +2846,13 @@ for example: alertnotify=echo %%s | mail -s &quot;Travelflex Alert&quot; admin@f
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Travelflex</source>
-        <translation>Error loading wallet.dat: Wallet requires newer version of Travelflex</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of TravelFlex</source>
+        <translation>Error loading wallet.dat: Wallet requires newer version of TravelFlex</translation>
     </message>
     <message>
         <location line="+93"/>
-        <source>Wallet needed to be rewritten: restart Travelflex to complete</source>
-        <translation>Wallet needed to be rewritten: restart Travelflex to complete</translation>
+        <source>Wallet needed to be rewritten: restart TravelFlex to complete</source>
+        <translation>Wallet needed to be rewritten: restart TravelFlex to complete</translation>
     </message>
     <message>
         <location line="-95"/>
@@ -2911,8 +2911,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Travelflex Alert&quot; admin@f
     </message>
     <message>
         <location line="-25"/>
-        <source>Unable to bind to %s on this computer. Travelflex is probably already running.</source>
-        <translation>Unable to bind to %s on this computer. Travelflex is probably already running.</translation>
+        <source>Unable to bind to %s on this computer. TravelFlex is probably already running.</source>
+        <translation>Unable to bind to %s on this computer. TravelFlex is probably already running.</translation>
     </message>
     <message>
         <location line="+64"/>
