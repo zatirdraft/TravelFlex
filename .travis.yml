@@ -1,0 +1,12 @@
+{
+  "language": "cpp",
+  "cache": {
+    "directories": [
+      "$HOME/.local" 
+    ]
+  },
+   "script": [
+   cd src
+    "cmake -f makefile.unix",
+   ]
+}
