@@ -21,9 +21,7 @@
 
 #include "allocators.h"
 #include "version.h"
-
-typedef long long  int64_t;
-typedef unsigned long long  uint64_t;
+#include <stdint.h>
 
 class CScript;
 class CDataStream;
