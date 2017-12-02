@@ -16,6 +16,7 @@
 #include <boost/filesystem/fstream.hpp>
 #include <boost/random/mersenne_twister.hpp>
 #include <boost/random/uniform_int.hpp>
+#include <memory>
 
 using namespace std;
 using namespace boost;
@@ -358,7 +359,7 @@ unsigned int LimitOrphanTxSize(unsigned int nMaxOrphans)
 bool CTxOut::IsDust() const
 {
     // TravelFlex: IsDust() detection disabled, allows any valid dust to be relayed.
-    // The fees imposed on each dust txo is considered sufficient spam deterrant. 
+    // The fees imposed on each dust txo is considered sufficient spam deterrant.
     return false;
 }
 
@@ -601,7 +602,7 @@ int64_t CTransaction::GetMinFee(unsigned int nBlockSize, bool fAllowFree,
     unsigned int nBytes = ::GetSerializeSize(*this, SER_NETWORK, PROTOCOL_VERSION);
     unsigned int nNewBlockSize = nBlockSize + nBytes;
     int64_t nMinFee = (1 + (int64_t)nBytes * 100) * nBaseFee;
-   
+
     if (fAllowFree)
     {
         // There is a free transaction area in blocks created by most miners,
@@ -612,7 +613,7 @@ int64_t CTransaction::GetMinFee(unsigned int nBlockSize, bool fAllowFree,
         //   to be considered safe and assume they can likely make it into this section.
         if (nBytes < (mode == GMF_SEND ? 250 : (DEFAULT_BLOCK_PRIORITY_SIZE - 1000)))
            nMinFee = (1 + (int64_t)nBytes * 15) * nBaseFee;
-        
+
     }
 
     // TravelFlex
@@ -620,7 +621,7 @@ int64_t CTransaction::GetMinFee(unsigned int nBlockSize, bool fAllowFree,
     BOOST_FOREACH(const CTxOut& txout, vout)
         if (txout.nValue < DUST_SOFT_LIMIT)
             nMinFee += (1 + (int64_t)nBytes * 10) * nBaseFee;
-        
+
 
     // Raise the price as the block approaches full
     if (nBlockSize != 1 && nNewBlockSize >= MAX_BLOCK_SIZE_GEN/2)
@@ -628,12 +629,12 @@ int64_t CTransaction::GetMinFee(unsigned int nBlockSize, bool fAllowFree,
         if (nNewBlockSize >= MAX_BLOCK_SIZE_GEN)
             return MAX_MONEY;
         nMinFee *= MAX_BLOCK_SIZE_GEN / (MAX_BLOCK_SIZE_GEN - nNewBlockSize);
-      
+
     }
 
     if (!MoneyRange(nMinFee))
         nMinFee = MAX_MONEY;
-      
+
     return nMinFee;
 }
 
@@ -4485,7 +4486,7 @@ public:
 CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn)
 {
     // Create new block
-    auto_ptr<CBlockTemplate> pblocktemplate(new CBlockTemplate());
+    unique_ptr<CBlockTemplate> pblocktemplate(new CBlockTemplate());
     if(!pblocktemplate.get())
         return NULL;
     CBlock *pblock = &pblocktemplate->block; // pointer for convenience
@@ -4854,7 +4855,7 @@ void static TravelFlexMiner(CWallet *pwallet)
         unsigned int nTransactionsUpdatedLast = nTransactionsUpdated;
         CBlockIndex* pindexPrev = pindexBest;
 
-        auto_ptr<CBlockTemplate> pblocktemplate(CreateNewBlockWithKey(reservekey));
+        unique_ptr<CBlockTemplate> pblocktemplate(CreateNewBlockWithKey(reservekey));
         if (!pblocktemplate.get())
             return;
         CBlock *pblock = &pblocktemplate->block;
