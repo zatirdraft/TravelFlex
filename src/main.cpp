@@ -33,10 +33,10 @@ CCriticalSection cs_main;
 CTxMemPool mempool;
 unsigned int nTransactionsUpdated = 0;
 
-bool nDoGenesis = true;
+bool nDoGenesis = false;
 
 map<uint256, CBlockIndex*> mapBlockIndex;
-uint256 hashGenesisBlock("0x00000ae4d6bfdf2adaf978fa3bc21dfc7cd3a836e64208e697fa00804c0091da");
+uint256 hashGenesisBlock("0x000001701438c1c2c1b6ab16f3418e761b851c7b74bc0614cee6408db6a648b7");
 uint256 hashGenesisBlockTestNet("0x");
 static CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // TravelFlex: starting difficulty is 1 / 2^12
 CBlockIndex* pindexGenesisBlock = NULL;
@@ -2899,7 +2899,7 @@ bool InitBlockIndex() {
         block.nVersion = 1;
         block.nTime    = 1512213058;
         block.nBits    = bnProofOfWorkLimit.GetCompact();
-        block.nNonce   = 36865;
+        block.nNonce   = 251506;
         if(fTestNet)
         {
             block.nNonce   = 0;
@@ -2929,7 +2929,7 @@ bool InitBlockIndex() {
         printf("block.nNonce = %u\n", block.nNonce);
         fflush(NULL);
 
-        assert(block.hashMerkleRoot == uint256("0xe1c2b5befd679bf1040bb4faf6a602150998d326dbaaa2fad8a4ba606cf41038"));
+        assert(block.hashMerkleRoot == uint256("0xf1df313eb8f45a2ea0c20b3ae264c23f5ae4f39f63e000d15ac8f7ce90d97ee9"));
 
         block.print();
         assert(block.GetHash() == (!fTestNet ? hashGenesisBlock : hashGenesisBlockTestNet));
