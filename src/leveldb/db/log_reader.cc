@@ -16,7 +16,7 @@ Reader::Reporter::~Reporter() {
 }
 
 Reader::Reader(SequentialFile* file, Reporter* reporter, bool checksum,
-               uint64_t initial_offset)
+               uint64_t_t initial_offset)
     : file_(file),
       reporter_(reporter),
       checksum_(checksum),
@@ -34,7 +34,7 @@ Reader::~Reader() {
 
 bool Reader::SkipToInitialBlock() {
   size_t offset_in_block = initial_offset_ % kBlockSize;
-  uint64_t block_start_location = initial_offset_ - offset_in_block;
+  uint64_t_t block_start_location = initial_offset_ - offset_in_block;
 
   // Don't search a block if we'd be in the trailer
   if (offset_in_block > kBlockSize - 6) {
@@ -68,11 +68,11 @@ bool Reader::ReadRecord(Slice* record, std::string* scratch) {
   bool in_fragmented_record = false;
   // Record offset of the logical record that we're reading
   // 0 is a dummy value to make compilers happy
-  uint64_t prospective_record_offset = 0;
+  uint64_t_t prospective_record_offset = 0;
 
   Slice fragment;
   while (true) {
-    uint64_t physical_record_offset = end_of_buffer_offset_ - buffer_.size();
+    uint64_t_t physical_record_offset = end_of_buffer_offset_ - buffer_.size();
     const unsigned int record_type = ReadPhysicalRecord(&fragment);
     switch (record_type) {
       case kFullType:
@@ -161,7 +161,7 @@ bool Reader::ReadRecord(Slice* record, std::string* scratch) {
   return false;
 }
 
-uint64_t Reader::LastRecordOffset() {
+uint64_t_t Reader::LastRecordOffset() {
   return last_record_offset_;
 }
 

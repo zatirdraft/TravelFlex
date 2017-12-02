@@ -166,7 +166,7 @@ class SpecialEnv : public EnvWrapper {
           : target_(target), counter_(counter) {
       }
       virtual ~CountingFile() { delete target_; }
-      virtual Status Read(uint64_t offset, size_t n, Slice* result,
+      virtual Status Read(uint64_t_t offset, size_t n, Slice* result,
                           char* scratch) const {
         counter_->Increment();
         return target_->Read(offset, n, result, scratch);
@@ -415,9 +415,9 @@ class DBTest {
     return static_cast<int>(files.size());
   }
 
-  uint64_t Size(const Slice& start, const Slice& limit) {
+  uint64_t_t Size(const Slice& start, const Slice& limit) {
     Range r(start, limit);
-    uint64_t size;
+    uint64_t_t size;
     db_->GetApproximateSizes(&r, 1, &size);
     return size;
   }
@@ -474,7 +474,7 @@ class DBTest {
   bool DeleteAnSSTFile() {
     std::vector<std::string> filenames;
     ASSERT_OK(env_->GetChildren(dbname_, &filenames));
-    uint64_t number;
+    uint64_t_t number;
     FileType type;
     for (size_t i = 0; i < filenames.size(); i++) {
       if (ParseFileName(filenames[i], &number, &type) && type == kTableFile) {
@@ -1028,7 +1028,7 @@ TEST(DBTest, SparseMerge) {
   ASSERT_LE(dbfull()->TEST_MaxNextLevelOverlappingBytes(), 20*1048576);
 }
 
-static bool Between(uint64_t val, uint64_t low, uint64_t high) {
+static bool Between(uint64_t_t val, uint64_t_t low, uint64_t_t high) {
   bool result = (val >= low) && (val <= high);
   if (!result) {
     fprintf(stderr, "Value %llu is not in range [%llu, %llu]\n",
@@ -1851,7 +1851,7 @@ class ModelDB: public DB {
   virtual bool GetProperty(const Slice& property, std::string* value) {
     return false;
   }
-  virtual void GetApproximateSizes(const Range* r, int n, uint64_t* sizes) {
+  virtual void GetApproximateSizes(const Range* r, int n, uint64_t_t* sizes) {
     for (int i = 0; i < n; i++) {
       sizes[i] = 0;
     }
@@ -2050,7 +2050,7 @@ void BM_LogAndApply(int iters, int num_base_files) {
   VersionSet vset(dbname, &options, NULL, &cmp);
   ASSERT_OK(vset.Recover());
   VersionEdit vbase;
-  uint64_t fnum = 1;
+  uint64_t_t fnum = 1;
   for (int i = 0; i < num_base_files; i++) {
     InternalKey start(MakeKey(2*fnum), 1, kTypeValue);
     InternalKey limit(MakeKey(2*fnum+1), 1, kTypeDeletion);
@@ -2058,7 +2058,7 @@ void BM_LogAndApply(int iters, int num_base_files) {
   }
   ASSERT_OK(vset.LogAndApply(&vbase, &mu));
 
-  uint64_t start_micros = env->NowMicros();
+  uint64_t_t start_micros = env->NowMicros();
 
   for (int i = 0; i < iters; i++) {
     VersionEdit vedit;
@@ -2068,7 +2068,7 @@ void BM_LogAndApply(int iters, int num_base_files) {
     vedit.AddFile(2, fnum++, 1 /* file size */, start, limit);
     vset.LogAndApply(&vedit, &mu);
   }
-  uint64_t stop_micros = env->NowMicros();
+  uint64_t_t stop_micros = env->NowMicros();
   unsigned int us = stop_micros - start_micros;
   char buf[16];
   snprintf(buf, sizeof(buf), "%d", num_base_files);

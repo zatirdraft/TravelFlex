@@ -115,9 +115,9 @@ class StringSource: public RandomAccessFile {
 
   virtual ~StringSource() { }
 
-  uint64_t Size() const { return contents_.size(); }
+  uint64_t_t Size() const { return contents_.size(); }
 
-  virtual Status Read(uint64_t offset, size_t n, Slice* result,
+  virtual Status Read(uint64_t_t offset, size_t n, Slice* result,
                        char* scratch) const {
     if (offset > contents_.size()) {
       return Status::InvalidArgument("invalid Read offset");
@@ -254,7 +254,7 @@ class TableConstructor: public Constructor {
     return table_->NewIterator(ReadOptions());
   }
 
-  uint64_t ApproximateOffsetOf(const Slice& key) const {
+  uint64_t_t ApproximateOffsetOf(const Slice& key) const {
     return table_->ApproximateOffsetOf(key);
   }
 
@@ -784,7 +784,7 @@ TEST(MemTableTest, Simple) {
   memtable->Unref();
 }
 
-static bool Between(uint64_t val, uint64_t low, uint64_t high) {
+static bool Between(uint64_t_t val, uint64_t_t low, uint64_t_t high) {
   bool result = (val >= low) && (val <= high);
   if (!result) {
     fprintf(stderr, "Value %llu is not in range [%llu, %llu]\n",

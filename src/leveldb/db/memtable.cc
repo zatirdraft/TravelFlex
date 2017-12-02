@@ -113,7 +113,7 @@ bool MemTable::Get(const LookupKey& key, std::string* value, Status* s) {
     // entry format is:
     //    klength  varint32
     //    userkey  char[klength]
-    //    tag      uint64
+    //    tag      uint64_t
     //    vlength  varint32
     //    value    char[vlength]
     // Check that it belongs to same user key.  We do not check the
@@ -126,7 +126,7 @@ bool MemTable::Get(const LookupKey& key, std::string* value, Status* s) {
             Slice(key_ptr, key_length - 8),
             key.user_key()) == 0) {
       // Correct user key
-      const uint64_t tag = DecodeFixed64(key_ptr + key_length - 8);
+      const uint64_t_t tag = DecodeFixed64(key_ptr + key_length - 8);
       switch (static_cast<ValueType>(tag & 0xff)) {
         case kTypeValue: {
           Slice v = GetLengthPrefixedSlice(key_ptr + key_length);

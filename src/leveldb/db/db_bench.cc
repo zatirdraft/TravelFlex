@@ -165,7 +165,7 @@ class Stats {
   double seconds_;
   int done_;
   int next_report_;
-  int64_t bytes_;
+  int64_t_t bytes_;
   double last_op_finish_;
   Histogram hist_;
   std::string message_;
@@ -232,7 +232,7 @@ class Stats {
     }
   }
 
-  void AddBytes(int64_t n) {
+  void AddBytes(int64_t_t n) {
     bytes_ += n;
   }
 
@@ -320,7 +320,7 @@ class Benchmark {
             static_cast<int>(FLAGS_value_size * FLAGS_compression_ratio + 0.5));
     fprintf(stdout, "Entries:    %d\n", num_);
     fprintf(stdout, "RawSize:    %.1f MB (estimated)\n",
-            ((static_cast<int64_t>(kKeySize + FLAGS_value_size) * num_)
+            ((static_cast<int64_t_t>(kKeySize + FLAGS_value_size) * num_)
              / 1048576.0));
     fprintf(stdout, "FileSize:   %.1f MB (estimated)\n",
             (((kKeySize + FLAGS_value_size * FLAGS_compression_ratio) * num_)
@@ -610,7 +610,7 @@ class Benchmark {
     const int size = 4096;
     const char* label = "(4K per op)";
     std::string data(size, 'x');
-    int64_t bytes = 0;
+    int64_t_t bytes = 0;
     uint32_t crc = 0;
     while (bytes < 500 * 1048576) {
       crc = crc32c::Value(data.data(), size);
@@ -643,8 +643,8 @@ class Benchmark {
   void SnappyCompress(ThreadState* thread) {
     RandomGenerator gen;
     Slice input = gen.Generate(Options().block_size);
-    int64_t bytes = 0;
-    int64_t produced = 0;
+    int64_t_t bytes = 0;
+    int64_t_t produced = 0;
     bool ok = true;
     std::string compressed;
     while (ok && bytes < 1024 * 1048576) {  // Compress 1G
@@ -670,7 +670,7 @@ class Benchmark {
     Slice input = gen.Generate(Options().block_size);
     std::string compressed;
     bool ok = port::Snappy_Compress(input.data(), input.size(), &compressed);
-    int64_t bytes = 0;
+    int64_t_t bytes = 0;
     char* uncompressed = new char[input.size()];
     while (ok && bytes < 1024 * 1048576) {  // Compress 1G
       ok =  port::Snappy_Uncompress(compressed.data(), compressed.size(),
@@ -720,7 +720,7 @@ class Benchmark {
     RandomGenerator gen;
     WriteBatch batch;
     Status s;
-    int64_t bytes = 0;
+    int64_t_t bytes = 0;
     for (int i = 0; i < num_; i += entries_per_batch_) {
       batch.Clear();
       for (int j = 0; j < entries_per_batch_; j++) {
@@ -743,7 +743,7 @@ class Benchmark {
   void ReadSequential(ThreadState* thread) {
     Iterator* iter = db_->NewIterator(ReadOptions());
     int i = 0;
-    int64_t bytes = 0;
+    int64_t_t bytes = 0;
     for (iter->SeekToFirst(); i < reads_ && iter->Valid(); iter->Next()) {
       bytes += iter->key().size() + iter->value().size();
       thread->stats.FinishedSingleOp();
@@ -756,7 +756,7 @@ class Benchmark {
   void ReadReverse(ThreadState* thread) {
     Iterator* iter = db_->NewIterator(ReadOptions());
     int i = 0;
-    int64_t bytes = 0;
+    int64_t_t bytes = 0;
     for (iter->SeekToLast(); i < reads_ && iter->Valid(); iter->Prev()) {
       bytes += iter->key().size() + iter->value().size();
       thread->stats.FinishedSingleOp();

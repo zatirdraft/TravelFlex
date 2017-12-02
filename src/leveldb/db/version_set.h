@@ -185,15 +185,15 @@ class VersionSet {
   Version* current() const { return current_; }
 
   // Return the current manifest file number
-  uint64_t ManifestFileNumber() const { return manifest_file_number_; }
+  uint64_t_t ManifestFileNumber() const { return manifest_file_number_; }
 
   // Allocate and return a new file number
-  uint64_t NewFileNumber() { return next_file_number_++; }
+  uint64_t_t NewFileNumber() { return next_file_number_++; }
 
   // Arrange to reuse "file_number" unless a newer file number has
   // already been allocated.
   // REQUIRES: "file_number" was returned by a call to NewFileNumber().
-  void ReuseFileNumber(uint64_t file_number) {
+  void ReuseFileNumber(uint64_t_t file_number) {
     if (next_file_number_ == file_number + 1) {
       next_file_number_ = file_number;
     }
@@ -203,26 +203,26 @@ class VersionSet {
   int NumLevelFiles(int level) const;
 
   // Return the combined file size of all files at the specified level.
-  int64_t NumLevelBytes(int level) const;
+  int64_t_t NumLevelBytes(int level) const;
 
   // Return the last sequence number.
-  uint64_t LastSequence() const { return last_sequence_; }
+  uint64_t_t LastSequence() const { return last_sequence_; }
 
   // Set the last sequence number to s.
-  void SetLastSequence(uint64_t s) {
+  void SetLastSequence(uint64_t_t s) {
     assert(s >= last_sequence_);
     last_sequence_ = s;
   }
 
   // Mark the specified file number as used.
-  void MarkFileNumberUsed(uint64_t number);
+  void MarkFileNumberUsed(uint64_t_t number);
 
   // Return the current log file number.
-  uint64_t LogNumber() const { return log_number_; }
+  uint64_t_t LogNumber() const { return log_number_; }
 
   // Return the log file number for the log file that is currently
   // being compacted, or zero if there is no such log file.
-  uint64_t PrevLogNumber() const { return prev_log_number_; }
+  uint64_t_t PrevLogNumber() const { return prev_log_number_; }
 
   // Pick level and inputs for a new compaction.
   // Returns NULL if there is no compaction to be done.
@@ -241,7 +241,7 @@ class VersionSet {
 
   // Return the maximum overlapping data (in bytes) at next level for any
   // file at a level >= 1.
-  int64_t MaxNextLevelOverlappingBytes();
+  int64_t_t MaxNextLevelOverlappingBytes();
 
   // Create an iterator that reads over the compaction inputs for "*c".
   // The caller should delete the iterator when no longer needed.
@@ -255,11 +255,11 @@ class VersionSet {
 
   // Add all files listed in any live version to *live.
   // May also mutate some internal state.
-  void AddLiveFiles(std::set<uint64_t>* live);
+  void AddLiveFiles(std::set<uint64_t_t>* live);
 
   // Return the approximate offset in the database of the data for
   // "key" as of version "v".
-  uint64_t ApproximateOffsetOf(Version* v, const InternalKey& key);
+  uint64_t_t ApproximateOffsetOf(Version* v, const InternalKey& key);
 
   // Return a human-readable short (single-line) summary of the number
   // of files per level.  Uses *scratch as backing store.
@@ -299,11 +299,11 @@ class VersionSet {
   const Options* const options_;
   TableCache* const table_cache_;
   const InternalKeyComparator icmp_;
-  uint64_t next_file_number_;
-  uint64_t manifest_file_number_;
-  uint64_t last_sequence_;
-  uint64_t log_number_;
-  uint64_t prev_log_number_;  // 0 or backing store for memtable being compacted
+  uint64_t_t next_file_number_;
+  uint64_t_t manifest_file_number_;
+  uint64_t_t last_sequence_;
+  uint64_t_t log_number_;
+  uint64_t_t prev_log_number_;  // 0 or backing store for memtable being compacted
 
   // Opened lazily
   WritableFile* descriptor_file_;
@@ -340,7 +340,7 @@ class Compaction {
   FileMetaData* input(int which, int i) const { return inputs_[which][i]; }
 
   // Maximum size of files to build during this compaction.
-  uint64_t MaxOutputFileSize() const { return max_output_file_size_; }
+  uint64_t_t MaxOutputFileSize() const { return max_output_file_size_; }
 
   // Is this a trivial compaction that can be implemented by just
   // moving a single input file to the next level (no merging or splitting)
@@ -369,7 +369,7 @@ class Compaction {
   explicit Compaction(int level);
 
   int level_;
-  uint64_t max_output_file_size_;
+  uint64_t_t max_output_file_size_;
   Version* input_version_;
   VersionEdit edit_;
 
@@ -381,7 +381,7 @@ class Compaction {
   std::vector<FileMetaData*> grandparents_;
   size_t grandparent_index_;  // Index in grandparent_starts_
   bool seen_key_;             // Some output key has been seen
-  int64_t overlapped_bytes_;  // Bytes of overlap between current output
+  int64_t_t overlapped_bytes_;  // Bytes of overlap between current output
                               // and grandparent files
 
   // State for implementing IsBaseLevelForKey

@@ -30,18 +30,18 @@ enum FileType {
 // Return the name of the log file with the specified number
 // in the db named by "dbname".  The result will be prefixed with
 // "dbname".
-extern std::string LogFileName(const std::string& dbname, uint64_t number);
+extern std::string LogFileName(const std::string& dbname, uint64_t_t number);
 
 // Return the name of the sstable with the specified number
 // in the db named by "dbname".  The result will be prefixed with
 // "dbname".
-extern std::string TableFileName(const std::string& dbname, uint64_t number);
+extern std::string TableFileName(const std::string& dbname, uint64_t_t number);
 
 // Return the name of the descriptor file for the db named by
 // "dbname" and the specified incarnation number.  The result will be
 // prefixed with "dbname".
 extern std::string DescriptorFileName(const std::string& dbname,
-                                      uint64_t number);
+                                      uint64_t_t number);
 
 // Return the name of the current file.  This file contains the name
 // of the current manifest file.  The result will be prefixed with
@@ -54,7 +54,7 @@ extern std::string LockFileName(const std::string& dbname);
 
 // Return the name of a temporary file owned by the db named "dbname".
 // The result will be prefixed with "dbname".
-extern std::string TempFileName(const std::string& dbname, uint64_t number);
+extern std::string TempFileName(const std::string& dbname, uint64_t_t number);
 
 // Return the name of the info log file for "dbname".
 extern std::string InfoLogFileName(const std::string& dbname);
@@ -66,13 +66,13 @@ extern std::string OldInfoLogFileName(const std::string& dbname);
 // The number encoded in the filename is stored in *number.  If the
 // filename was successfully parsed, returns true.  Else return false.
 extern bool ParseFileName(const std::string& filename,
-                          uint64_t* number,
+                          uint64_t_t* number,
                           FileType* type);
 
 // Make the CURRENT file point to the descriptor file with the
 // specified number.
 extern Status SetCurrentFile(Env* env, const std::string& dbname,
-                             uint64_t descriptor_number);
+                             uint64_t_t descriptor_number);
 
 
 }  // namespace leveldb

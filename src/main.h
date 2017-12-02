@@ -50,12 +50,12 @@ static const unsigned int UNDOFILE_CHUNK_SIZE = 0x100000; // 1 MiB
 /** Fake height value used in CCoins to signify they are only in the memory pool (since 0.8) */
 static const unsigned int MEMPOOL_HEIGHT = 0x7FFFFFFF;
 /** Dust Soft Limit, allowed with additional fee per output */
-static const int64 DUST_SOFT_LIMIT = 1000000000; // 10 TRF
+static const int64_t DUST_SOFT_LIMIT = 1000000000; // 10 TRF
 /** Dust Hard Limit, ignored as wallet inputs (mininput default) */
-static const int64 DUST_HARD_LIMIT = 1000000;   // 0.01 TRF mininput
+static const int64_t DUST_HARD_LIMIT = 1000000;   // 0.01 TRF mininput
 /** No amount larger than this (in satoshi) is valid */
-static const int64 MAX_MONEY = 10000000000 * COIN;
-inline bool MoneyRange(int64 nValue) { return (nValue >= 0 && nValue <= MAX_MONEY); }
+static const int64_t MAX_MONEY = 10000000000 * COIN;
+inline bool MoneyRange(int64_t nValue) { return (nValue >= 0 && nValue <= MAX_MONEY); }
 /** Coinbase transaction outputs can only be spent after this number of new blocks (network rule) */
 static const int COINBASE_MATURITY = 100;
 /** Threshold for nLockTime: below this value it is interpreted as block number, otherwise as UNIX timestamp. */
@@ -87,12 +87,12 @@ extern uint256 nBestInvalidWork;
 extern uint256 hashBestChain;
 extern CBlockIndex* pindexBest;
 extern unsigned int nTransactionsUpdated;
-extern uint64 nLastBlockTx;
-extern uint64 nLastBlockSize;
+extern uint64_t nLastBlockTx;
+extern uint64_t nLastBlockSize;
 extern const std::string strMessageMagic;
 extern double dHashesPerSec;
-extern int64 nHPSTimerStart;
-extern int64 nTimeBestReceived;
+extern int64_t nHPSTimerStart;
+extern int64_t nTimeBestReceived;
 extern CCriticalSection cs_setpwalletRegistered;
 extern std::set<CWallet*> setpwalletRegistered;
 extern unsigned char pchMessageStart[4];
@@ -104,11 +104,11 @@ extern bool fTxIndex;
 extern unsigned int nCoinCacheSize;
 
 // Settings
-extern int64 nTransactionFee;
-extern int64 nMinimumInputValue;
+extern int64_t nTransactionFee;
+extern int64_t nMinimumInputValue;
 
 // Minimum disk space required - used in CheckDiskSpace()
-static const uint64 nMinDiskSpace = 52428800;
+static const uint64_t nMinDiskSpace = 52428800;
 
 
 class CReserveKey;
@@ -133,7 +133,7 @@ void SyncWithWallets(const uint256 &hash, const CTransaction& tx, const CBlock* 
 /** Process an incoming block */
 bool ProcessBlock(CValidationState &state, CNode* pfrom, CBlock* pblock, CDiskBlockPos *dbp = NULL);
 /** Check whether enough disk space is available for an incoming block */
-bool CheckDiskSpace(uint64 nAdditionalBytes = 0);
+bool CheckDiskSpace(uint64_t nAdditionalBytes = 0);
 /** Open a block file (blk?????.dat) */
 FILE* OpenBlockFile(const CDiskBlockPos &pos, bool fReadOnly = false);
 /** Open an undo file (rev?????.dat) */
@@ -172,7 +172,7 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey);
 /** Check whether a block hash satisfies the proof-of-work requirement specified by nBits */
 bool CheckProofOfWork(uint256 hash, unsigned int nBits);
 /** Calculate the minimum amount of work a received block needs, without knowing its direct parent */
-unsigned int ComputeMinWork(unsigned int nBase, int64 nTime);
+unsigned int ComputeMinWork(unsigned int nBase, int64_t nTime);
 /** Get the number of active peers */
 int GetNumBlocksOfPeers();
 /** Check whether we are doing an initial block download (synchronizing from disk or network) */
@@ -399,7 +399,7 @@ public:
 class CTxOut
 {
 public:
-    int64 nValue;
+    int64_t nValue;
     CScript scriptPubKey;
 
     CTxOut()
@@ -407,7 +407,7 @@ public:
         SetNull();
     }
 
-    CTxOut(int64 nValueIn, CScript scriptPubKeyIn)
+    CTxOut(int64_t nValueIn, CScript scriptPubKeyIn)
     {
         nValue = nValueIn;
         scriptPubKey = scriptPubKeyIn;
@@ -476,8 +476,8 @@ enum GetMinFee_mode
 class CTransaction
 {
 public:
-    static int64 nMinTxFee;
-    static int64 nMinRelayTxFee;
+    static int64_t nMinTxFee;
+    static int64_t nMinRelayTxFee;
     static const int CURRENT_VERSION=1;
     int nVersion;
     std::vector<CTxIn> vin;
@@ -516,7 +516,7 @@ public:
         return SerializeHash(*this);
     }
 
-    bool IsFinal(int nBlockHeight=0, int64 nBlockTime=0) const
+    bool IsFinal(int nBlockHeight=0, int64_t nBlockTime=0) const
     {
         // Time based nLockTime implemented in 0.1.6
         if (nLockTime == 0)
@@ -525,7 +525,7 @@ public:
             nBlockHeight = nBestHeight;
         if (nBlockTime == 0)
             nBlockTime = GetAdjustedTime();
-        if ((int64)nLockTime < ((int64)nLockTime < LOCKTIME_THRESHOLD ? (int64)nBlockHeight : nBlockTime))
+        if ((int64_t)nLockTime < ((int64_t)nLockTime < LOCKTIME_THRESHOLD ? (int64_t)nBlockHeight : nBlockTime))
             return true;
         BOOST_FOREACH(const CTxIn& txin, vin)
             if (!txin.IsFinal())
@@ -598,9 +598,9 @@ public:
     /** Amount of bitcoins spent by this transaction.
         @return sum of all outputs (note: does not include fees)
      */
-    int64 GetValueOut() const
+    int64_t GetValueOut() const
     {
-        int64 nValueOut = 0;
+        int64_t nValueOut = 0;
         BOOST_FOREACH(const CTxOut& txout, vout)
         {
             nValueOut += txout.nValue;
@@ -617,7 +617,7 @@ public:
         @param[in] mapInputs	Map of previous transactions that have outputs we're spending
         @return	Sum of value of all inputs (scriptSigs)
      */
-    int64 GetValueIn(CCoinsViewCache& mapInputs) const;
+    int64_t GetValueIn(CCoinsViewCache& mapInputs) const;
 
     static bool AllowFree(double dPriority)
     {
@@ -629,7 +629,7 @@ public:
 // Apply the effects of this transaction on the UTXO set represented by view
 void UpdateCoins(const CTransaction& tx, CValidationState &state, CCoinsViewCache &inputs, CTxUndo &txundo, int nHeight, const uint256 &txhash);
 
-    int64 GetMinFee(unsigned int nBlockSize=1, bool fAllowFree=true, enum GetMinFee_mode mode=GMF_BLOCK) const;
+    int64_t GetMinFee(unsigned int nBlockSize=1, bool fAllowFree=true, enum GetMinFee_mode mode=GMF_BLOCK) const;
 
     friend bool operator==(const CTransaction& a, const CTransaction& b)
     {
@@ -697,17 +697,17 @@ private:
     CTxOut &txout;
 
 public:
-    static uint64 CompressAmount(uint64 nAmount);
-    static uint64 DecompressAmount(uint64 nAmount);
+    static uint64_t CompressAmount(uint64_t nAmount);
+    static uint64_t DecompressAmount(uint64_t nAmount);
 
     CTxOutCompressor(CTxOut &txoutIn) : txout(txoutIn) { }
 
     IMPLEMENT_SERIALIZE(({
         if (!fRead) {
-            uint64 nVal = CompressAmount(txout.nValue);
+            uint64_t nVal = CompressAmount(txout.nValue);
             READWRITE(VARINT(nVal));
         } else {
-            uint64 nVal = 0;
+            uint64_t nVal = 0;
             READWRITE(VARINT(nVal));
             txout.nValue = DecompressAmount(nVal);
         }
@@ -1322,9 +1322,9 @@ public:
         return Hash(BEGIN(nVersion), END(nNonce));
     }
 
-    int64 GetBlockTime() const
+    int64_t GetBlockTime() const
     {
-        return (int64)nTime;
+        return (int64_t)nTime;
     }
 
     void UpdateTime(const CBlockIndex* pindexPrev);
@@ -1548,8 +1548,8 @@ public:
     unsigned int nUndoSize;    // number of used bytes in the undo file
     unsigned int nHeightFirst; // lowest height of block in file
     unsigned int nHeightLast;  // highest height of block in file
-    uint64 nTimeFirst;         // earliest time of block in file
-    uint64 nTimeLast;          // latest time of block in file
+    uint64_t nTimeFirst;         // earliest time of block in file
+    uint64_t nTimeLast;          // latest time of block in file
 
     IMPLEMENT_SERIALIZE(
         READWRITE(VARINT(nBlocks));
@@ -1580,7 +1580,7 @@ public:
      }
 
      // update statistics (does not update nSize)
-     void AddBlock(unsigned int nHeightIn, uint64 nTimeIn) {
+     void AddBlock(unsigned int nHeightIn, uint64_t nTimeIn) {
          if (nBlocks==0 || nHeightFirst > nHeightIn)
              nHeightFirst = nHeightIn;
          if (nBlocks==0 || nTimeFirst > nTimeIn)
@@ -1745,9 +1745,9 @@ public:
         return *phashBlock;
     }
 
-    int64 GetBlockTime() const
+    int64_t GetBlockTime() const
     {
-        return (int64)nTime;
+        return (int64_t)nTime;
     }
 
     CBigNum GetBlockWork() const
@@ -1773,11 +1773,11 @@ public:
 
     enum { nMedianTimeSpan=11 };
 
-    int64 GetMedianTimePast() const
+    int64_t GetMedianTimePast() const
     {
-        int64 pmedian[nMedianTimeSpan];
-        int64* pbegin = &pmedian[nMedianTimeSpan];
-        int64* pend = &pmedian[nMedianTimeSpan];
+        int64_t pmedian[nMedianTimeSpan];
+        int64_t* pbegin = &pmedian[nMedianTimeSpan];
+        int64_t* pend = &pmedian[nMedianTimeSpan];
 
         const CBlockIndex* pindex = this;
         for (int i = 0; i < nMedianTimeSpan && pindex; i++, pindex = pindex->pprev)
@@ -1787,7 +1787,7 @@ public:
         return pbegin[(pend - pbegin)/2];
     }
 
-    int64 GetMedianTime() const
+    int64_t GetMedianTime() const
     {
         const CBlockIndex* pindex = this;
         for (int i = 0; i < nMedianTimeSpan/2; i++)
@@ -2132,11 +2132,11 @@ struct CCoinsStats
 {
     int nHeight;
     uint256 hashBlock;
-    uint64 nTransactions;
-    uint64 nTransactionOutputs;
-    uint64 nSerializedSize;
+    uint64_t nTransactions;
+    uint64_t nTransactionOutputs;
+    uint64_t nSerializedSize;
     uint256 hashSerialized;
-    int64 nTotalAmount;
+    int64_t nTotalAmount;
 
     CCoinsStats() : nHeight(0), hashBlock(0), nTransactions(0), nTransactionOutputs(0), nSerializedSize(0), hashSerialized(0), nTotalAmount(0) {}
 };
@@ -2245,8 +2245,8 @@ extern CBlockTreeDB *pblocktree;
 struct CBlockTemplate
 {
     CBlock block;
-    std::vector<int64_t> vTxFees;
-    std::vector<int64_t> vTxSigOps;
+    std::vector<int64_t_t> vTxFees;
+    std::vector<int64_t_t> vTxSigOps;
 };
 
 #if defined(_M_IX86) || defined(__i386__) || defined(__i386) || defined(_M_X64) || defined(__x86_64__) || defined(_M_AMD64)

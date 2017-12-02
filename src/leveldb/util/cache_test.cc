@@ -174,8 +174,8 @@ TEST(CacheTest, HeavyEntries) {
 }
 
 TEST(CacheTest, NewId) {
-  uint64_t a = cache_->NewId();
-  uint64_t b = cache_->NewId();
+  uint64_t_t a = cache_->NewId();
+  uint64_t_t b = cache_->NewId();
   ASSERT_NE(a, b);
 }
 

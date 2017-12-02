@@ -30,7 +30,7 @@ class FilterBlockBuilder {
  public:
   explicit FilterBlockBuilder(const FilterPolicy*);
 
-  void StartBlock(uint64_t block_offset);
+  void StartBlock(uint64_t_t block_offset);
   void AddKey(const Slice& key);
   Slice Finish();
 
@@ -53,7 +53,7 @@ class FilterBlockReader {
  public:
  // REQUIRES: "contents" and *policy must stay live while *this is live.
   FilterBlockReader(const FilterPolicy* policy, const Slice& contents);
-  bool KeyMayMatch(uint64_t block_offset, const Slice& key);
+  bool KeyMayMatch(uint64_t_t block_offset, const Slice& key);
 
  private:
   const FilterPolicy* policy_;

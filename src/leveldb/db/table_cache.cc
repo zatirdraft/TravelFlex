@@ -42,7 +42,7 @@ TableCache::~TableCache() {
   delete cache_;
 }
 
-Status TableCache::FindTable(uint64_t file_number, uint64_t file_size,
+Status TableCache::FindTable(uint64_t_t file_number, uint64_t_t file_size,
                              Cache::Handle** handle) {
   Status s;
   char buf[sizeof(file_number)];
@@ -74,8 +74,8 @@ Status TableCache::FindTable(uint64_t file_number, uint64_t file_size,
 }
 
 Iterator* TableCache::NewIterator(const ReadOptions& options,
-                                  uint64_t file_number,
-                                  uint64_t file_size,
+                                  uint64_t_t file_number,
+                                  uint64_t_t file_size,
                                   Table** tableptr) {
   if (tableptr != NULL) {
     *tableptr = NULL;
@@ -97,8 +97,8 @@ Iterator* TableCache::NewIterator(const ReadOptions& options,
 }
 
 Status TableCache::Get(const ReadOptions& options,
-                       uint64_t file_number,
-                       uint64_t file_size,
+                       uint64_t_t file_number,
+                       uint64_t_t file_size,
                        const Slice& k,
                        void* arg,
                        void (*saver)(void*, const Slice&, const Slice&)) {
@@ -112,7 +112,7 @@ Status TableCache::Get(const ReadOptions& options,
   return s;
 }
 
-void TableCache::Evict(uint64_t file_number) {
+void TableCache::Evict(uint64_t_t file_number) {
   char buf[sizeof(file_number)];
   EncodeFixed64(buf, file_number);
   cache_->Erase(Slice(buf, sizeof(buf)));

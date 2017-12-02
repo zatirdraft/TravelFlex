@@ -68,11 +68,11 @@ class TableBuilder {
   void Abandon();
 
   // Number of calls to Add() so far.
-  uint64_t NumEntries() const;
+  uint64_t_t NumEntries() const;
 
   // Size of the file generated so far.  If invoked after a successful
   // Finish() call, returns the size of the final generated file.
-  uint64_t FileSize() const;
+  uint64_t_t FileSize() const;
 
  private:
   bool ok() const { return status().ok(); }

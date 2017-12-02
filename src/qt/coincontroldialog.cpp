@@ -23,7 +23,7 @@
 #include <QTreeWidgetItem>
 
 using namespace std;
-QList<qint64> CoinControlDialog::payAmounts;
+QList<qint64_t> CoinControlDialog::payAmounts;
 CCoinControl* CoinControlDialog::coinControl = new CCoinControl();
 
 CoinControlDialog::CoinControlDialog(QWidget *parent) :
@@ -118,11 +118,11 @@ CoinControlDialog::CoinControlDialog(QWidget *parent) :
     ui->treeWidget->setColumnWidth(COLUMN_PRIORITY, 100);
     ui->treeWidget->setColumnHidden(COLUMN_TXHASH, true);         // store transacton hash in this column, but dont show it
     ui->treeWidget->setColumnHidden(COLUMN_VOUT_INDEX, true);     // store vout index in this column, but dont show it
-    ui->treeWidget->setColumnHidden(COLUMN_AMOUNT_INT64, true);   // store amount int64 in this column, but dont show it
-    ui->treeWidget->setColumnHidden(COLUMN_PRIORITY_INT64, true); // store priority int64 in this column, but dont show it
+    ui->treeWidget->setColumnHidden(COLUMN_AMOUNT_int64_t, true);   // store amount int64_t in this column, but dont show it
+    ui->treeWidget->setColumnHidden(COLUMN_PRIORITY_int64_t, true); // store priority int64_t in this column, but dont show it
    
     // default view is sorted by amount desc
-    sortView(COLUMN_AMOUNT_INT64, Qt::DescendingOrder);
+    sortView(COLUMN_AMOUNT_int64_t, Qt::DescendingOrder);
 }
 
 CoinControlDialog::~CoinControlDialog()
@@ -322,7 +322,7 @@ void CoinControlDialog::sortView(int column, Qt::SortOrder order)
     sortColumn = column;
     sortOrder = order;
     ui->treeWidget->sortItems(column, order);
-    ui->treeWidget->header()->setSortIndicator((sortColumn == COLUMN_AMOUNT_INT64 ? COLUMN_AMOUNT : (sortColumn == COLUMN_PRIORITY_INT64 ? COLUMN_PRIORITY : sortColumn)), sortOrder);
+    ui->treeWidget->header()->setSortIndicator((sortColumn == COLUMN_AMOUNT_int64_t ? COLUMN_AMOUNT : (sortColumn == COLUMN_PRIORITY_int64_t ? COLUMN_PRIORITY : sortColumn)), sortOrder);
 }
 
 // treeview: clicked on header
@@ -330,22 +330,22 @@ void CoinControlDialog::headerSectionClicked(int logicalIndex)
 {
     if (logicalIndex == COLUMN_CHECKBOX) // click on most left column -> do nothing
     {      
-        ui->treeWidget->header()->setSortIndicator((sortColumn == COLUMN_AMOUNT_INT64 ? COLUMN_AMOUNT : (sortColumn == COLUMN_PRIORITY_INT64 ? COLUMN_PRIORITY : sortColumn)), sortOrder);
+        ui->treeWidget->header()->setSortIndicator((sortColumn == COLUMN_AMOUNT_int64_t ? COLUMN_AMOUNT : (sortColumn == COLUMN_PRIORITY_int64_t ? COLUMN_PRIORITY : sortColumn)), sortOrder);
     }
     else
     {
         if (logicalIndex == COLUMN_AMOUNT) // sort by amount
-            logicalIndex = COLUMN_AMOUNT_INT64;
+            logicalIndex = COLUMN_AMOUNT_int64_t;
             
         if (logicalIndex == COLUMN_PRIORITY) // sort by priority
-            logicalIndex = COLUMN_PRIORITY_INT64;
+            logicalIndex = COLUMN_PRIORITY_int64_t;
             
         if (sortColumn == logicalIndex)
             sortOrder = ((sortOrder == Qt::AscendingOrder) ? Qt::DescendingOrder : Qt::AscendingOrder);
         else
         {
             sortColumn = logicalIndex;
-            sortOrder = ((sortColumn == COLUMN_AMOUNT_INT64 || sortColumn == COLUMN_PRIORITY_INT64 || sortColumn == COLUMN_DATE || sortColumn == COLUMN_CONFIRMATIONS) ? Qt::DescendingOrder : Qt::AscendingOrder); // if amount,date,conf,priority then default => desc, else default => asc
+            sortOrder = ((sortColumn == COLUMN_AMOUNT_int64_t || sortColumn == COLUMN_PRIORITY_int64_t || sortColumn == COLUMN_DATE || sortColumn == COLUMN_CONFIRMATIONS) ? Qt::DescendingOrder : Qt::AscendingOrder); // if amount,date,conf,priority then default => desc, else default => asc
         }
 
         sortView(sortColumn, sortOrder);
@@ -422,12 +422,12 @@ void CoinControlDialog::updateLabels(WalletModel *model, QDialog* dialog)
     if (!model) return;
 
     // nPayAmount
-    qint64 nPayAmount = 0;
+    qint64_t nPayAmount = 0;
     bool fLowOutput = false;
     bool fDust = false;
     unsigned int nQuantityDust = 0;
     CTransaction txDummy;
-    foreach(const qint64 &amount, CoinControlDialog::payAmounts)
+    foreach(const qint64_t &amount, CoinControlDialog::payAmounts)
     {
         nPayAmount += amount;
         
@@ -446,10 +446,10 @@ void CoinControlDialog::updateLabels(WalletModel *model, QDialog* dialog)
     }
 
     QString sPriorityLabel      = "";
-    int64 nAmount               = 0;
-    int64 nPayFee               = 0;
-    int64 nAfterFee             = 0;
-    int64 nChange               = 0;
+    int64_t nAmount               = 0;
+    int64_t nPayFee               = 0;
+    int64_t nAfterFee             = 0;
+    int64_t nChange               = 0;
     unsigned int nBytes         = 0;
     unsigned int nBytesInputs   = 0;
     double dPriority            = 0;
@@ -506,10 +506,10 @@ void CoinControlDialog::updateLabels(WalletModel *model, QDialog* dialog)
         sPriorityLabel = CoinControlDialog::getPriorityLabel(dPriority);
         
         // Fee
-        int64 nFee = nTransactionFee * (1 + (int64)nBytes / 1000);
+        int64_t nFee = nTransactionFee * (1 + (int64_t)nBytes / 1000);
         
         // Min Fee
-        int64 nMinFee = CTransaction::nMinTxFee * (1 + (int64)nBytes / 1000) + CTransaction::nMinTxFee * nQuantityDust;
+        int64_t nMinFee = CTransaction::nMinTxFee * (1 + (int64_t)nBytes / 1000) + CTransaction::nMinTxFee * nQuantityDust;
         if (CTransaction::AllowFree(dPriority) && nBytes < 5000)
             nMinFee = 0;
         
@@ -659,7 +659,7 @@ void CoinControlDialog::updateView()
             itemWalletAddress->setText(COLUMN_ADDRESS, sWalletAddress);
         }
 
-        int64 nSum = 0;
+        int64_t nSum = 0;
         double dPrioritySum = 0;
         int nChildren = 0;
         int nInputSum = 0;
@@ -711,7 +711,7 @@ void CoinControlDialog::updateView()
 
             // amount
             itemOutput->setText(COLUMN_AMOUNT, BitcoinUnits::format(nDisplayUnit, out.tx->vout[out.i].nValue));
-            itemOutput->setText(COLUMN_AMOUNT_INT64, strPad(QString::number(out.tx->vout[out.i].nValue), 15, " ")); // padding so that sorting works correctly
+            itemOutput->setText(COLUMN_AMOUNT_int64_t, strPad(QString::number(out.tx->vout[out.i].nValue), 15, " ")); // padding so that sorting works correctly
 
             // date
             itemOutput->setText(COLUMN_DATE, QDateTime::fromTime_t(out.tx->GetTxTime()).toString("yy-MM-dd hh:mm"));
@@ -722,7 +722,7 @@ void CoinControlDialog::updateView()
             // priority
             double dPriority = ((double)out.tx->vout[out.i].nValue  / (nInputSize + 78)) * (out.nDepth+1); // 78 = 2 * 34 + 10
             itemOutput->setText(COLUMN_PRIORITY, CoinControlDialog::getPriorityLabel(dPriority));
-            itemOutput->setText(COLUMN_PRIORITY_INT64, strPad(QString::number((int64)dPriority), 20, " "));
+            itemOutput->setText(COLUMN_PRIORITY_int64_t, strPad(QString::number((int64_t)dPriority), 20, " "));
             dPrioritySum += (double)out.tx->vout[out.i].nValue  * (out.nDepth+1);
             nInputSum    += nInputSize;
             
@@ -753,9 +753,9 @@ void CoinControlDialog::updateView()
             dPrioritySum = dPrioritySum / (nInputSum + 78);
             itemWalletAddress->setText(COLUMN_CHECKBOX, "(" + QString::number(nChildren) + ")");
             itemWalletAddress->setText(COLUMN_AMOUNT, BitcoinUnits::format(nDisplayUnit, nSum));
-            itemWalletAddress->setText(COLUMN_AMOUNT_INT64, strPad(QString::number(nSum), 15, " "));
+            itemWalletAddress->setText(COLUMN_AMOUNT_int64_t, strPad(QString::number(nSum), 15, " "));
             itemWalletAddress->setText(COLUMN_PRIORITY, CoinControlDialog::getPriorityLabel(dPrioritySum));
-            itemWalletAddress->setText(COLUMN_PRIORITY_INT64, strPad(QString::number((int64)dPrioritySum), 20, " "));
+            itemWalletAddress->setText(COLUMN_PRIORITY_int64_t, strPad(QString::number((int64_t)dPrioritySum), 20, " "));
         }
     }
     

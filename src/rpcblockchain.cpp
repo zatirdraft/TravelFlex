@@ -5,6 +5,7 @@
 
 #include "main.h"
 #include "bitcoinrpc.h"
+#include <stdint.h>
 
 using namespace json_spirit;
 using namespace std;
@@ -58,8 +59,8 @@ Object blockToJSON(const CBlock& block, const CBlockIndex* blockindex)
     BOOST_FOREACH(const CTransaction&tx, block.vtx)
         txs.push_back(tx.GetHash().GetHex());
     result.push_back(Pair("tx", txs));
-    result.push_back(Pair("time", (boost::int64_t)block.GetBlockTime()));
-    result.push_back(Pair("nonce", (boost::uint64_t)block.nNonce));
+    result.push_back(Pair("time", (int64_t)block.GetBlockTime()));
+    result.push_back(Pair("nonce", (uint64_t)block.nNonce));
     result.push_back(Pair("bits", HexBits(block.nBits)));
     result.push_back(Pair("difficulty", GetDifficulty(blockindex)));
 
@@ -110,7 +111,7 @@ Value settxfee(const Array& params, bool fHelp)
             "<amount> is a real and is rounded to the nearest 0.00000001");
 
     // Amount
-    int64 nAmount = 0;
+    int64_t nAmount = 0;
     if (params[0].get_real() != 0.0)
         nAmount = AmountFromValue(params[0]);        // rejects 0.0 amounts
 
@@ -195,11 +196,11 @@ Value gettxoutsetinfo(const Array& params, bool fHelp)
 
     CCoinsStats stats;
     if (pcoinsTip->GetStats(stats)) {
-        ret.push_back(Pair("height", (boost::int64_t)stats.nHeight));
+        ret.push_back(Pair("height", (int64_t)stats.nHeight));
         ret.push_back(Pair("bestblock", stats.hashBlock.GetHex()));
-        ret.push_back(Pair("transactions", (boost::int64_t)stats.nTransactions));
-        ret.push_back(Pair("txouts", (boost::int64_t)stats.nTransactionOutputs));
-        ret.push_back(Pair("bytes_serialized", (boost::int64_t)stats.nSerializedSize));
+        ret.push_back(Pair("transactions", (int64_t)stats.nTransactions));
+        ret.push_back(Pair("txouts", (int64_t)stats.nTransactionOutputs));
+        ret.push_back(Pair("bytes_serialized", (int64_t)stats.nSerializedSize));
         ret.push_back(Pair("hash_serialized", stats.hashSerialized.GetHex()));
         ret.push_back(Pair("total_amount", ValueFromAmount(stats.nTotalAmount)));
     }

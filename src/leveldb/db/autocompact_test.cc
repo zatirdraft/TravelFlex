@@ -39,9 +39,9 @@ class AutoCompactTest {
     return std::string(buf);
   }
 
-  uint64_t Size(const Slice& start, const Slice& limit) {
+  uint64_t_t Size(const Slice& start, const Slice& limit) {
     Range r(start, limit);
-    uint64_t size;
+    uint64_t_t size;
     db_->GetApproximateSizes(&r, 1, &size);
     return size;
   }
@@ -72,8 +72,8 @@ void AutoCompactTest::DoReads(int n) {
   ASSERT_OK(dbi->TEST_CompactMemTable());
 
   // Get initial measurement of the space we will be reading.
-  const int64_t initial_size = Size(Key(0), Key(n));
-  const int64_t initial_other_size = Size(Key(n), Key(kCount));
+  const int64_t_t initial_size = Size(Key(0), Key(n));
+  const int64_t_t initial_other_size = Size(Key(n), Key(kCount));
 
   // Read until size drops significantly.
   std::string limit_key = Key(n);
@@ -88,7 +88,7 @@ void AutoCompactTest::DoReads(int n) {
     delete iter;
     // Wait a little bit to allow any triggered compactions to complete.
     Env::Default()->SleepForMicroseconds(1000000);
-    uint64_t size = Size(Key(0), Key(n));
+    uint64_t_t size = Size(Key(0), Key(n));
     fprintf(stderr, "iter %3d => %7.3f MB [other %7.3f MB]\n",
             read+1, size/1048576.0, Size(Key(n), Key(kCount))/1048576.0);
     if (size <= initial_size/10) {
@@ -98,7 +98,7 @@ void AutoCompactTest::DoReads(int n) {
 
   // Verify that the size of the key space not touched by the reads
   // is pretty much unchanged.
-  const int64_t final_other_size = Size(Key(n), Key(kCount));
+  const int64_t_t final_other_size = Size(Key(n), Key(kCount));
   ASSERT_LE(final_other_size, initial_other_size + 1048576);
   ASSERT_GE(final_other_size, initial_other_size/5 - 1048576);
 }

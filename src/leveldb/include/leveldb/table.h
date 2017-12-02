@@ -37,7 +37,7 @@ class Table {
   // *file must remain live while this Table is in use.
   static Status Open(const Options& options,
                      RandomAccessFile* file,
-                     uint64_t file_size,
+                     uint64_t_t file_size,
                      Table** table);
 
   ~Table();
@@ -53,7 +53,7 @@ class Table {
   // bytes, and so includes effects like compression of the underlying data.
   // E.g., the approximate offset of the last key in the table will
   // be close to the file length.
-  uint64_t ApproximateOffsetOf(const Slice& key) const;
+  uint64_t_t ApproximateOffsetOf(const Slice& key) const;
 
  private:
   struct Rep;

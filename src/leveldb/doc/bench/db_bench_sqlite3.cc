@@ -168,7 +168,7 @@ class Benchmark {
   int reads_;
   double start_;
   double last_op_finish_;
-  int64_t bytes_;
+  int64_t_t bytes_;
   std::string message_;
   Histogram hist_;
   RandomGenerator gen_;
@@ -185,7 +185,7 @@ class Benchmark {
     fprintf(stdout, "Values:     %d bytes each\n", FLAGS_value_size);
     fprintf(stdout, "Entries:    %d\n", num_);
     fprintf(stdout, "RawSize:    %.1f MB (estimated)\n",
-            ((static_cast<int64_t>(kKeySize + FLAGS_value_size) * num_)
+            ((static_cast<int64_t_t>(kKeySize + FLAGS_value_size) * num_)
              / 1048576.0));
     PrintWarnings();
     fprintf(stdout, "------------------------------------------------\n");

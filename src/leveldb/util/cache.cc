@@ -271,7 +271,7 @@ class ShardedLRUCache : public Cache {
  private:
   LRUCache shard_[kNumShards];
   port::Mutex id_mutex_;
-  uint64_t last_id_;
+  uint64_t_t last_id_;
 
   static inline uint32_t HashSlice(const Slice& s) {
     return Hash(s.data(), s.size(), 0);
@@ -310,7 +310,7 @@ class ShardedLRUCache : public Cache {
   virtual void* Value(Handle* handle) {
     return reinterpret_cast<LRUHandle*>(handle)->value;
   }
-  virtual uint64_t NewId() {
+  virtual uint64_t_t NewId() {
     MutexLock l(&id_mutex_);
     return ++(last_id_);
   }

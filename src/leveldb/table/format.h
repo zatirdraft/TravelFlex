@@ -24,12 +24,12 @@ class BlockHandle {
   BlockHandle();
 
   // The offset of the block in the file.
-  uint64_t offset() const { return offset_; }
-  void set_offset(uint64_t offset) { offset_ = offset; }
+  uint64_t_t offset() const { return offset_; }
+  void set_offset(uint64_t_t offset) { offset_ = offset; }
 
   // The size of the stored block
-  uint64_t size() const { return size_; }
-  void set_size(uint64_t size) { size_ = size; }
+  uint64_t_t size() const { return size_; }
+  void set_size(uint64_t_t size) { size_ = size; }
 
   void EncodeTo(std::string* dst) const;
   Status DecodeFrom(Slice* input);
@@ -38,8 +38,8 @@ class BlockHandle {
   enum { kMaxEncodedLength = 10 + 10 };
 
  private:
-  uint64_t offset_;
-  uint64_t size_;
+  uint64_t_t offset_;
+  uint64_t_t size_;
 };
 
 // Footer encapsulates the fixed information stored at the tail
@@ -78,7 +78,7 @@ class Footer {
 // kTableMagicNumber was picked by running
 //    echo http://code.google.com/p/leveldb/ | sha1sum
 // and taking the leading 64 bits.
-static const uint64_t kTableMagicNumber = 0xdb4775248b80fb57ull;
+static const uint64_t_t kTableMagicNumber = 0xdb4775248b80fb57ull;
 
 // 1-byte type + 32-bit crc
 static const size_t kBlockTrailerSize = 5;
@@ -99,8 +99,8 @@ extern Status ReadBlock(RandomAccessFile* file,
 // Implementation details follow.  Clients should ignore,
 
 inline BlockHandle::BlockHandle()
-    : offset_(~static_cast<uint64_t>(0)),
-      size_(~static_cast<uint64_t>(0)) {
+    : offset_(~static_cast<uint64_t_t>(0)),
+      size_(~static_cast<uint64_t_t>(0)) {
 }
 
 }  // namespace leveldb

@@ -605,7 +605,7 @@ bool AppInit2(boost::thread_group& threadGroup)
     // cost to you of processing a transaction.
     if (mapArgs.count("-mintxfee"))
     {
-        int64 n = 0;
+        int64_t n = 0;
         if (ParseMoney(mapArgs["-mintxfee"], n) && n > 0)
             CTransaction::nMinTxFee = n;
         else
@@ -613,7 +613,7 @@ bool AppInit2(boost::thread_group& threadGroup)
     }
     if (mapArgs.count("-minrelaytxfee"))
     {
-        int64 n = 0;
+        int64_t n = 0;
         if (ParseMoney(mapArgs["-minrelaytxfee"], n) && n > 0)
             CTransaction::nMinRelayTxFee = n;
         else
@@ -667,7 +667,7 @@ bool AppInit2(boost::thread_group& threadGroup)
             threadGroup.create_thread(&ThreadScriptCheck);
     }
 
-    int64 nStart;
+    int64_t nStart;
 
 #if defined(USE_SSE2)
     scrypt_detect_sse2();

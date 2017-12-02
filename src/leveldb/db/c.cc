@@ -254,7 +254,7 @@ void leveldb_approximate_sizes(
     int num_ranges,
     const char* const* range_start_key, const size_t* range_start_key_len,
     const char* const* range_limit_key, const size_t* range_limit_key_len,
-    uint64_t* sizes) {
+    uint64_t_t* sizes) {
   Range* ranges = new Range[num_ranges];
   for (int i = 0; i < num_ranges; i++) {
     ranges[i].start = Slice(range_start_key[i], range_start_key_len[i]);

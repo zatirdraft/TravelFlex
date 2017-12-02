@@ -28,7 +28,7 @@ bool GuessType(const std::string& fname, FileType* type) {
   } else {
     basename = std::string(fname.data() + pos + 1, fname.size() - pos - 1);
   }
-  uint64_t ignored;
+  uint64_t_t ignored;
   return ParseFileName(basename, &ignored, type);
 }
 
@@ -67,8 +67,8 @@ bool PrintLogContents(Env* env, const std::string& fname,
 // Called on every item found in a WriteBatch.
 class WriteBatchItemPrinter : public WriteBatch::Handler {
  public:
-  uint64_t offset_;
-  uint64_t sequence_;
+  uint64_t_t offset_;
+  uint64_t_t sequence_;
 
   virtual void Put(const Slice& key, const Slice& value) {
     printf("  put '%s' '%s'\n",
@@ -122,7 +122,7 @@ bool DumpDescriptor(Env* env, const std::string& fname) {
 }
 
 bool DumpTable(Env* env, const std::string& fname) {
-  uint64_t file_size;
+  uint64_t_t file_size;
   RandomAccessFile* file = NULL;
   Table* table = NULL;
   Status s = env->GetFileSize(fname, &file_size);

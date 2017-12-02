@@ -14,13 +14,13 @@ class BitcoinAmountField: public QWidget
 {
     Q_OBJECT
 
-    Q_PROPERTY(qint64 value READ value WRITE setValue NOTIFY textChanged USER true)
+    Q_PROPERTY(qint64_t value READ value WRITE setValue NOTIFY textChanged USER true)
 
 public:
     explicit BitcoinAmountField(QWidget *parent = 0);
 
-    qint64 value(bool *valid=0) const;
-    void setValue(qint64 value);
+    qint64_t value(bool *valid=0) const;
+    void setValue(qint64_t value);
 
     /** Mark current value as invalid in UI. */
     void setValid(bool valid);

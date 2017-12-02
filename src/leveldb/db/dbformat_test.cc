@@ -9,7 +9,7 @@
 namespace leveldb {
 
 static std::string IKey(const std::string& user_key,
-                        uint64_t seq,
+                        uint64_t_t seq,
                         ValueType vt) {
   std::string encoded;
   AppendInternalKey(&encoded, ParsedInternalKey(user_key, seq, vt));
@@ -29,7 +29,7 @@ static std::string ShortSuccessor(const std::string& s) {
 }
 
 static void TestKey(const std::string& key,
-                    uint64_t seq,
+                    uint64_t_t seq,
                     ValueType vt) {
   std::string encoded = IKey(key, seq, vt);
 
@@ -48,7 +48,7 @@ class FormatTest { };
 
 TEST(FormatTest, InternalKey_EncodeDecode) {
   const char* keys[] = { "", "k", "hello", "longggggggggggggggggggggg" };
-  const uint64_t seq[] = {
+  const uint64_t_t seq[] = {
     1, 2, 3,
     (1ull << 8) - 1, 1ull << 8, (1ull << 8) + 1,
     (1ull << 16) - 1, 1ull << 16, (1ull << 16) + 1,

@@ -22,7 +22,7 @@ namespace GUIUtil
 {
     // Create human-readable string from date
     QString dateTimeStr(const QDateTime &datetime);
-    QString dateTimeStr(qint64 nTime);
+    QString dateTimeStr(qint64_t nTime);
 
     // Render Bitcoin addresses in monospace font
     QFont bitcoinAddressFont();
