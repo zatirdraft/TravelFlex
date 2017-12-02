@@ -36,7 +36,7 @@ unsigned int nTransactionsUpdated = 0;
 bool nDoGenesis = true;
 
 map<uint256, CBlockIndex*> mapBlockIndex;
-uint256 hashGenesisBlock("0x000001701438c1c2c1b6ab16f3418e761b851c7b74bc0614cee6408db6a648b7");
+uint256 hashGenesisBlock("0x6408db6a648b7");
 uint256 hashGenesisBlockTestNet("0x");
 static CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // TravelFlex: starting difficulty is 1 / 2^12
 CBlockIndex* pindexGenesisBlock = NULL;
