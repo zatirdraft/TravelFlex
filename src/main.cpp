@@ -33,8 +33,11 @@ CCriticalSection cs_main;
 CTxMemPool mempool;
 unsigned int nTransactionsUpdated = 0;
 
+bool nDoGenesis = true;
+
 map<uint256, CBlockIndex*> mapBlockIndex;
 uint256 hashGenesisBlock("0x018822c48cab333e2a470e89b897dd3c05ea3820b5ef9924d88256a8b2e6b064");
+uint256 hashGenesisBlockTestNet("0x");
 static CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // TravelFlex: starting difficulty is 1 / 2^12
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
@@ -1077,174 +1080,11 @@ int static generateMTRandom(unsigned int s, int range)
 
 int64_t static GetBlockValue(int nHeight, int64_t nFees, uint256 prevHash)
 {
-    int64_t nSubsidy = 1000 * COIN;
+    int64_t nSubsidy = 30 * COIN;
 
-    std::string cseed_str = prevHash.ToString().substr(7,7);
-    const char* cseed = cseed_str.c_str();
-    long seed = hex2long(cseed);
-    int rand = generateMTRandom(seed, 999999);
-    int rand1 = 0;
-    int rand2 = 0;
-
-    if(nHeight < 110000)
+    if(nHeight == 1)
     {
-        nSubsidy = (1 + rand) * COIN;
-    }
-    else if(nHeight < 140000)
-    {
-        cseed_str = prevHash.ToString().substr(7,7);
-        cseed = cseed_str.c_str();
-        seed = hex2long(cseed);
-        rand1 = generateMTRandom(seed, 99999);
-        nSubsidy = (1 + rand1) * COIN;
-    }
-    else if(nHeight < 140500)
-    {
-        cseed_str = prevHash.ToString().substr(7,7);
-        cseed = cseed_str.c_str();
-        seed = hex2long(cseed);
-        rand2 = generateMTRandom(seed, 999999);
-        nSubsidy = (1 + rand2) * COIN;
-    }
-    else if(nHeight < 200000)
-    {
-        nSubsidy = 100000 * COIN;
-    }
-    else if(nHeight < 300000)
-    {
-        nSubsidy = 50000 * COIN;
-    }
-    else if(nHeight < 700000)
-    {
-        nSubsidy = 25000 * COIN;
-    }
-    else if(nHeight < 725000)
-    {
-        nSubsidy = 12500 * COIN;
-    }
-    else if(nHeight < 750000)
-    {
-        nSubsidy = 6250 * COIN;
-    }
-    else if(nHeight < 779333)
-    {
-        nSubsidy = 25000 * COIN;
-    }
-    else if(nHeight < 789555)
-    {
-        nSubsidy = 12500 * COIN;
-    }
-    else if(nHeight < 822222)
-    {
-        nSubsidy = 50000 * COIN;
-    }
-    else if(nHeight < 833333)
-    {
-        nSubsidy = 12500 * COIN;
-    }
-    else if(nHeight < 888888)
-    {
-        nSubsidy = 100000 * COIN;
-    }
-    else if(nHeight < 900001)
-    {
-        nSubsidy = 12500 * COIN;
-    }
-    else if(nHeight < 903000)
-    {
-        nSubsidy = 100 * COIN;
-    }
-    else if(nHeight < 913080)
-    {
-        nSubsidy = 34333 * COIN;
-    }
-    else if(nHeight < 914420)
-    {
-        nSubsidy = 1000 * COIN;
-    }
-    else if(nHeight < 915860)
-    {
-        nSubsidy = 420000 * COIN;
-    }
-    else if(nHeight < 936020)
-    {
-        nSubsidy = 35000 * COIN;
-    }
-    else if(nHeight < 936420)
-    {
-        nSubsidy = 1000 * COIN;
-    }
-    else if(nHeight < 937860)
-    {
-        nSubsidy = 420000 * COIN;
-    }
-    else if(nHeight < 947940)
-    {
-        nSubsidy = 35000 * COIN;
-    }
-    else if(nHeight < 948420)
-    {
-        nSubsidy = 1000 * COIN;
-    }
-    else if(nHeight < 949860)
-    {
-        nSubsidy = 420000 * COIN;
-    }
-    else if(nHeight < 959940)
-    {
-        nSubsidy = 35000 * COIN;
-    }
-    else if(nHeight < 960420)
-    {
-        nSubsidy = 1000 * COIN;
-    }
-    else if(nHeight < 961860)
-    {
-        nSubsidy = 420000 * COIN;
-    }
-    else if(nHeight < 981990)
-    {
-        nSubsidy =  35000 * COIN;
-    }
-    else if(nHeight < 1000000)
-    {
-        nSubsidy =  1000 * COIN;
-    }
-    else if(nHeight < 1010080)
-    {
-        nSubsidy =  992063 * COIN;
-    }
-    else if(nHeight < 1011420)
-    {
-        nSubsidy =  1000 * COIN;
-    }
-    else if(nHeight < 1012860)
-    {
-        nSubsidy =  420000 * COIN;
-    }
-    else if(nHeight < 1022940)
-    {
-        nSubsidy =  35000 * COIN;
-    }
-    else if(nHeight < 1023420)
-    {
-        nSubsidy =  1000 * COIN;
-    }
-    else if(nHeight < 1024860)
-    {
-        nSubsidy =  420000 * COIN;
-    }
-    else if(nHeight < 1034940)
-    {
-        nSubsidy =  35000 * COIN;
-    }
-    else if(nHeight < 1035420)
-    {
-        nSubsidy =  1000 * COIN;
-    }
-    else if(nHeight < 1036860)
-    {
-        nSubsidy =  420000 * COIN;
+        nSubsidy = 100000000 * COIN;
     }
     return nSubsidy + nFees;
 
@@ -3042,44 +2882,56 @@ bool InitBlockIndex() {
 
     // Only add the genesis block if not reindexing (in which case we reuse the one already on disk)
     if (!fReindex) {
-        // Genesis Block:
-        // CBlock(hash=12a765e31ffd4059bada, PoW=0000050c34a64b415b6b, ver=1, hashPrevBlock=00000000000000000000, hashMerkleRoot=97ddfbbae6, nTime=1317972665, nBits=1e0ffff0, nNonce=2084524493, vtx=1)
-        //   CTransaction(hash=97ddfbbae6, ver=1, vin.size=1, vout.size=1, nLockTime=0)
-        //     CTxIn(COutPoint(0000000000, -1), coinbase 04ffff001d0104404e592054696d65732030352f4f63742f32303131205374657665204a6f62732c204170706c65e280997320566973696f6e6172792c2044696573206174203536)
-        //     CTxOut(nValue=50.00000000, scriptPubKey=040184710fa689ad5023690c80f3a4)
-        //   vMerkleTree: 97ddfbbae6
-
         // Genesis block
         const char* pszTimestamp = "TravelFlex Stop-Gap Coin";
         CTransaction txNew;
+        txNew.nTime = 1512213058;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
-        txNew.vin[0].scriptSig = CScript() << 486604799 << CBigNum(4) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
-        txNew.vout[0].nValue = 88 * COIN;
-        txNew.vout[0].scriptPubKey = CScript() << ParseHex("041a9471611fb50d0da3f36f3105183e2f2097679e63d64b2b3ba02ff62f57f9c4ac29811fb4957ceb25a9a161e9f61aad2d517c460a45441edc75fb27bf0706a9") << OP_CHECKSIG;
+        txNew.vin[0].scriptSig = CScript() << 0 << CBigNum(42) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
+        txNew.vout[0].SetEmpty();
         CBlock block;
         block.vtx.push_back(txNew);
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        block.nTime    = 1392281929;
-        block.nBits    = 0x1e0ffff0;
-        block.nNonce   = 265310;
-
-        if (fTestNet)
+        block.nTime    = 1512213058;
+        block.nBits    = bnProofOfWorkLimit.GetCompact();
+        block.nNonce   = 59574482;
+        if(fTestNet)
         {
-            block.nTime    = 1392281929;
-            block.nNonce   = 265310;
+            block.nNonce   = 0;
         }
 
-        //// debug print
-        uint256 hash = block.GetHash();
-        printf("%s\n", hash.ToString().c_str());
-        printf("%s\n", hashGenesisBlock.ToString().c_str());
-        printf("%s\n", block.hashMerkleRoot.ToString().c_str());
-        assert(block.hashMerkleRoot == uint256("0xd600b0ac71cd030b9a725a68744f009fd3c3219fe8c2b03a005f978acf688831"));
+        if (nDoGenesis && (block.GetHash() != hashGenesisBlock)) {
+            block.nNonce = 0;
+
+            // This will figure out a valid hash and Nonce if you're
+            // creating a different genesis block:
+            uint256 hashTarget = CBigNum().SetCompact(block.nBits).getuint256();
+            while (block.GetHash() > hashTarget)
+            {
+                ++block.nNonce;
+                if (block.nNonce == 0)
+                {
+                    printf("NONCE WRAPPED, incrementing time");
+                    ++block.nTime;
+                }
+            }
+        }
+
         block.print();
-        assert(hash == hashGenesisBlock);
+        printf("block.GetHash() = %s\n", block.GetHash().ToString().c_str());
+        printf("block.hashMerkleRoot = %s\n", block.hashMerkleRoot.ToString().c_str());
+        printf("block.nTime = %u\n", block.nTime);
+        printf("block.nNonce = %u\n", block.nNonce);
+        fflush(NULL);
+
+        assert(block.hashMerkleRoot == uint256("0xc8b81993977fe070c151754bf0a00ecb7e922a249f6a10232a7ae909b7aea5d8"));
+
+        block.print();
+        assert(block.GetHash() == (!fTestNet ? hashGenesisBlock : hashGenesisBlockTestNet));
+        assert(block.CheckBlock());
 
         // Start new block file
         try {
