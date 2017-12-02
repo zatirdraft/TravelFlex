@@ -440,7 +440,7 @@ namespace json_spirit
                 Str_action    new_null   ( boost::bind( &Semantic_actions_t::new_null,    &self.actions_, _1, _2 ) );
                 Real_action   new_real   ( boost::bind( &Semantic_actions_t::new_real,    &self.actions_, _1 ) );
                 Int_action    new_int    ( boost::bind( &Semantic_actions_t::new_int,     &self.actions_, _1 ) );
-                Uint64_t_action new_uint64_t ( boost::bind( &Semantic_actions_t::new_uint64_t,  &self.actions_, _1 ) );
+                Uint64_t_action new_uint64 ( boost::bind( &Semantic_actions_t::new_uint64,  &self.actions_, _1 ) );
 
                 // actual grammer
 
@@ -499,7 +499,7 @@ namespace json_spirit
                 number_
                     = strict_real_p[ new_real   ]
                     | int64_t_p      [ new_int    ]
-                    | uint64_t_p     [ new_uint64_t ]
+                    | uint64_t_p     [ new_uint64 ]
                     ;
             }
 
