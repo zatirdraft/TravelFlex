@@ -33,7 +33,7 @@ CCriticalSection cs_main;
 CTxMemPool mempool;
 unsigned int nTransactionsUpdated = 0;
 
-bool nDoGenesis = false;
+bool nDoGenesis = true;
 
 map<uint256, CBlockIndex*> mapBlockIndex;
 uint256 hashGenesisBlock("0x000001701438c1c2c1b6ab16f3418e761b851c7b74bc0614cee6408db6a648b7");
@@ -2911,7 +2911,7 @@ bool InitBlockIndex() {
             // This will figure out a valid hash and Nonce if you're
             // creating a different genesis block:
             uint256 hashTarget = CBigNum().SetCompact(block.nBits).getuint256();
-            while (block.GetHash() > hashTarget)
+            while (block.GetHash() > hashTarget && block.GetPoWHash() > hashTarget)
             {
                 ++block.nNonce;
                 if (block.nNonce == 0)
