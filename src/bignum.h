@@ -79,15 +79,13 @@ public:
     }
 
     //CBigNum(char n) is not portable.  Use 'signed char' or 'unsigned char'.
-    CBigNum(signed char n)      { BN_init(this); if (n >= 0) setulong(n); else setint64(n); }
-    CBigNum(short n)            { BN_init(this); if (n >= 0) setulong(n); else setint64(n); }
-    CBigNum(int n)              { BN_init(this); if (n >= 0) setulong(n); else setint64(n); }
-    CBigNum(long n)             { BN_init(this); if (n >= 0) setulong(n); else setint64(n); }
+    CBigNum(signed char n)      { BN_init(this); if (n >= 0) setuint(n); else setint64(n); }
+    CBigNum(short n)            { BN_init(this); if (n >= 0) setuint(n); else setint64(n); }
+    CBigNum(int n)              { BN_init(this); if (n >= 0) setuint(n); else setint64(n); }
     CBigNum(int64_t n)          { BN_init(this); setint64(n); }
-    CBigNum(unsigned char n)    { BN_init(this); setulong(n); }
-    CBigNum(unsigned short n)   { BN_init(this); setulong(n); }
-    CBigNum(unsigned int n)     { BN_init(this); setulong(n); }
-    CBigNum(unsigned long n)    { BN_init(this); setulong(n); }
+    CBigNum(unsigned char n)    { BN_init(this); setuint(n); }
+    CBigNum(unsigned short n)   { BN_init(this); setuint(n); }
+    CBigNum(unsigned int n)     { BN_init(this); setuint(n); }
     CBigNum(uint64_t n)         { BN_init(this); setuint64(n); }
     explicit CBigNum(uint256 n) { BN_init(this); setuint256(n); }
 
@@ -97,15 +95,10 @@ public:
         setvch(vch);
     }
 
-    void setulong(unsigned long n)
+    void setuint(unsigned int n)
     {
         if (!BN_set_word(this, n))
-            throw bignum_error("CBigNum conversion from unsigned long : BN_set_word failed");
-    }
-
-    unsigned long getulong() const
-    {
-        return BN_get_word(this);
+            throw bignum_error("CBigNum conversion from unsigned int : BN_set_word failed");
     }
 
     unsigned int getuint() const
@@ -376,7 +369,7 @@ public:
             if (!BN_div(&dv, &rem, &bn, &bnBase, pctx))
                 throw bignum_error("CBigNum::ToString() : BN_div failed");
             bn = dv;
-            unsigned int c = rem.getulong();
+            unsigned int c = rem.getuint();
             str += "0123456789abcdef"[c];
         }
         if (BN_is_negative(this))
