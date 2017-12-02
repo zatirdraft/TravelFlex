@@ -1071,12 +1071,14 @@ uint256 static GetOrphanRoot(const CBlockHeader* pblock)
     return pblock->GetHash();
 }
 
+#if 0
 int static generateMTRandom(unsigned int s, int range)
 {
     boost::mt19937 gen(s);
     boost::uniform_int<> dist(1, range);
     return dist(gen);
 }
+#endif
 
 int64_t static GetBlockValue(int nHeight, int64_t nFees, uint256 prevHash)
 {
@@ -2885,7 +2887,6 @@ bool InitBlockIndex() {
         // Genesis block
         const char* pszTimestamp = "TravelFlex Stop-Gap Coin";
         CTransaction txNew;
-        txNew.nTime = 1512213058;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
         txNew.vin[0].scriptSig = CScript() << 0 << CBigNum(42) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
@@ -2931,7 +2932,6 @@ bool InitBlockIndex() {
 
         block.print();
         assert(block.GetHash() == (!fTestNet ? hashGenesisBlock : hashGenesisBlockTestNet));
-        assert(block.CheckBlock());
 
         // Start new block file
         try {
