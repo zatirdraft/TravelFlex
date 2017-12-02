@@ -318,7 +318,6 @@ public:
     CScript& operator<<(unsigned char b)  { return push_uint64(b); }
     CScript& operator<<(unsigned int b)   { return push_uint64(b); }
     CScript& operator<<(unsigned short b) { return push_uint64(b); }
-    CScript& operator<<(unsigned long b)  { return push_uint64(b); }
     CScript& operator<<(uint64_t b)       { return push_uint64(b); }
 
     CScript& operator<<(opcodetype opcode)
