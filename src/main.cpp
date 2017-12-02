@@ -36,7 +36,7 @@ unsigned int nTransactionsUpdated = 0;
 bool nDoGenesis = true;
 
 map<uint256, CBlockIndex*> mapBlockIndex;
-uint256 hashGenesisBlock("0x6408db6a648b7");
+uint256 hashGenesisBlock("0x000001701438c1b16f3418e761b851c7b74bc0614cee6408db6a648b7");
 uint256 hashGenesisBlockTestNet("0x");
 static CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // TravelFlex: starting difficulty is 1 / 2^12
 CBlockIndex* pindexGenesisBlock = NULL;
@@ -2908,19 +2908,27 @@ bool InitBlockIndex() {
         if (nDoGenesis && (block.GetHash() != hashGenesisBlock)) {
             block.nNonce = 0;
 
-            // This will figure out a valid hash and Nonce if you're
-            // creating a different genesis block:
+            printf("Searching for genesis block...\n");
             uint256 hashTarget = CBigNum().SetCompact(block.nBits).getuint256();
-            while (block.GetHash() > hashTarget && block.GetPoWHash() > hashTarget)
+            uint256 thash;
+            char scratchpad[SCRYPT_SCRATCHPAD_SIZE];
+
+            loop
             {
+                scrypt_1024_1_1_256_sp(BEGIN(block.nVersion), BEGIN(thash), scratchpad);
+                if (thash <= hashTarget)
+                    break;
+                if ((block.nNonce & 0xFFF) == 0)
+                {
+                    printf("nonce %08X: hash = %s (target = %s)\n", block.nNonce, thash.ToString().c_str(), hashTarget.ToString().c_str());
+                }
                 ++block.nNonce;
                 if (block.nNonce == 0)
                 {
-                    printf("NONCE WRAPPED, incrementing time");
+                    printf("NONCE WRAPPED, incrementing time\n");
                     ++block.nTime;
                 }
-            }
-        }
+       }
 
         block.print();
         printf("block.GetHash() = %s\n", block.GetHash().ToString().c_str());
