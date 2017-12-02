@@ -76,7 +76,7 @@ public:
     friend class Win32Env;
     virtual ~Win32SequentialFile();
     virtual Status Read(size_t n, Slice* result, char* scratch);
-    virtual Status Skip(uint64_t_t n);
+    virtual Status Skip(uint64_t n);
     BOOL isEnable();
 private:
     BOOL _Init();
@@ -92,7 +92,7 @@ class Win32RandomAccessFile : public RandomAccessFile
 public:
     friend class Win32Env;
     virtual ~Win32RandomAccessFile();
-    virtual Status Read(uint64_t_t offset, size_t n, Slice* result,char* scratch) const;
+    virtual Status Read(uint64_t offset, size_t n, Slice* result,char* scratch) const;
     BOOL isEnable();
 private:
     BOOL _Init(LPCWSTR path);
@@ -124,7 +124,7 @@ private:
     char* _limit;           // Limit of the mapped region
     char* _dst;             // Where to write next  (in range [base_,limit_])
     char* _last_sync;       // Where have we synced up to
-    uint64_t_t _file_offset;  // Offset of base_ in file
+    uint64_t _file_offset;  // Offset of base_ in file
     //LARGE_INTEGER file_offset_;
     // Have we done an munmap of unsynced data?
     bool _pending_sync;
@@ -189,7 +189,7 @@ public:
 
     virtual Status DeleteDir(const std::string& dirname);
 
-    virtual Status GetFileSize(const std::string& fname, uint64_t_t* file_size);
+    virtual Status GetFileSize(const std::string& fname, uint64_t* file_size);
 
     virtual Status RenameFile(const std::string& src,
         const std::string& target);
@@ -210,7 +210,7 @@ public:
 
     virtual Status NewLogger(const std::string& fname, Logger** result);
 
-    virtual uint64_t_t NowMicros();
+    virtual uint64_t NowMicros();
 
     virtual void SleepForMicroseconds(int micros);
 };
@@ -350,7 +350,7 @@ Status Win32SequentialFile::Read( size_t n, Slice* result, char* scratch )
     return sRet;
 }
 
-Status Win32SequentialFile::Skip( uint64_t_t n )
+Status Win32SequentialFile::Skip( uint64_t n )
 {
     Status sRet;
     LARGE_INTEGER Move,NowPointer;
@@ -401,7 +401,7 @@ Win32RandomAccessFile::~Win32RandomAccessFile()
     _CleanUp();
 }
 
-Status Win32RandomAccessFile::Read(uint64_t_t offset,size_t n,Slice* result,char* scratch) const
+Status Win32RandomAccessFile::Read(uint64_t offset,size_t n,Slice* result,char* scratch) const
 {
     Status sRet;
     OVERLAPPED ol = {0};
@@ -690,7 +690,7 @@ Win32Logger::~Win32Logger()
 
 void Win32Logger::Logv( const char* format, va_list ap )
 {
-    uint64_t_t thread_id = ::GetCurrentThreadId();
+    uint64_t thread_id = ::GetCurrentThreadId();
 
     // We try twice: the first time with a fixed-size stack allocated buffer,
     // and the second time with a much larger dynamically allocated buffer.
@@ -811,7 +811,7 @@ Status Win32Env::DeleteFile( const std::string& fname )
     return sRet;
 }
 
-Status Win32Env::GetFileSize( const std::string& fname, uint64_t_t* file_size )
+Status Win32Env::GetFileSize( const std::string& fname, uint64_t* file_size )
 {
     Status sRet;
     std::string path = fname;
@@ -822,7 +822,7 @@ Status Win32Env::GetFileSize( const std::string& fname, uint64_t_t* file_size )
         GENERIC_READ,FILE_SHARE_READ,NULL,OPEN_EXISTING,FILE_ATTRIBUTE_NORMAL,NULL);
     LARGE_INTEGER li;
     if(::GetFileSizeEx(file,&li)){
-        *file_size = (uint64_t_t)li.QuadPart;
+        *file_size = (uint64_t)li.QuadPart;
     }else
         sRet = Status::IOError(path,"Could not get the file size.");
     CloseHandle(file);
@@ -898,12 +898,12 @@ Status Win32Env::GetTestDirectory( std::string* path )
     return sRet;
 }
 
-uint64_t_t Win32Env::NowMicros()
+uint64_t Win32Env::NowMicros()
 {
 #ifndef USE_VISTA_API
 #define GetTickCount64 GetTickCount
 #endif
-    return (uint64_t_t)(GetTickCount64()*1000);
+    return (uint64_t)(GetTickCount64()*1000);
 }
 
 static Status CreateDirInner( const std::string& dirname )

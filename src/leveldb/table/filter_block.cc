@@ -19,8 +19,8 @@ FilterBlockBuilder::FilterBlockBuilder(const FilterPolicy* policy)
     : policy_(policy) {
 }
 
-void FilterBlockBuilder::StartBlock(uint64_t_t block_offset) {
-  uint64_t_t filter_index = (block_offset / kFilterBase);
+void FilterBlockBuilder::StartBlock(uint64_t block_offset) {
+  uint64_t filter_index = (block_offset / kFilterBase);
   assert(filter_index >= filter_offsets_.size());
   while (filter_index > filter_offsets_.size()) {
     GenerateFilter();
@@ -92,8 +92,8 @@ FilterBlockReader::FilterBlockReader(const FilterPolicy* policy,
   num_ = (n - 5 - last_word) / 4;
 }
 
-bool FilterBlockReader::KeyMayMatch(uint64_t_t block_offset, const Slice& key) {
-  uint64_t_t index = block_offset >> base_lg_;
+bool FilterBlockReader::KeyMayMatch(uint64_t block_offset, const Slice& key) {
+  uint64_t index = block_offset >> base_lg_;
   if (index < num_) {
     uint32_t start = DecodeFixed32(offset_ + index*4);
     uint32_t limit = DecodeFixed32(offset_ + index*4 + 4);

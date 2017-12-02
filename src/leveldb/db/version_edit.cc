@@ -114,7 +114,7 @@ Status VersionEdit::DecodeFrom(const Slice& src) {
 
   // Temporary storage for parsing
   int level;
-  uint64_t_t number;
+  uint64_t number;
   FileMetaData f;
   Slice str;
   InternalKey key;

@@ -279,7 +279,7 @@ int main(int argc, char** argv) {
     int n = 20000;
     char keybuf[100];
     char valbuf[100];
-    uint64_t_t sizes[2];
+    uint64_t sizes[2];
     const char* start[2] = { "a", "k00000000000000010000" };
     size_t start_len[2] = { 1, 21 };
     const char* limit[2] = { "k00000000000000010000", "z" };

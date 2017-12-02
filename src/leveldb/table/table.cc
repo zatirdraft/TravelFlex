@@ -27,7 +27,7 @@ struct Table::Rep {
   Options options;
   Status status;
   RandomAccessFile* file;
-  uint64_t_t cache_id;
+  uint64_t cache_id;
   FilterBlockReader* filter;
   const char* filter_data;
 
@@ -37,7 +37,7 @@ struct Table::Rep {
 
 Status Table::Open(const Options& options,
                    RandomAccessFile* file,
-                   uint64_t_t size,
+                   uint64_t size,
                    Table** table) {
   *table = NULL;
   if (size < Footer::kEncodedLength) {
@@ -245,11 +245,11 @@ Status Table::InternalGet(const ReadOptions& options, const Slice& k,
 }
 
 
-uint64_t_t Table::ApproximateOffsetOf(const Slice& key) const {
+uint64_t Table::ApproximateOffsetOf(const Slice& key) const {
   Iterator* index_iter =
       rep_->index_block->NewIterator(rep_->options.comparator);
   index_iter->Seek(key);
-  uint64_t_t result;
+  uint64_t result;
   if (index_iter->Valid()) {
     BlockHandle handle;
     Slice input = index_iter->value();

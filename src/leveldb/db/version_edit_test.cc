@@ -20,7 +20,7 @@ static void TestEncodeDecode(const VersionEdit& edit) {
 class VersionEditTest { };
 
 TEST(VersionEditTest, EncodeDecode) {
-  static const uint64_t_t kBig = 1ull << 50;
+  static const uint64_t kBig = 1ull << 50;
 
   VersionEdit edit;
   for (int i = 0; i < 4; i++) {

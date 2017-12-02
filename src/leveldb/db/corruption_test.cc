@@ -88,7 +88,7 @@ class CorruptionTest {
     std::string value_space;
     Iterator* iter = db_->NewIterator(ReadOptions());
     for (iter->SeekToFirst(); iter->Valid(); iter->Next()) {
-      uint64_t_t key;
+      uint64_t key;
       Slice in(iter->key());
       if (in == "" || in == "~") {
         // Ignore boundary keys.
@@ -121,7 +121,7 @@ class CorruptionTest {
     // Pick file to corrupt
     std::vector<std::string> filenames;
     ASSERT_OK(env_.GetChildren(dbname_, &filenames));
-    uint64_t_t number;
+    uint64_t number;
     FileType type;
     std::string fname;
     int picked_number = -1;

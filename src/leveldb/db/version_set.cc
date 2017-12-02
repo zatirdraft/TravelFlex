@@ -24,12 +24,12 @@ static const int kTargetFileSize = 2 * 1048576;
 
 // Maximum bytes of overlaps in grandparent (i.e., level+2) before we
 // stop building a single file in a level->level+1 compaction.
-static const int64_t_t kMaxGrandParentOverlapBytes = 10 * kTargetFileSize;
+static const int64_t kMaxGrandParentOverlapBytes = 10 * kTargetFileSize;
 
 // Maximum number of bytes in all compacted files.  We avoid expanding
 // the lower level file set of a compaction if it would make the
 // total compaction cover more than this many bytes.
-static const int64_t_t kExpandedCompactionByteSizeLimit = 25 * kTargetFileSize;
+static const int64_t kExpandedCompactionByteSizeLimit = 25 * kTargetFileSize;
 
 static double MaxBytesForLevel(int level) {
   // Note: the result for level zero is not really used since we set
@@ -42,12 +42,12 @@ static double MaxBytesForLevel(int level) {
   return result;
 }
 
-static uint64_t_t MaxFileSizeForLevel(int level) {
+static uint64_t MaxFileSizeForLevel(int level) {
   return kTargetFileSize;  // We could vary per level to reduce number of files?
 }
 
-static int64_t_t TotalFileSize(const std::vector<FileMetaData*>& files) {
-  int64_t_t sum = 0;
+static int64_t TotalFileSize(const std::vector<FileMetaData*>& files) {
+  int64_t sum = 0;
   for (size_t i = 0; i < files.size(); i++) {
     sum += files[i]->file_size;
   }
@@ -55,9 +55,9 @@ static int64_t_t TotalFileSize(const std::vector<FileMetaData*>& files) {
 }
 
 namespace {
-std::string IntSetToString(const std::set<uint64_t_t>& s) {
+std::string IntSetToString(const std::set<uint64_t>& s) {
   std::string result = "{";
-  for (std::set<uint64_t_t>::const_iterator it = s.begin();
+  for (std::set<uint64_t>::const_iterator it = s.begin();
        it != s.end();
        ++it) {
     result += (result.size() > 1) ? "," : "";
@@ -521,7 +521,7 @@ int Version::PickLevelForMemTableOutput(
       if (level + 2 < config::kNumLevels) {
         // Check that file does not overlap too many grandparent bytes.
         GetOverlappingInputs(level + 2, &start, &limit, &overlaps);
-        const int64_t_t sum = TotalFileSize(overlaps);
+        const int64_t sum = TotalFileSize(overlaps);
         if (sum > kMaxGrandParentOverlapBytes) {
           break;
         }
@@ -624,7 +624,7 @@ class VersionSet::Builder {
 
   typedef std::set<FileMetaData*, BySmallestKey> FileSet;
   struct LevelState {
-    std::set<uint64_t_t> deleted_files;
+    std::set<uint64_t> deleted_files;
     FileSet* added_files;
   };
 
@@ -681,7 +681,7 @@ class VersionSet::Builder {
          iter != del.end();
          ++iter) {
       const int level = iter->first;
-      const uint64_t_t number = iter->second;
+      const uint64_t number = iter->second;
       levels_[level].deleted_files.insert(number);
     }
 
@@ -945,10 +945,10 @@ Status VersionSet::Recover() {
   bool have_prev_log_number = false;
   bool have_next_file = false;
   bool have_last_sequence = false;
-  uint64_t_t next_file = 0;
-  uint64_t_t last_sequence = 0;
-  uint64_t_t log_number = 0;
-  uint64_t_t prev_log_number = 0;
+  uint64_t next_file = 0;
+  uint64_t last_sequence = 0;
+  uint64_t log_number = 0;
+  uint64_t prev_log_number = 0;
   Builder builder(this, current_);
 
   {
@@ -1030,7 +1030,7 @@ Status VersionSet::Recover() {
   return s;
 }
 
-void VersionSet::MarkFileNumberUsed(uint64_t_t number) {
+void VersionSet::MarkFileNumberUsed(uint64_t number) {
   if (next_file_number_ <= number) {
     next_file_number_ = number + 1;
   }
@@ -1059,7 +1059,7 @@ void VersionSet::Finalize(Version* v) {
           static_cast<double>(config::kL0_CompactionTrigger);
     } else {
       // Compute the ratio of current size to size limit.
-      const uint64_t_t level_bytes = TotalFileSize(v->files_[level]);
+      const uint64_t level_bytes = TotalFileSize(v->files_[level]);
       score = static_cast<double>(level_bytes) / MaxBytesForLevel(level);
     }
 
@@ -1149,8 +1149,8 @@ bool VersionSet::ManifestContains(const std::string& record) const {
   return result;
 }
 
-uint64_t_t VersionSet::ApproximateOffsetOf(Version* v, const InternalKey& ikey) {
-  uint64_t_t result = 0;
+uint64_t VersionSet::ApproximateOffsetOf(Version* v, const InternalKey& ikey) {
+  uint64_t result = 0;
   for (int level = 0; level < config::kNumLevels; level++) {
     const std::vector<FileMetaData*>& files = v->files_[level];
     for (size_t i = 0; i < files.size(); i++) {
@@ -1181,7 +1181,7 @@ uint64_t_t VersionSet::ApproximateOffsetOf(Version* v, const InternalKey& ikey) 
   return result;
 }
 
-void VersionSet::AddLiveFiles(std::set<uint64_t_t>* live) {
+void VersionSet::AddLiveFiles(std::set<uint64_t>* live) {
   for (Version* v = dummy_versions_.next_;
        v != &dummy_versions_;
        v = v->next_) {
@@ -1194,21 +1194,21 @@ void VersionSet::AddLiveFiles(std::set<uint64_t_t>* live) {
   }
 }
 
-int64_t_t VersionSet::NumLevelBytes(int level) const {
+int64_t VersionSet::NumLevelBytes(int level) const {
   assert(level >= 0);
   assert(level < config::kNumLevels);
   return TotalFileSize(current_->files_[level]);
 }
 
-int64_t_t VersionSet::MaxNextLevelOverlappingBytes() {
-  int64_t_t result = 0;
+int64_t VersionSet::MaxNextLevelOverlappingBytes() {
+  int64_t result = 0;
   std::vector<FileMetaData*> overlaps;
   for (int level = 1; level < config::kNumLevels - 1; level++) {
     for (size_t i = 0; i < current_->files_[level].size(); i++) {
       const FileMetaData* f = current_->files_[level][i];
       current_->GetOverlappingInputs(level+1, &f->smallest, &f->largest,
                                      &overlaps);
-      const int64_t_t sum = TotalFileSize(overlaps);
+      const int64_t sum = TotalFileSize(overlaps);
       if (sum > result) {
         result = sum;
       }
@@ -1357,9 +1357,9 @@ void VersionSet::SetupOtherInputs(Compaction* c) {
   if (!c->inputs_[1].empty()) {
     std::vector<FileMetaData*> expanded0;
     current_->GetOverlappingInputs(level, &all_start, &all_limit, &expanded0);
-    const int64_t_t inputs0_size = TotalFileSize(c->inputs_[0]);
-    const int64_t_t inputs1_size = TotalFileSize(c->inputs_[1]);
-    const int64_t_t expanded0_size = TotalFileSize(expanded0);
+    const int64_t inputs0_size = TotalFileSize(c->inputs_[0]);
+    const int64_t inputs1_size = TotalFileSize(c->inputs_[1]);
+    const int64_t expanded0_size = TotalFileSize(expanded0);
     if (expanded0.size() > c->inputs_[0].size() &&
         inputs1_size + expanded0_size < kExpandedCompactionByteSizeLimit) {
       InternalKey new_start, new_limit;
@@ -1423,10 +1423,10 @@ Compaction* VersionSet::CompactRange(
   // and we must not pick one file and drop another older file if the
   // two files overlap.
   if (level > 0) {
-    const uint64_t_t limit = MaxFileSizeForLevel(level);
-    uint64_t_t total = 0;
+    const uint64_t limit = MaxFileSizeForLevel(level);
+    uint64_t total = 0;
     for (size_t i = 0; i < inputs.size(); i++) {
-      uint64_t_t s = inputs[i]->file_size;
+      uint64_t s = inputs[i]->file_size;
       total += s;
       if (total >= limit) {
         inputs.resize(i + 1);

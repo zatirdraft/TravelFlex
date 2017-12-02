@@ -12,7 +12,7 @@
 
 namespace leveldb {
 
-typedef uint64_t_t Key;
+typedef uint64_t Key;
 
 struct Comparator {
   int operator()(const Key& a, const Key& b) const {
@@ -150,17 +150,17 @@ class ConcurrentTest {
  private:
   static const uint32_t K = 4;
 
-  static uint64_t_t key(Key key) { return (key >> 40); }
-  static uint64_t_t gen(Key key) { return (key >> 8) & 0xffffffffu; }
-  static uint64_t_t hash(Key key) { return key & 0xff; }
+  static uint64_t key(Key key) { return (key >> 40); }
+  static uint64_t gen(Key key) { return (key >> 8) & 0xffffffffu; }
+  static uint64_t hash(Key key) { return key & 0xff; }
 
-  static uint64_t_t HashNumbers(uint64_t_t k, uint64_t_t g) {
-    uint64_t_t data[2] = { k, g };
+  static uint64_t HashNumbers(uint64_t k, uint64_t g) {
+    uint64_t data[2] = { k, g };
     return Hash(reinterpret_cast<char*>(data), sizeof(data), 0);
   }
 
-  static Key MakeKey(uint64_t_t k, uint64_t_t g) {
-    assert(sizeof(Key) == sizeof(uint64_t_t));
+  static Key MakeKey(uint64_t k, uint64_t g) {
+    assert(sizeof(Key) == sizeof(uint64_t));
     assert(k <= K);  // We sometimes pass K to seek to the end of the skiplist
     assert(g <= 0xffffffffu);
     return ((k << 40) | (g << 8) | (HashNumbers(k, g) & 0xff));
@@ -336,7 +336,7 @@ class TestState {
 static void ConcurrentReader(void* arg) {
   TestState* state = reinterpret_cast<TestState*>(arg);
   Random rnd(state->seed_);
-  int64_t_t reads = 0;
+  int64_t reads = 0;
   state->Change(TestState::RUNNING);
   while (!state->quit_flag_.Acquire_Load()) {
     state->t_.ReadStep(&rnd);

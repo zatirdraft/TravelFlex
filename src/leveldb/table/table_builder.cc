@@ -21,12 +21,12 @@ struct TableBuilder::Rep {
   Options options;
   Options index_block_options;
   WritableFile* file;
-  uint64_t_t offset;
+  uint64_t offset;
   Status status;
   BlockBuilder data_block;
   BlockBuilder index_block;
   std::string last_key;
-  int64_t_t num_entries;
+  int64_t num_entries;
   bool closed;          // Either Finish() or Abandon() has been called.
   FilterBlockBuilder* filter_block;
 
@@ -259,11 +259,11 @@ void TableBuilder::Abandon() {
   r->closed = true;
 }
 
-uint64_t_t TableBuilder::NumEntries() const {
+uint64_t TableBuilder::NumEntries() const {
   return rep_->num_entries;
 }
 
-uint64_t_t TableBuilder::FileSize() const {
+uint64_t TableBuilder::FileSize() const {
   return rep_->offset;
 }
 

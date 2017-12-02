@@ -126,7 +126,7 @@ class DB {
   //
   // The results may not include the sizes of recently written data.
   virtual void GetApproximateSizes(const Range* range, int n,
-                                   uint64_t_t* sizes) = 0;
+                                   uint64_t* sizes) = 0;
 
   // Compact the underlying storage for the key range [*begin,*end].
   // In particular, deleted and overwritten versions are discarded,

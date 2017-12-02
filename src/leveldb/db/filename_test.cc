@@ -16,12 +16,12 @@ class FileNameTest { };
 TEST(FileNameTest, Parse) {
   Slice db;
   FileType type;
-  uint64_t_t number;
+  uint64_t number;
 
   // Successful parses
   static struct {
     const char* fname;
-    uint64_t_t number;
+    uint64_t number;
     FileType type;
   } cases[] = {
     { "100.log",            100,   kLogFile },
@@ -74,7 +74,7 @@ TEST(FileNameTest, Parse) {
 }
 
 TEST(FileNameTest, Construction) {
-  uint64_t_t number;
+  uint64_t number;
   FileType type;
   std::string fname;
 

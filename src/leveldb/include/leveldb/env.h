@@ -88,7 +88,7 @@ class Env {
   virtual Status DeleteDir(const std::string& dirname) = 0;
 
   // Store the size of fname in *file_size.
-  virtual Status GetFileSize(const std::string& fname, uint64_t_t* file_size) = 0;
+  virtual Status GetFileSize(const std::string& fname, uint64_t* file_size) = 0;
 
   // Rename file src to target.
   virtual Status RenameFile(const std::string& src,
@@ -140,7 +140,7 @@ class Env {
 
   // Returns the number of micro-seconds since some fixed point in time. Only
   // useful for computing deltas of time.
-  virtual uint64_t_t NowMicros() = 0;
+  virtual uint64_t NowMicros() = 0;
 
   // Sleep/delay the thread for the perscribed number of micro-seconds.
   virtual void SleepForMicroseconds(int micros) = 0;
@@ -174,7 +174,7 @@ class SequentialFile {
   // file, and Skip will return OK.
   //
   // REQUIRES: External synchronization
-  virtual Status Skip(uint64_t_t n) = 0;
+  virtual Status Skip(uint64_t n) = 0;
 
  private:
   // No copying allowed
@@ -197,7 +197,7 @@ class RandomAccessFile {
   // status.
   //
   // Safe for concurrent use by multiple threads.
-  virtual Status Read(uint64_t_t offset, size_t n, Slice* result,
+  virtual Status Read(uint64_t offset, size_t n, Slice* result,
                       char* scratch) const = 0;
 
  private:
@@ -296,7 +296,7 @@ class EnvWrapper : public Env {
   Status DeleteFile(const std::string& f) { return target_->DeleteFile(f); }
   Status CreateDir(const std::string& d) { return target_->CreateDir(d); }
   Status DeleteDir(const std::string& d) { return target_->DeleteDir(d); }
-  Status GetFileSize(const std::string& f, uint64_t_t* s) {
+  Status GetFileSize(const std::string& f, uint64_t* s) {
     return target_->GetFileSize(f, s);
   }
   Status RenameFile(const std::string& s, const std::string& t) {
@@ -318,7 +318,7 @@ class EnvWrapper : public Env {
   virtual Status NewLogger(const std::string& fname, Logger** result) {
     return target_->NewLogger(fname, result);
   }
-  uint64_t_t NowMicros() {
+  uint64_t NowMicros() {
     return target_->NowMicros();
   }
   void SleepForMicroseconds(int micros) {

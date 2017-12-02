@@ -497,7 +497,7 @@ number of bytes of file system space used by one or more key ranges.
    leveldb::Range ranges[2];
    ranges[0] = leveldb::Range("a", "c");
    ranges[1] = leveldb::Range("x", "z");
-   uint64_t_t sizes[2];
+   uint64_t sizes[2];
    leveldb::Status s = db-&gt;GetApproximateSizes(ranges, 2, sizes);
 </pre>
 The preceding call will set <code>sizes[0]</code> to the approximate number of

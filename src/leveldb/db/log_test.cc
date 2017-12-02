@@ -76,7 +76,7 @@ class LogTest {
       return Status::OK();
     }
 
-    virtual Status Skip(uint64_t_t n) {
+    virtual Status Skip(uint64_t n) {
       if (n > contents_.size()) {
         contents_.clear();
         return Status::NotFound("in-memory file skipepd past end");
@@ -109,7 +109,7 @@ class LogTest {
 
   // Record metadata for testing initial offset functionality
   static size_t initial_offset_record_sizes_[];
-  static uint64_t_t initial_offset_last_record_offsets_[];
+  static uint64_t initial_offset_last_record_offsets_[];
 
  public:
   LogTest() : reading_(false),
@@ -189,7 +189,7 @@ class LogTest {
     }
   }
 
-  void CheckOffsetPastEndReturnsNoRecords(uint64_t_t offset_past_end) {
+  void CheckOffsetPastEndReturnsNoRecords(uint64_t offset_past_end) {
     WriteInitialOffsetLog();
     reading_ = true;
     source_.contents_ = Slice(dest_.contents_);
@@ -201,7 +201,7 @@ class LogTest {
     delete offset_reader;
   }
 
-  void CheckInitialOffsetRecord(uint64_t_t initial_offset,
+  void CheckInitialOffsetRecord(uint64_t initial_offset,
                                 int expected_record_offset) {
     WriteInitialOffsetLog();
     reading_ = true;
@@ -227,7 +227,7 @@ size_t LogTest::initial_offset_record_sizes_[] =
      2 * log::kBlockSize - 1000,  // Span three blocks
      1};
 
-uint64_t_t LogTest::initial_offset_last_record_offsets_[] =
+uint64_t LogTest::initial_offset_last_record_offsets_[] =
     {0,
      kHeaderSize + 10000,
      2 * (kHeaderSize + 10000),

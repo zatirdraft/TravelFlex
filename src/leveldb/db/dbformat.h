@@ -60,7 +60,7 @@ enum ValueType {
 // ValueType, not the lowest).
 static const ValueType kValueTypeForSeek = kTypeValue;
 
-typedef uint64_t_t SequenceNumber;
+typedef uint64_t SequenceNumber;
 
 // We leave eight bits empty at the bottom so a type and sequence#
 // can be packed together into 64-bits.
@@ -103,7 +103,7 @@ inline Slice ExtractUserKey(const Slice& internal_key) {
 inline ValueType ExtractValueType(const Slice& internal_key) {
   assert(internal_key.size() >= 8);
   const size_t n = internal_key.size();
-  uint64_t_t num = DecodeFixed64(internal_key.data() + n - 8);
+  uint64_t num = DecodeFixed64(internal_key.data() + n - 8);
   unsigned char c = num & 0xff;
   return static_cast<ValueType>(c);
 }
@@ -177,7 +177,7 @@ inline bool ParseInternalKey(const Slice& internal_key,
                              ParsedInternalKey* result) {
   const size_t n = internal_key.size();
   if (n < 8) return false;
-  uint64_t_t num = DecodeFixed64(internal_key.data() + n - 8);
+  uint64_t num = DecodeFixed64(internal_key.data() + n - 8);
   unsigned char c = num & 0xff;
   result->sequence = num >> 8;
   result->type = static_cast<ValueType>(c);

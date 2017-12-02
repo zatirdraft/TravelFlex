@@ -17,7 +17,7 @@ void EncodeFixed32(char* buf, uint32_t value) {
   }
 }
 
-void EncodeFixed64(char* buf, uint64_t_t value) {
+void EncodeFixed64(char* buf, uint64_t value) {
   if (port::kLittleEndian) {
     memcpy(buf, &value, sizeof(value));
   } else {
@@ -38,7 +38,7 @@ void PutFixed32(std::string* dst, uint32_t value) {
   dst->append(buf, sizeof(buf));
 }
 
-void PutFixed64(std::string* dst, uint64_t_t value) {
+void PutFixed64(std::string* dst, uint64_t value) {
   char buf[sizeof(value)];
   EncodeFixed64(buf, value);
   dst->append(buf, sizeof(buf));
@@ -78,7 +78,7 @@ void PutVarint32(std::string* dst, uint32_t v) {
   dst->append(buf, ptr - buf);
 }
 
-char* EncodeVarint64(char* dst, uint64_t_t v) {
+char* EncodeVarint64(char* dst, uint64_t v) {
   static const int B = 128;
   unsigned char* ptr = reinterpret_cast<unsigned char*>(dst);
   while (v >= B) {
@@ -89,7 +89,7 @@ char* EncodeVarint64(char* dst, uint64_t_t v) {
   return reinterpret_cast<char*>(ptr);
 }
 
-void PutVarint64(std::string* dst, uint64_t_t v) {
+void PutVarint64(std::string* dst, uint64_t v) {
   char buf[10];
   char* ptr = EncodeVarint64(buf, v);
   dst->append(buf, ptr - buf);
@@ -100,7 +100,7 @@ void PutLengthPrefixedSlice(std::string* dst, const Slice& value) {
   dst->append(value.data(), value.size());
 }
 
-int VarintLength(uint64_t_t v) {
+int VarintLength(uint64_t v) {
   int len = 1;
   while (v >= 128) {
     v >>= 7;
@@ -140,10 +140,10 @@ bool GetVarint32(Slice* input, uint32_t* value) {
   }
 }
 
-const char* GetVarint64_tPtr(const char* p, const char* limit, uint64_t_t* value) {
-  uint64_t_t result = 0;
+const char* GetVarint64_tPtr(const char* p, const char* limit, uint64_t* value) {
+  uint64_t result = 0;
   for (uint32_t shift = 0; shift <= 63 && p < limit; shift += 7) {
-    uint64_t_t byte = *(reinterpret_cast<const unsigned char*>(p));
+    uint64_t byte = *(reinterpret_cast<const unsigned char*>(p));
     p++;
     if (byte & 128) {
       // More bytes are present
@@ -157,7 +157,7 @@ const char* GetVarint64_tPtr(const char* p, const char* limit, uint64_t_t* value
   return NULL;
 }
 
-bool GetVarint64(Slice* input, uint64_t_t* value) {
+bool GetVarint64(Slice* input, uint64_t* value) {
   const char* p = input->data();
   const char* limit = p + input->size();
   const char* q = GetVarint64_tPtr(p, limit, value);

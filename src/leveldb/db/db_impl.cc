@@ -59,8 +59,8 @@ struct DBImpl::CompactionState {
 
   // Files produced by compaction
   struct Output {
-    uint64_t_t number;
-    uint64_t_t file_size;
+    uint64_t number;
+    uint64_t file_size;
     InternalKey smallest, largest;
   };
   std::vector<Output> outputs;
@@ -69,7 +69,7 @@ struct DBImpl::CompactionState {
   WritableFile* outfile;
   TableBuilder* builder;
 
-  uint64_t_t total_bytes;
+  uint64_t total_bytes;
 
   Output* current_output() { return &outputs[outputs.size()-1]; }
 
@@ -218,12 +218,12 @@ void DBImpl::MaybeIgnoreError(Status* s) const {
 
 void DBImpl::DeleteObsoleteFiles() {
   // Make a set of all of the live files
-  std::set<uint64_t_t> live = pending_outputs_;
+  std::set<uint64_t> live = pending_outputs_;
   versions_->AddLiveFiles(&live);
 
   std::vector<std::string> filenames;
   env_->GetChildren(dbname_, &filenames); // Ignoring errors on purpose
-  uint64_t_t number;
+  uint64_t number;
   FileType type;
   for (size_t i = 0; i < filenames.size(); i++) {
     if (ParseFileName(filenames[i], &number, &type)) {
@@ -307,18 +307,18 @@ Status DBImpl::Recover(VersionEdit* edit) {
     // Note that PrevLogNumber() is no longer used, but we pay
     // attention to it in case we are recovering a database
     // produced by an older version of leveldb.
-    const uint64_t_t min_log = versions_->LogNumber();
-    const uint64_t_t prev_log = versions_->PrevLogNumber();
+    const uint64_t min_log = versions_->LogNumber();
+    const uint64_t prev_log = versions_->PrevLogNumber();
     std::vector<std::string> filenames;
     s = env_->GetChildren(dbname_, &filenames);
     if (!s.ok()) {
       return s;
     }
-    std::set<uint64_t_t> expected;
+    std::set<uint64_t> expected;
     versions_->AddLiveFiles(&expected);
-    uint64_t_t number;
+    uint64_t number;
     FileType type;
-    std::vector<uint64_t_t> logs;
+    std::vector<uint64_t> logs;
     for (size_t i = 0; i < filenames.size(); i++) {
       if (ParseFileName(filenames[i], &number, &type)) {
         expected.erase(number);
@@ -354,7 +354,7 @@ Status DBImpl::Recover(VersionEdit* edit) {
   return s;
 }
 
-Status DBImpl::RecoverLogFile(uint64_t_t log_number,
+Status DBImpl::RecoverLogFile(uint64_t log_number,
                               VersionEdit* edit,
                               SequenceNumber* max_sequence) {
   struct LogReporter : public log::Reader::Reporter {
@@ -452,7 +452,7 @@ Status DBImpl::RecoverLogFile(uint64_t_t log_number,
 Status DBImpl::WriteLevel0Table(MemTable* mem, VersionEdit* edit,
                                 Version* base) {
   mutex_.AssertHeld();
-  const uint64_t_t start_micros = env_->NowMicros();
+  const uint64_t start_micros = env_->NowMicros();
   FileMetaData meta;
   meta.number = versions_->NewFileNumber();
   pending_outputs_.insert(meta.number);
@@ -755,7 +755,7 @@ void DBImpl::CleanupCompaction(CompactionState* compact) {
 Status DBImpl::OpenCompactionOutputFile(CompactionState* compact) {
   assert(compact != NULL);
   assert(compact->builder == NULL);
-  uint64_t_t file_number;
+  uint64_t file_number;
   {
     mutex_.Lock();
     file_number = versions_->NewFileNumber();
@@ -783,18 +783,18 @@ Status DBImpl::FinishCompactionOutputFile(CompactionState* compact,
   assert(compact->outfile != NULL);
   assert(compact->builder != NULL);
 
-  const uint64_t_t output_number = compact->current_output()->number;
+  const uint64_t output_number = compact->current_output()->number;
   assert(output_number != 0);
 
   // Check for iterator errors
   Status s = input->status();
-  const uint64_t_t current_entries = compact->builder->NumEntries();
+  const uint64_t current_entries = compact->builder->NumEntries();
   if (s.ok()) {
     s = compact->builder->Finish();
   } else {
     compact->builder->Abandon();
   }
-  const uint64_t_t current_bytes = compact->builder->FileSize();
+  const uint64_t current_bytes = compact->builder->FileSize();
   compact->current_output()->file_size = current_bytes;
   compact->total_bytes += current_bytes;
   delete compact->builder;
@@ -851,8 +851,8 @@ Status DBImpl::InstallCompactionResults(CompactionState* compact) {
 }
 
 Status DBImpl::DoCompactionWork(CompactionState* compact) {
-  const uint64_t_t start_micros = env_->NowMicros();
-  int64_t_t imm_micros = 0;  // Micros spent doing imm_ compactions
+  const uint64_t start_micros = env_->NowMicros();
+  int64_t imm_micros = 0;  // Micros spent doing imm_ compactions
 
   Log(options_.info_log,  "Compacting %d@%d + %d@%d files",
       compact->compaction->num_input_files(0),
@@ -882,7 +882,7 @@ Status DBImpl::DoCompactionWork(CompactionState* compact) {
   for (; input->Valid() && !shutting_down_.Acquire_Load(); ) {
     // Prioritize immutable compaction work
     if (has_imm_.NoBarrier_Load() != NULL) {
-      const uint64_t_t imm_start = env_->NowMicros();
+      const uint64_t imm_start = env_->NowMicros();
       mutex_.Lock();
       if (imm_ != NULL) {
         CompactMemTable();
@@ -1064,7 +1064,7 @@ Iterator* DBImpl::TEST_NewInternalIterator() {
   return NewInternalIterator(ReadOptions(), &ignored, &ignored_seed);
 }
 
-int64_t_t DBImpl::TEST_MaxNextLevelOverlappingBytes() {
+int64_t DBImpl::TEST_MaxNextLevelOverlappingBytes() {
   MutexLock l(&mutex_);
   return versions_->MaxNextLevelOverlappingBytes();
 }
@@ -1171,7 +1171,7 @@ Status DBImpl::Write(const WriteOptions& options, WriteBatch* my_batch) {
 
   // May temporarily unlock and wait.
   Status status = MakeRoomForWrite(my_batch == NULL);
-  uint64_t_t last_sequence = versions_->LastSequence();
+  uint64_t last_sequence = versions_->LastSequence();
   Writer* last_writer = &w;
   if (status.ok() && my_batch != NULL) {  // NULL batch is for compactions
     WriteBatch* updates = BuildBatchGroup(&last_writer);
@@ -1307,7 +1307,7 @@ Status DBImpl::MakeRoomForWrite(bool force) {
     } else {
       // Attempt to switch to a new memtable and trigger compaction of old
       assert(versions_->PrevLogNumber() == 0);
-      uint64_t_t new_log_number = versions_->NewFileNumber();
+      uint64_t new_log_number = versions_->NewFileNumber();
       WritableFile* lfile = NULL;
       s = env_->NewWritableFile(LogFileName(dbname_, new_log_number), &lfile);
       if (!s.ok()) {
@@ -1342,7 +1342,7 @@ bool DBImpl::GetProperty(const Slice& property, std::string* value) {
 
   if (in.starts_with("num-files-at-level")) {
     in.remove_prefix(strlen("num-files-at-level"));
-    uint64_t_t level;
+    uint64_t level;
     bool ok = ConsumeDecimalNumber(&in, &level) && in.empty();
     if (!ok || level >= config::kNumLevels) {
       return false;
@@ -1387,7 +1387,7 @@ bool DBImpl::GetProperty(const Slice& property, std::string* value) {
 
 void DBImpl::GetApproximateSizes(
     const Range* range, int n,
-    uint64_t_t* sizes) {
+    uint64_t* sizes) {
   // TODO(opt): better implementation
   Version* v;
   {
@@ -1400,8 +1400,8 @@ void DBImpl::GetApproximateSizes(
     // Convert user_key into a corresponding internal key.
     InternalKey k1(range[i].start, kMaxSequenceNumber, kValueTypeForSeek);
     InternalKey k2(range[i].limit, kMaxSequenceNumber, kValueTypeForSeek);
-    uint64_t_t start = versions_->ApproximateOffsetOf(v, k1);
-    uint64_t_t limit = versions_->ApproximateOffsetOf(v, k2);
+    uint64_t start = versions_->ApproximateOffsetOf(v, k1);
+    uint64_t limit = versions_->ApproximateOffsetOf(v, k2);
     sizes[i] = (limit >= start ? limit - start : 0);
   }
 
@@ -1436,7 +1436,7 @@ Status DB::Open(const Options& options, const std::string& dbname,
   VersionEdit edit;
   Status s = impl->Recover(&edit); // Handles create_if_missing, error_if_exists
   if (s.ok()) {
-    uint64_t_t new_log_number = impl->versions_->NewFileNumber();
+    uint64_t new_log_number = impl->versions_->NewFileNumber();
     WritableFile* lfile;
     s = options.env->NewWritableFile(LogFileName(dbname, new_log_number),
                                      &lfile);
@@ -1477,7 +1477,7 @@ Status DestroyDB(const std::string& dbname, const Options& options) {
   const std::string lockname = LockFileName(dbname);
   Status result = env->LockFile(lockname, &lock);
   if (result.ok()) {
-    uint64_t_t number;
+    uint64_t number;
     FileType type;
     for (size_t i = 0; i < filenames.size(); i++) {
       if (ParseFileName(filenames[i], &number, &type) &&

@@ -41,7 +41,7 @@ class Reader {
   // The Reader will start reading at the first record located at physical
   // position >= initial_offset within the file.
   Reader(SequentialFile* file, Reporter* reporter, bool checksum,
-         uint64_t_t initial_offset);
+         uint64_t initial_offset);
 
   ~Reader();
 
@@ -55,7 +55,7 @@ class Reader {
   // Returns the physical offset of the last record returned by ReadRecord.
   //
   // Undefined before the first call to ReadRecord.
-  uint64_t_t LastRecordOffset();
+  uint64_t LastRecordOffset();
 
  private:
   SequentialFile* const file_;
@@ -66,12 +66,12 @@ class Reader {
   bool eof_;   // Last Read() indicated EOF by returning < kBlockSize
 
   // Offset of the last record returned by ReadRecord.
-  uint64_t_t last_record_offset_;
+  uint64_t last_record_offset_;
   // Offset of the first location past the end of buffer_.
-  uint64_t_t end_of_buffer_offset_;
+  uint64_t end_of_buffer_offset_;
 
   // Offset at which to start looking for the first record to return
-  uint64_t_t const initial_offset_;
+  uint64_t const initial_offset_;
 
   // Extend record types with the following special values
   enum {

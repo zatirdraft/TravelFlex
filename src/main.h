@@ -2245,8 +2245,8 @@ extern CBlockTreeDB *pblocktree;
 struct CBlockTemplate
 {
     CBlock block;
-    std::vector<int64_t_t> vTxFees;
-    std::vector<int64_t_t> vTxSigOps;
+    std::vector<int64_t> vTxFees;
+    std::vector<int64_t> vTxSigOps;
 };
 
 #if defined(_M_IX86) || defined(__i386__) || defined(__i386) || defined(_M_X64) || defined(__x86_64__) || defined(_M_AMD64)

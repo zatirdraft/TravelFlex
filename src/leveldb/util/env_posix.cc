@@ -61,7 +61,7 @@ class PosixSequentialFile: public SequentialFile {
     return s;
   }
 
-  virtual Status Skip(uint64_t_t n) {
+  virtual Status Skip(uint64_t n) {
     if (fseek(file_, n, SEEK_CUR)) {
       return IOError(filename_, errno);
     }
@@ -80,7 +80,7 @@ class PosixRandomAccessFile: public RandomAccessFile {
       : filename_(fname), fd_(fd) { }
   virtual ~PosixRandomAccessFile() { close(fd_); }
 
-  virtual Status Read(uint64_t_t offset, size_t n, Slice* result,
+  virtual Status Read(uint64_t offset, size_t n, Slice* result,
                       char* scratch) const {
     Status s;
     ssize_t r = pread(fd_, scratch, n, static_cast<off_t>(offset));
@@ -163,7 +163,7 @@ class PosixMmapReadableFile: public RandomAccessFile {
     limiter_->Release();
   }
 
-  virtual Status Read(uint64_t_t offset, size_t n, Slice* result,
+  virtual Status Read(uint64_t offset, size_t n, Slice* result,
                       char* scratch) const {
     Status s;
     if (offset + n > length_) {
@@ -190,7 +190,7 @@ class PosixMmapFile : public WritableFile {
   char* limit_;           // Limit of the mapped region
   char* dst_;             // Where to write next  (in range [base_,limit_])
   char* last_sync_;       // Where have we synced up to
-  uint64_t_t file_offset_;  // Offset of base_ in file
+  uint64_t file_offset_;  // Offset of base_ in file
 
   // Have we done an munmap of unsynced data?
   bool pending_sync_;
@@ -528,7 +528,7 @@ class PosixEnv : public Env {
       s = IOError(fname, errno);
 #if !defined(OS_MACOSX)
     } else if (mmap_limit_.Acquire()) {
-      uint64_t_t size;
+      uint64_t size;
       s = GetFileSize(fname, &size);
       if (s.ok()) {
         void* base = mmap(NULL, size, PROT_READ, MAP_SHARED, fd, 0);
@@ -609,7 +609,7 @@ class PosixEnv : public Env {
     return result;
   }
 
-  virtual Status GetFileSize(const std::string& fname, uint64_t_t* size) {
+  virtual Status GetFileSize(const std::string& fname, uint64_t* size) {
     Status s;
     struct stat sbuf;
     if (stat(fname.c_str(), &sbuf) != 0) {
@@ -681,9 +681,9 @@ class PosixEnv : public Env {
     return Status::OK();
   }
 
-  static uint64_t_t gettid() {
+  static uint64_t gettid() {
     pthread_t tid = pthread_self();
-    uint64_t_t thread_id = 0;
+    uint64_t thread_id = 0;
     memcpy(&thread_id, &tid, std::min(sizeof(thread_id), sizeof(tid)));
     return thread_id;
   }
@@ -699,10 +699,10 @@ class PosixEnv : public Env {
     }
   }
 
-  virtual uint64_t_t NowMicros() {
+  virtual uint64_t NowMicros() {
     struct timeval tv;
     gettimeofday(&tv, NULL);
-    return static_cast<uint64_t_t>(tv.tv_sec) * 1000000 + tv.tv_usec;
+    return static_cast<uint64_t>(tv.tv_sec) * 1000000 + tv.tv_usec;
   }
 
   virtual void SleepForMicroseconds(int micros) {

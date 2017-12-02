@@ -15,7 +15,7 @@ namespace leveldb {
 extern Status WriteStringToFileSync(Env* env, const Slice& data,
                                     const std::string& fname);
 
-static std::string MakeFileName(const std::string& name, uint64_t_t number,
+static std::string MakeFileName(const std::string& name, uint64_t number,
                                 const char* suffix) {
   char buf[100];
   snprintf(buf, sizeof(buf), "/%06llu.%s",
@@ -24,17 +24,17 @@ static std::string MakeFileName(const std::string& name, uint64_t_t number,
   return name + buf;
 }
 
-std::string LogFileName(const std::string& name, uint64_t_t number) {
+std::string LogFileName(const std::string& name, uint64_t number) {
   assert(number > 0);
   return MakeFileName(name, number, "log");
 }
 
-std::string TableFileName(const std::string& name, uint64_t_t number) {
+std::string TableFileName(const std::string& name, uint64_t number) {
   assert(number > 0);
   return MakeFileName(name, number, "sst");
 }
 
-std::string DescriptorFileName(const std::string& dbname, uint64_t_t number) {
+std::string DescriptorFileName(const std::string& dbname, uint64_t number) {
   assert(number > 0);
   char buf[100];
   snprintf(buf, sizeof(buf), "/MANIFEST-%06llu",
@@ -50,7 +50,7 @@ std::string LockFileName(const std::string& dbname) {
   return dbname + "/LOCK";
 }
 
-std::string TempFileName(const std::string& dbname, uint64_t_t number) {
+std::string TempFileName(const std::string& dbname, uint64_t number) {
   assert(number > 0);
   return MakeFileName(dbname, number, "dbtmp");
 }
@@ -73,7 +73,7 @@ std::string OldInfoLogFileName(const std::string& dbname) {
 //    dbname/MANIFEST-[0-9]+
 //    dbname/[0-9]+.(log|sst)
 bool ParseFileName(const std::string& fname,
-                   uint64_t_t* number,
+                   uint64_t* number,
                    FileType* type) {
   Slice rest(fname);
   if (rest == "CURRENT") {
@@ -87,7 +87,7 @@ bool ParseFileName(const std::string& fname,
     *type = kInfoLogFile;
   } else if (rest.starts_with("MANIFEST-")) {
     rest.remove_prefix(strlen("MANIFEST-"));
-    uint64_t_t num;
+    uint64_t num;
     if (!ConsumeDecimalNumber(&rest, &num)) {
       return false;
     }
@@ -99,7 +99,7 @@ bool ParseFileName(const std::string& fname,
   } else {
     // Avoid strtoull() to keep filename format independent of the
     // current locale
-    uint64_t_t num;
+    uint64_t num;
     if (!ConsumeDecimalNumber(&rest, &num)) {
       return false;
     }
@@ -119,7 +119,7 @@ bool ParseFileName(const std::string& fname,
 }
 
 Status SetCurrentFile(Env* env, const std::string& dbname,
-                      uint64_t_t descriptor_number) {
+                      uint64_t descriptor_number) {
   // Remove leading "dbname/" and add newline to manifest file name
   std::string manifest = DescriptorFileName(dbname, descriptor_number);
   Slice contents = manifest;

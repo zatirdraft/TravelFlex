@@ -39,7 +39,7 @@ class DBImpl : public DB {
   virtual const Snapshot* GetSnapshot();
   virtual void ReleaseSnapshot(const Snapshot* snapshot);
   virtual bool GetProperty(const Slice& property, std::string* value);
-  virtual void GetApproximateSizes(const Range* range, int n, uint64_t_t* sizes);
+  virtual void GetApproximateSizes(const Range* range, int n, uint64_t* sizes);
   virtual void CompactRange(const Slice* begin, const Slice* end);
 
   // Extra methods (for testing) that are not in the public DB interface
@@ -57,7 +57,7 @@ class DBImpl : public DB {
 
   // Return the maximum overlapping data (in bytes) at next level for any
   // file at a level >= 1.
-  int64_t_t TEST_MaxNextLevelOverlappingBytes();
+  int64_t TEST_MaxNextLevelOverlappingBytes();
 
   // Record a sample of bytes read at the specified internal key.
   // Samples are taken approximately once every config::kReadBytesPeriod
@@ -90,7 +90,7 @@ class DBImpl : public DB {
   Status CompactMemTable()
       EXCLUSIVE_LOCKS_REQUIRED(mutex_);
 
-  Status RecoverLogFile(uint64_t_t log_number,
+  Status RecoverLogFile(uint64_t log_number,
                         VersionEdit* edit,
                         SequenceNumber* max_sequence)
       EXCLUSIVE_LOCKS_REQUIRED(mutex_);
@@ -139,7 +139,7 @@ class DBImpl : public DB {
   MemTable* imm_;                // Memtable being compacted
   port::AtomicPointer has_imm_;  // So bg thread can detect non-NULL imm_
   WritableFile* logfile_;
-  uint64_t_t logfile_number_;
+  uint64_t logfile_number_;
   log::Writer* log_;
   uint32_t seed_;                // For sampling.
 
@@ -151,7 +151,7 @@ class DBImpl : public DB {
 
   // Set of table files to protect from deletion because they are
   // part of ongoing compactions.
-  std::set<uint64_t_t> pending_outputs_;
+  std::set<uint64_t> pending_outputs_;
 
   // Has a background compaction been scheduled or is running?
   bool bg_compaction_scheduled_;
@@ -175,9 +175,9 @@ class DBImpl : public DB {
   // Per level compaction stats.  stats_[level] stores the stats for
   // compactions that produced data for the specified "level".
   struct CompactionStats {
-    int64_t_t micros;
-    int64_t_t bytes_read;
-    int64_t_t bytes_written;
+    int64_t micros;
+    int64_t bytes_read;
+    int64_t bytes_written;
 
     CompactionStats() : micros(0), bytes_read(0), bytes_written(0) { }
 

@@ -27,7 +27,7 @@ TEST(Coding, Fixed32) {
 TEST(Coding, Fixed64) {
   std::string s;
   for (int power = 0; power <= 63; power++) {
-    uint64_t_t v = static_cast<uint64_t_t>(1) << power;
+    uint64_t v = static_cast<uint64_t>(1) << power;
     PutFixed64(&s, v - 1);
     PutFixed64(&s, v + 0);
     PutFixed64(&s, v + 1);
@@ -35,19 +35,19 @@ TEST(Coding, Fixed64) {
 
   const char* p = s.data();
   for (int power = 0; power <= 63; power++) {
-    uint64_t_t v = static_cast<uint64_t_t>(1) << power;
-    uint64_t_t actual;
+    uint64_t v = static_cast<uint64_t>(1) << power;
+    uint64_t actual;
     actual = DecodeFixed64(p);
     ASSERT_EQ(v-1, actual);
-    p += sizeof(uint64_t_t);
+    p += sizeof(uint64_t);
 
     actual = DecodeFixed64(p);
     ASSERT_EQ(v+0, actual);
-    p += sizeof(uint64_t_t);
+    p += sizeof(uint64_t);
 
     actual = DecodeFixed64(p);
     ASSERT_EQ(v+1, actual);
-    p += sizeof(uint64_t_t);
+    p += sizeof(uint64_t);
   }
 }
 
@@ -97,15 +97,15 @@ TEST(Coding, Varint32) {
 
 TEST(Coding, Varint64_t) {
   // Construct the list of values to check
-  std::vector<uint64_t_t> values;
+  std::vector<uint64_t> values;
   // Some special values
   values.push_back(0);
   values.push_back(100);
-  values.push_back(~static_cast<uint64_t_t>(0));
-  values.push_back(~static_cast<uint64_t_t>(0) - 1);
+  values.push_back(~static_cast<uint64_t>(0));
+  values.push_back(~static_cast<uint64_t>(0) - 1);
   for (uint32_t k = 0; k < 64; k++) {
     // Test values near powers of two
-    const uint64_t_t power = 1ull << k;
+    const uint64_t power = 1ull << k;
     values.push_back(power);
     values.push_back(power-1);
     values.push_back(power+1);
@@ -120,7 +120,7 @@ TEST(Coding, Varint64_t) {
   const char* limit = p + s.size();
   for (int i = 0; i < values.size(); i++) {
     ASSERT_TRUE(p < limit);
-    uint64_t_t actual;
+    uint64_t actual;
     const char* start = p;
     p = GetVarint64_tPtr(p, limit, &actual);
     ASSERT_TRUE(p != NULL);
@@ -151,17 +151,17 @@ TEST(Coding, Varint32Truncation) {
 }
 
 TEST(Coding, Varint64_tOverflow) {
-  uint64_t_t result;
+  uint64_t result;
   std::string input("\x81\x82\x83\x84\x85\x81\x82\x83\x84\x85\x11");
   ASSERT_TRUE(GetVarint64_tPtr(input.data(), input.data() + input.size(), &result)
               == NULL);
 }
 
 TEST(Coding, Varint64_tTruncation) {
-  uint64_t_t large_value = (1ull << 63) + 100ull;
+  uint64_t large_value = (1ull << 63) + 100ull;
   std::string s;
   PutVarint64(&s, large_value);
-  uint64_t_t result;
+  uint64_t result;
   for (int len = 0; len < s.size() - 1; len++) {
     ASSERT_TRUE(GetVarint64_tPtr(s.data(), s.data() + len, &result) == NULL);
   }

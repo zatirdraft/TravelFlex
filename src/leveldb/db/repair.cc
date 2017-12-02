@@ -108,10 +108,10 @@ class Repairer {
   VersionEdit edit_;
 
   std::vector<std::string> manifests_;
-  std::vector<uint64_t_t> table_numbers_;
-  std::vector<uint64_t_t> logs_;
+  std::vector<uint64_t> table_numbers_;
+  std::vector<uint64_t> logs_;
   std::vector<TableInfo> tables_;
-  uint64_t_t next_file_number_;
+  uint64_t next_file_number_;
 
   Status FindFiles() {
     std::vector<std::string> filenames;
@@ -123,7 +123,7 @@ class Repairer {
       return Status::IOError(dbname_, "repair found no files");
     }
 
-    uint64_t_t number;
+    uint64_t number;
     FileType type;
     for (size_t i = 0; i < filenames.size(); i++) {
       if (ParseFileName(filenames[i], &number, &type)) {
@@ -159,11 +159,11 @@ class Repairer {
     }
   }
 
-  Status ConvertLogToTable(uint64_t_t log) {
+  Status ConvertLogToTable(uint64_t log) {
     struct LogReporter : public log::Reader::Reporter {
       Env* env;
       Logger* info_log;
-      uint64_t_t lognum;
+      uint64_t lognum;
       virtual void Corruption(size_t bytes, const Status& s) {
         // We print error messages for corruption, but continue repairing.
         Log(info_log, "Log #%llu: dropping %d bytes; %s",

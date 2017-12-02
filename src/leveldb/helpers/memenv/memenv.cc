@@ -47,13 +47,13 @@ class FileState {
     }
   }
 
-  uint64_t_t Size() const { return size_; }
+  uint64_t Size() const { return size_; }
 
-  Status Read(uint64_t_t offset, size_t n, Slice* result, char* scratch) const {
+  Status Read(uint64_t offset, size_t n, Slice* result, char* scratch) const {
     if (offset > size_) {
       return Status::IOError("Offset greater than file size.");
     }
-    const uint64_t_t available = size_ - offset;
+    const uint64_t available = size_ - offset;
     if (n > available) {
       n = available;
     }
@@ -140,7 +140,7 @@ class FileState {
   // while the file is being written, and concurrent access is not allowed
   // to writable files.
   std::vector<char*> blocks_;
-  uint64_t_t size_;
+  uint64_t size_;
 
   enum { kBlockSize = 8 * 1024 };
 };
@@ -163,7 +163,7 @@ class SequentialFileImpl : public SequentialFile {
     return s;
   }
 
-  virtual Status Skip(uint64_t_t n) {
+  virtual Status Skip(uint64_t n) {
     if (pos_ > file_->Size()) {
       return Status::IOError("pos_ > file_->Size()");
     }
@@ -190,7 +190,7 @@ class RandomAccessFileImpl : public RandomAccessFile {
     file_->Unref();
   }
 
-  virtual Status Read(uint64_t_t offset, size_t n, Slice* result,
+  virtual Status Read(uint64_t offset, size_t n, Slice* result,
                       char* scratch) const {
     return file_->Read(offset, n, result, scratch);
   }
@@ -325,7 +325,7 @@ class InMemoryEnv : public EnvWrapper {
     return Status::OK();
   }
 
-  virtual Status GetFileSize(const std::string& fname, uint64_t_t* file_size) {
+  virtual Status GetFileSize(const std::string& fname, uint64_t* file_size) {
     MutexLock lock(&mutex_);
     if (file_map_.find(fname) == file_map_.end()) {
       return Status::IOError(fname, "File not found");
