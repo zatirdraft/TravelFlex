@@ -317,37 +317,6 @@
        <bool>true</bool>
       </property>
      </widget>
-     <widget class="QLabel" name="label_12">
-      <property name="geometry">
-       <rect>
-        <x>210</x>
-        <y>-10</y>
-        <width>175</width>
-        <height>100</height>
-       </rect>
-      </property>
-      <property name="minimumSize">
-       <size>
-        <width>175</width>
-        <height>100</height>
-       </size>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>125</width>
-        <height>16777215</height>
-       </size>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>:/images/res/images/cld4.png</pixmap>
-      </property>
-      <property name="scaledContents">
-       <bool>true</bool>
-      </property>
-     </widget>
      <widget class="QLabel" name="label_2">
       <property name="geometry">
        <rect>
@@ -374,68 +343,6 @@
       </property>
       <property name="pixmap">
        <pixmap>:/images/res/images/fb5.png</pixmap>
-      </property>
-      <property name="scaledContents">
-       <bool>true</bool>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_10">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>250</width>
-        <height>100</height>
-       </rect>
-      </property>
-      <property name="minimumSize">
-       <size>
-        <width>250</width>
-        <height>100</height>
-       </size>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>150</width>
-        <height>50</height>
-       </size>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>:/images/res/images/cld4.png</pixmap>
-      </property>
-      <property name="scaledContents">
-       <bool>true</bool>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_11">
-      <property name="geometry">
-       <rect>
-        <x>80</x>
-        <y>100</y>
-        <width>70</width>
-        <height>50</height>
-       </rect>
-      </property>
-      <property name="minimumSize">
-       <size>
-        <width>70</width>
-        <height>50</height>
-       </size>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>70</width>
-        <height>50</height>
-       </size>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>:/images/res/images/fb1.png</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -472,44 +379,6 @@
        <bool>true</bool>
       </property>
      </widget>
-     <widget class="QLabel" name="label_9">
-      <property name="geometry">
-       <rect>
-        <x>170</x>
-        <y>20</y>
-        <width>70</width>
-        <height>50</height>
-       </rect>
-      </property>
-      <property name="minimumSize">
-       <size>
-        <width>70</width>
-        <height>50</height>
-       </size>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>70</width>
-        <height>50</height>
-       </size>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="pixmap">
-       <pixmap>:/images/res/images/fb2.png</pixmap>
-      </property>
-      <property name="scaledContents">
-       <bool>true</bool>
-      </property>
-     </widget>
-     <zorder>label_10</zorder>
-     <zorder>label_6</zorder>
-     <zorder>label_12</zorder>
-     <zorder>label_2</zorder>
-     <zorder>label_11</zorder>
-     <zorder>label_7</zorder>
-     <zorder>label_9</zorder>
     </widget>
    </item>
    <item row="5" column="3">
@@ -558,8 +427,8 @@
     <widget class="QLabel" name="label_wallet_bg">
      <property name="minimumSize">
       <size>
-       <width>275</width>
-       <height>275</height>
+       <width>350</width>
+       <height>300</height>
       </size>
      </property>
      <property name="maximumSize">
