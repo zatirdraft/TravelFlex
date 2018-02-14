@@ -52,7 +52,7 @@ win32:QMAKE_LFLAGS *= -Wl,--dynamicbase -Wl,--nxcompat
 # on Windows: enable GCC large address aware linker flag
 #win32:QMAKE_LFLAGS *= -Wl,--large-address-aware
 # i686-w64-mingw32
-win32:QMAKE_LFLAGS *= -static-libgcc -static-libstdc++
+win32:QMAKE_LFLAGS *= -static-libgcc -static-libstdc++ -std=c++11
 
 # use: qmake "USE_QRCODE=1"
 # libqrencode (http://fukuchi.org/works/qrencode/index.en.html) must be installed for support
@@ -394,7 +394,7 @@ isEmpty(BOOST_INCLUDE_PATH) {
     macx:BOOST_INCLUDE_PATH = /opt/local/include
 }
 
-MXE_PATH=/opt/src/mxe
+MXE_PATH=/mnt/mxe
 BOOST_INCLUDE_PATH=${MXE_PATH}/usr/x86_64-w64-mingw32.static/include
 BOOST_LIB_PATH=${MXE_PATH}/usr/x86_64-w64-mingw32.static/lib
 BDB_INCLUDE_PATH=${MXE_PATH}/usr/x86_64-w64-mingw32.static/include
@@ -443,7 +443,7 @@ LIBS += $$join(BOOST_LIB_PATH,,-L,) $$join(BDB_LIB_PATH,,-L,) $$join(OPENSSL_LIB
 LIBS += -lssl -lcrypto -ldb_cxx$$BDB_LIB_SUFFIX
 # -lgdi32 has to happen after -lcrypto (see  #681)
 win32:LIBS += -lws2_32 -lshlwapi -lmswsock -lole32 -loleaut32 -luuid -lgdi32
-LIBS += -lboost_system$$BOOST_LIB_SUFFIX -lboost_filesystem$$BOOST_LIB_SUFFIX -lboost_program_options$$BOOST_LIB_SUFFIX -lboost_thread_win32$$BOOST_THREAD_LIB_SUFFIX
+LIBS += -lboost_system$$BOOST_LIB_SUFFIX -lboost_filesystem$$BOOST_LIB_SUFFIX -lboost_program_options$$BOOST_LIB_SUFFIX -lboost_thread$$BOOST_THREAD_LIB_SUFFIX
 win32:LIBS += -lboost_chrono$$BOOST_LIB_SUFFIX
 macx:LIBS += -lboost_chrono$$BOOST_LIB_SUFFIX
 

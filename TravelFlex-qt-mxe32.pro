@@ -395,17 +395,17 @@ isEmpty(BOOST_INCLUDE_PATH) {
     macx:BOOST_INCLUDE_PATH = /opt/local/include
 }
 
-MXE_PATH=/mnt/mxe
-BOOST_INCLUDE_PATH=${MXE_PATH}/usr/i686-w64-mingw32.static/include
-BOOST_LIB_PATH=${MXE_PATH}/usr/i686-w64-mingw32.static/lib
-BDB_INCLUDE_PATH=${MXE_PATH}/usr/i686-w64-mingw32.static/include
-BDB_LIB_PATH=${MXE_PATH}/usr/i686-w64-mingw32.static/lib
-OPENSSL_INCLUDE_PATH=${MXE_PATH}/usr/i686-w64-mingw32.static/include
-OPENSSL_LIB_PATH=${MXE_PATH}/usr/i686-w64-mingw32.static/lib
-MINIUPNPC_INCLUDE_PATH=${MXE_PATH}/usr/i686-w64-mingw32.static/include
-MINIUPNPC_LIB_PATH=${MXE_PATH}/usr/i686-w64-mingw32.static/lib
-QRENCODE_INCLUDE_PATH=${MXE_PATH}/usr/i686-w64-mingw32.static/include
-QRENCODE_LIB_PATH=${MXE_PATH}/usr/i686-w64-mingw32.static/lib
+#MXE_PATH=/mnt/mxe
+#BOOST_INCLUDE_PATH=${MXE_PATH}/usr/i686-w64-mingw32.static/include
+#BOOST_LIB_PATH=${MXE_PATH}/usr/i686-w64-mingw32.static/lib
+#BDB_INCLUDE_PATH=${MXE_PATH}/usr/i686-w64-mingw32.static/include
+#BDB_LIB_PATH=${MXE_PATH}/usr/i686-w64-mingw32.static/lib
+#OPENSSL_INCLUDE_PATH=${MXE_PATH}/usr/i686-w64-mingw32.static/include
+#OPENSSL_LIB_PATH=${MXE_PATH}/usr/i686-w64-mingw32.static/lib
+#MINIUPNPC_INCLUDE_PATH=${MXE_PATH}/usr/i686-w64-mingw32.static/include
+#MINIUPNPC_LIB_PATH=${MXE_PATH}/usr/i686-w64-mingw32.static/lib
+#QRENCODE_INCLUDE_PATH=${MXE_PATH}/usr/i686-w64-mingw32.static/include
+#QRENCODE_LIB_PATH=${MXE_PATH}/usr/i686-w64-mingw32.static/lib
 
 win32:DEFINES += WIN32
 win32:RC_FILE = src/qt/res/bitcoin-qt.rc

@@ -102,7 +102,7 @@ Value getgenerate(const Array& params, bool fHelp)
 
 Value setgenerate(const Array& params, bool fHelp)
 {
-    if (fHelp || params.size() < 1 || params.size() > 2)
+   /* if (fHelp || params.size() < 1 || params.size() > 2)
         throw runtime_error(
             "setgenerate <generate> [genproclimit]\n"
             "<generate> is true or false to turn generation on or off.\n"
@@ -123,7 +123,8 @@ Value setgenerate(const Array& params, bool fHelp)
 
     assert(pwalletMain != NULL);
     GenerateBitcoins(fGenerate, pwalletMain);
-    return Value::null;
+  */ 
+   return Value::null;
 }
 
 
