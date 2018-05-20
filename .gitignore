@@ -53,7 +53,7 @@ src/qt/test/moc*.cpp
 Makefile
 bitcoin-qt
 Bitcoin-Qt.app
-
+Thumbs.db
 # Unit-tests
 Makefile.test
 bitcoin-qt_test
