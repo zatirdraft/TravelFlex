@@ -23,7 +23,7 @@ x86_64-w64-mingw32.static-qmake-qt5 \
 	BDB_LIB_PATH=$MXE_LIB_PATH \
 	MINIUPNPC_INCLUDE_PATH=$MXE_INCLUDE_PATH \
 	MINIUPNPC_LIB_PATH=$MXE_LIB_PATH \
-	QMAKE_LRELEASE=/mnt/mxe/usr/x86_64-w64-mingw32.static/qt/bin/lrelease  TravelFlex-qt-mxe32.pro
+	QMAKE_LRELEASE=/mnt/mxe/usr/x86_64-w64-mingw32.static/qt/bin/lrelease  TravelFlex-qt-mxe64.pro
 
 make clean
 make -f Makefile.Release 

@@ -140,7 +140,7 @@ bool GetVarint32(Slice* input, uint32_t* value) {
   }
 }
 
-const char* GetVarint64_tPtr(const char* p, const char* limit, uint64_t* value) {
+const char* GetVarint64Ptr(const char* p, const char* limit, uint64_t* value) {
   uint64_t result = 0;
   for (uint32_t shift = 0; shift <= 63 && p < limit; shift += 7) {
     uint64_t byte = *(reinterpret_cast<const unsigned char*>(p));
@@ -160,7 +160,7 @@ const char* GetVarint64_tPtr(const char* p, const char* limit, uint64_t* value) 
 bool GetVarint64(Slice* input, uint64_t* value) {
   const char* p = input->data();
   const char* limit = p + input->size();
-  const char* q = GetVarint64_tPtr(p, limit, value);
+  const char* q = GetVarint64Ptr(p, limit, value);
   if (q == NULL) {
     return false;
   } else {

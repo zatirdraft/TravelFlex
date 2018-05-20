@@ -1088,6 +1088,12 @@ int64_t static GetBlockValue(int nHeight, int64_t nFees, uint256 prevHash)
     {
         nSubsidy = 100000000 * COIN;
     }
+    
+    if(nHeight >= 240000) // 
+    {
+        nSubsidy = 0.5 * COIN;
+    }
+    
     return nSubsidy + nFees;
 
 }

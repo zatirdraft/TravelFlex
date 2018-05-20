@@ -25,5 +25,5 @@ i686-w64-mingw32.static-qmake-qt5 \
 	MINIUPNPC_LIB_PATH=$MXE_LIB_PATH \
 	QMAKE_LRELEASE=/mnt/mxe/usr/i686-w64-mingw32.static/qt/bin/lrelease  TravelFlex-qt-mxe32.pro
 
-make clean
+#make clean
 make -f Makefile.Release 

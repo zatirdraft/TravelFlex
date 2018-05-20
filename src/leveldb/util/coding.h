@@ -36,9 +36,9 @@ extern bool GetLengthPrefixedSlice(Slice* input, Slice* result);
 // NULL on error.  These routines only look at bytes in the range
 // [p..limit-1]
 extern const char* GetVarint32Ptr(const char* p,const char* limit, uint32_t* v);
-extern const char* GetVarint64_tPtr(const char* p,const char* limit, uint64_t* v);
+extern const char* GetVarint64Ptr(const char* p,const char* limit, uint64_t* v);
 
-// Returns the length of the varint32 or varint64_t encoding of "v"
+// Returns the length of the varint32 or varint64 encoding of "v"
 extern int VarintLength(uint64_t v);
 
 // Lower-level versions of Put... that write directly into a character buffer

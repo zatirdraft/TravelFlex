@@ -50,7 +50,7 @@ QMAKE_CXXFLAGS += -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=2
 # for extra security on Windows: enable ASLR and DEP via GCC linker flags
 win32:QMAKE_LFLAGS *= -Wl,--dynamicbase -Wl,--nxcompat
 # on Windows: enable GCC large address aware linker flag
-#win32:QMAKE_LFLAGS *= -Wl,--large-address-aware
+#win32:QMAKE_LFLAGS *= -Wl
 # i686-w64-mingw32
 win32:QMAKE_LFLAGS *= -static-libgcc -static-libstdc++ -std=c++11
 
@@ -394,17 +394,17 @@ isEmpty(BOOST_INCLUDE_PATH) {
     macx:BOOST_INCLUDE_PATH = /opt/local/include
 }
 
-MXE_PATH=/mnt/mxe
-BOOST_INCLUDE_PATH=${MXE_PATH}/usr/x86_64-w64-mingw32.static/include
-BOOST_LIB_PATH=${MXE_PATH}/usr/x86_64-w64-mingw32.static/lib
-BDB_INCLUDE_PATH=${MXE_PATH}/usr/x86_64-w64-mingw32.static/include
-BDB_LIB_PATH=${MXE_PATH}/usr/x86_64-w64-mingw32.static/lib
-OPENSSL_INCLUDE_PATH=${MXE_PATH}/usr/x86_64-w64-mingw32.static/include
-OPENSSL_LIB_PATH=${MXE_PATH}/usr/x86_64-w64-mingw32.static/lib
-MINIUPNPC_INCLUDE_PATH=${MXE_PATH}/usr/x86_64-w64-mingw32.static/include
-MINIUPNPC_LIB_PATH=${MXE_PATH}/usr/x86_64-w64-mingw32.static/lib
-QRENCODE_INCLUDE_PATH=${MXE_PATH}/usr/x86_64-w64-mingw32.static/include
-QRENCODE_LIB_PATH=${MXE_PATH}/usr/x86_64-w64-mingw32.static/lib
+#MXE_PATH=/mnt/mxe
+#BOOST_INCLUDE_PATH=${MXE_PATH}/usr/x86_64-w64-mingw32.static/include
+#BOOST_LIB_PATH=${MXE_PATH}/usr/x86_64-w64-mingw32.static/lib
+#BDB_INCLUDE_PATH=${MXE_PATH}/usr/x86_64-w64-mingw32.static/include
+#BDB_LIB_PATH=${MXE_PATH}/usr/x86_64-w64-mingw32.static/lib
+#OPENSSL_INCLUDE_PATH=${MXE_PATH}/usr/x86_64-w64-mingw32.static/include
+#OPENSSL_LIB_PATH=${MXE_PATH}/usr/x86_64-w64-mingw32.static/lib
+#MINIUPNPC_INCLUDE_PATH=${MXE_PATH}/usr/x86_64-w64-mingw32.static/include
+#MINIUPNPC_LIB_PATH=${MXE_PATH}/usr/x86_64-w64-mingw32.static/lib
+#QRENCODE_INCLUDE_PATH=${MXE_PATH}/usr/x86_64-w64-mingw32.static/include
+#QRENCODE_LIB_PATH=${MXE_PATH}/usr/x86_64-w64-mingw32.static/lib
 
 win32:DEFINES += WIN32
 win32:RC_FILE = src/qt/res/bitcoin-qt.rc

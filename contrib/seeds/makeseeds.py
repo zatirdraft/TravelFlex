@@ -3,7 +3,7 @@
 # Generate pnSeed[] from Pieter's DNS seeder
 #
 
-NSEEDS=600
+NSEEDS=8
 
 import re
 import sys
@@ -13,7 +13,7 @@ def main():
     lines = sys.stdin.readlines()
 
     ips = []
-    pattern = re.compile(r"^(\d{1,3})\.(\d{1,3})\.(\d{1,3})\.(\d{1,3}):11556")
+    pattern = re.compile(r"^(\d{1,3})\.(\d{1,3})\.(\d{1,3})\.(\d{1,3}):54322")
     for line in lines:
         m = pattern.match(line)
         if m is None:
@@ -28,5 +28,7 @@ def main():
     for row in range(0, min(NSEEDS,len(ips)), 8):
         print "    " + ", ".join([ "0x%08x"%i for i in ips[row:row+8] ]) + ","
 
-if __name__ == '__main__':
-    main()
+print "TravelFlex pnSEED generator: "
+
+# if __name__ == '__main__':
+main()
